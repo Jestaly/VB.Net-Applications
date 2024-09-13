@@ -1,0 +1,16 @@
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.exe
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.deps.json
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.runtimeconfig.json
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.dll
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.pdb
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.Form1.resources
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.vbproj.GenerateResource.cache
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.AssemblyInfoInputs.cache
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.AssemblyInfo.vb
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.vbproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.dll
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\refint\LoginApplication.dll
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.pdb
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.genruntimeconfig.cache
+C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\ref\LoginApplication.dll
