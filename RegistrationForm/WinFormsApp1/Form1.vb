@@ -1,8 +1,21 @@
 ﻿Public Class Form1
 
     Private Sub nextButton_Click(sender As Object, e As EventArgs) Handles nextButton.Click
-        panel1.Visible = False
-        panel2.Visible = True
+
+        If (userName.Text.Length < 5 Or userName.Text.Length > 15) Then
+            MessageBox.Show("Error, Username should range from 5 - 15 Characters.")
+        End If
+        If (password.Text.Length < 8 Or password.Text.Length > 16) Then
+            MessageBox.Show("Error, Password should range from 8 - 16 Characters.")
+        End If
+        If (Not (confirmPassword.Text.Equals(password.Text))) Then
+            MessageBox.Show("Error, Password not matching.")
+        End If
+        If (userName.Text.Length >= 5 And userName.Text.Length <= 15 And password.Text.Length >= 8 And password.Text.Length <= 16 And confirmPassword.Text.Equals(password.Text)) Then
+            panel1.Visible = False
+            panel2.Visible = True
+        End If
+
     End Sub
 
     Private Sub nextButton2_Click(sender As Object, e As EventArgs) Handles nextButton2.Click
@@ -21,15 +34,6 @@
     End Sub
 
     Private Sub confirmButton_Click(sender As Object, e As EventArgs) Handles confirmButton.Click
-        If (userName.Text.Length > 15) Then
-            MessageBox.Show("Error, User Name should atleast 20 chacaracters.")
-        End If
-        If (password.Text.Length > 9) Then
-            MessageBox.Show("Error, Password should atleast 8 chacaracters.")
-        End If
-        If (Not (confirmPassword.Text.Equals(password.Text))) Then
-            MessageBox.Show("Error, Password not matching.")
-        End If
         If (surname.Text.Length > 20) Then
             MessageBox.Show("Error, Surname should atleast 20 chacaracters.")
         End If
@@ -54,7 +58,7 @@
         Try
 
         Catch ex As Exception
-            MessageBox.Show("Unit Field should be  an Integer.")
+            MessageBox.Show("Unit Field should be an Integer.")
         End Try
     End Sub
 

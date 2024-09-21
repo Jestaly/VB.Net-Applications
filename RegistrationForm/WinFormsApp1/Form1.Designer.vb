@@ -71,6 +71,8 @@ Partial Class Form1
         ' 
         ' userName
         ' 
+        userName.BackColor = Color.White
+        userName.ForeColor = SystemColors.ControlText
         userName.Location = New Point(29, 39)
         userName.Name = "userName"
         userName.PlaceholderText = "Username"
@@ -89,6 +91,8 @@ Partial Class Form1
         ' 
         ' confirmPassword
         ' 
+        confirmPassword.BackColor = Color.White
+        confirmPassword.ForeColor = SystemColors.ControlText
         confirmPassword.Location = New Point(29, 145)
         confirmPassword.Name = "confirmPassword"
         confirmPassword.PlaceholderText = "Confirm Password"
@@ -97,6 +101,8 @@ Partial Class Form1
         ' 
         ' password
         ' 
+        password.BackColor = Color.White
+        password.ForeColor = SystemColors.ControlText
         password.Location = New Point(28, 92)
         password.Name = "password"
         password.PlaceholderText = "Password"
@@ -105,6 +111,7 @@ Partial Class Form1
         ' 
         ' nextButton
         ' 
+        nextButton.ForeColor = SystemColors.ActiveCaptionText
         nextButton.Location = New Point(117, 180)
         nextButton.Name = "nextButton"
         nextButton.Size = New Size(94, 29)
@@ -117,7 +124,7 @@ Partial Class Form1
         surname.Location = New Point(12, 32)
         surname.Name = "surname"
         surname.PlaceholderText = "Surname"
-        surname.Size = New Size(138, 27)
+        surname.Size = New Size(142, 27)
         surname.TabIndex = 7
         ' 
         ' givenName
@@ -133,7 +140,7 @@ Partial Class Form1
         middleName.Location = New Point(12, 98)
         middleName.Name = "middleName"
         middleName.PlaceholderText = "Middle Name"
-        middleName.Size = New Size(138, 27)
+        middleName.Size = New Size(142, 27)
         middleName.TabIndex = 9
         ' 
         ' extensionName
@@ -147,7 +154,7 @@ Partial Class Form1
         ' surnameLabel
         ' 
         surnameLabel.AutoSize = True
-        surnameLabel.Location = New Point(12, 14)
+        surnameLabel.Location = New Point(12, 10)
         surnameLabel.Name = "surnameLabel"
         surnameLabel.Size = New Size(67, 20)
         surnameLabel.TabIndex = 11
@@ -294,6 +301,7 @@ Partial Class Form1
         ' 
         ' nextButton2
         ' 
+        nextButton2.ForeColor = SystemColors.ActiveCaptionText
         nextButton2.Location = New Point(56, 312)
         nextButton2.Name = "nextButton2"
         nextButton2.Size = New Size(94, 29)
@@ -303,6 +311,7 @@ Partial Class Form1
         ' 
         ' backButton
         ' 
+        backButton.ForeColor = SystemColors.ActiveCaptionText
         backButton.Location = New Point(156, 312)
         backButton.Name = "backButton"
         backButton.Size = New Size(94, 29)
@@ -336,6 +345,7 @@ Partial Class Form1
         ' 
         genderRadioButton.Controls.Add(maleRadioButton)
         genderRadioButton.Controls.Add(femaleRadioButton)
+        genderRadioButton.ForeColor = SystemColors.Control
         genderRadioButton.Location = New Point(3, 16)
         genderRadioButton.Name = "genderRadioButton"
         genderRadioButton.Size = New Size(105, 104)
@@ -361,6 +371,7 @@ Partial Class Form1
         ' phoneNumberLabel
         ' 
         phoneNumberLabel.AutoSize = True
+        phoneNumberLabel.ForeColor = SystemColors.Control
         phoneNumberLabel.Location = New Point(114, 16)
         phoneNumberLabel.Name = "phoneNumberLabel"
         phoneNumberLabel.Size = New Size(108, 20)
@@ -404,6 +415,7 @@ Partial Class Form1
         ' 
         ' panel1
         ' 
+        panel1.BackColor = Color.Transparent
         panel1.Controls.Add(usernameLabel)
         panel1.Controls.Add(userName)
         panel1.Controls.Add(confirmPassword)
@@ -418,6 +430,7 @@ Partial Class Form1
         ' 
         ' panel2
         ' 
+        panel2.BackColor = Color.Transparent
         panel2.Controls.Add(surnameLabel)
         panel2.Controls.Add(areaLabel)
         panel2.Controls.Add(barangayName)
@@ -438,7 +451,7 @@ Partial Class Form1
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(614, 48)
+        panel2.Location = New Point(624, 71)
         panel2.Name = "panel2"
         panel2.Size = New Size(312, 348)
         panel2.TabIndex = 42
@@ -446,6 +459,7 @@ Partial Class Form1
         ' 
         ' panel3
         ' 
+        panel3.BackColor = Color.Transparent
         panel3.Controls.Add(genderRadioButton)
         panel3.Controls.Add(birtday)
         panel3.Controls.Add(phoneNumberName)
@@ -454,9 +468,10 @@ Partial Class Form1
         panel3.Controls.Add(confirmButton)
         panel3.Controls.Add(emailName)
         panel3.Controls.Add(emailLabel)
-        panel3.Location = New Point(236, 141)
+        panel3.ForeColor = SystemColors.ActiveCaptionText
+        panel3.Location = New Point(181, 133)
         panel3.Name = "panel3"
-        panel3.Size = New Size(309, 279)
+        panel3.Size = New Size(307, 279)
         panel3.TabIndex = 43
         panel3.Visible = False
         ' 
@@ -464,11 +479,13 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.DarkSlateGray
         ClientSize = New Size(1317, 450)
         Controls.Add(panel3)
         Controls.Add(panel2)
         Controls.Add(panel1)
         Controls.Add(Label1)
+        ForeColor = SystemColors.Control
         Name = "Form1"
         Text = "Form1"
         genderRadioButton.ResumeLayout(False)
