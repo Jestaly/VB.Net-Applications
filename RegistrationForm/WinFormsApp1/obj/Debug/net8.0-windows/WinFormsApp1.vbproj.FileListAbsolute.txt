@@ -1,0 +1,33 @@
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.vbproj.GenerateResource.cache
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.vb
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\acer\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.vbproj.GenerateResource.cache
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.vb
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.vbproj.CoreCompileInputs.cache
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
