@@ -381,6 +381,7 @@ Partial Class Form1
         ' emailLabel
         ' 
         emailLabel.AutoSize = True
+        emailLabel.ForeColor = SystemColors.Control
         emailLabel.Location = New Point(114, 72)
         emailLabel.Name = "emailLabel"
         emailLabel.Size = New Size(46, 20)
