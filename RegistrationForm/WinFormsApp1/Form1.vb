@@ -48,28 +48,36 @@
     End Sub
 
     Private Sub confirmButton_Click(sender As Object, e As EventArgs) Handles confirmButton.Click
-        If (Not (phoneNumberName.Text.Length = 11)) Then
-            MessageBox.Show("Error, Phone format invalid.")
-        ElseIf (Not (emailName.Text.Contains("@")) And emailName.Text.Equals("")) Then
-            MessageBox.Show("Error, Invalid email.")
-        Else
+        Dim gender = ""
+
+        If (maleRadioButton.Checked = True) Then
+            gender = maleRadioButton.Text
+        ElseIf (femaleRadioButton.Checked = True) Then
+            gender = femaleRadioButton.Text
+        End If
+
+        If (phoneNumberName.Text.Length = 12 And emailName.Text.Contains("@") And emailName.Text.Contains(".") And Not (gender.Equals(""))) Then
             MessageBox.Show("Success.")
-            MessageBox.Show("Username: " & userName.Text &
-                            "Password: " & password.Text &
-                            "Surname: " & surname.Text &
-                            "Given name: " & givenName.Text &
-                            "Middle name: " & middleName.Text &
-                            "Extension name: " & extensionName.Text &
-                            "Unit/House number: " & unitName.Text &
-                            "Street: " & streetName.Text &
-                            "Area: " & areaName.Text &
-                            "Barangay: " & barangayName.Text &
-                            "City: " & cityName.Text &
-                            "Gender: " & genderRadioButton.Text &
-                            "Phone number: " & phoneNumberName.Text &
-                            "Email: " & emailName.Text &
+            MessageBox.Show("Username: " & userName.Text & vbNewLine &
+                            "Password: " & password.Text & vbNewLine &
+                            "Surname: " & surname.Text & vbNewLine &
+                            "Given name: " & givenName.Text & vbNewLine &
+                            "Middle name: " & middleName.Text & vbNewLine &
+                            "Extension name: " & extensionName.Text & vbNewLine &
+                            "Unit/House number: " & unitName.Text & vbNewLine &
+                            "Street: " & streetName.Text & vbNewLine &
+                            "Area: " & areaName.Text & vbNewLine &
+                            "Barangay: " & barangayName.Text & vbNewLine &
+                            "City: " & cityName.Text & vbNewLine &
+                            "Gender: " & gender & vbNewLine &
+                            "Phone number: " & phoneNumberName.Text & vbNewLine &
+                            "Email: " & emailName.Text & vbNewLine &
                             "Birthday: " & birthday.Text)
             End
+        Else
+            MessageBox.Show("Error, some field/s are invalid.")
+            MessageBox.Show(phoneNumberName.Text.Length)
+
         End If
 
 

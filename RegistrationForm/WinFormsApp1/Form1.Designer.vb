@@ -54,7 +54,6 @@ Partial Class Form1
         femaleRadioButton = New RadioButton()
         genderRadioButton = New GroupBox()
         birthday = New DateTimePicker()
-        phoneNumberName = New TextBox()
         phoneNumberLabel = New Label()
         emailLabel = New Label()
         emailName = New TextBox()
@@ -63,6 +62,7 @@ Partial Class Form1
         panel1 = New Panel()
         panel2 = New Panel()
         panel3 = New Panel()
+        phoneNumberName = New MaskedTextBox()
         genderRadioButton.SuspendLayout()
         panel1.SuspendLayout()
         panel2.SuspendLayout()
@@ -83,11 +83,11 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 20F)
-        Label1.Location = New Point(88, 27)
+        Label1.Location = New Point(117, 21)
         Label1.Name = "Label1"
-        Label1.Size = New Size(286, 46)
+        Label1.Size = New Size(141, 46)
         Label1.TabIndex = 1
-        Label1.Text = "Registration Form"
+        Label1.Text = "Register"
         ' 
         ' confirmPassword
         ' 
@@ -121,7 +121,7 @@ Partial Class Form1
         ' 
         ' surname
         ' 
-        surname.Location = New Point(12, 32)
+        surname.Location = New Point(29, 33)
         surname.Name = "surname"
         surname.PlaceholderText = "Surname"
         surname.Size = New Size(142, 27)
@@ -129,7 +129,7 @@ Partial Class Form1
         ' 
         ' givenName
         ' 
-        givenName.Location = New Point(160, 33)
+        givenName.Location = New Point(177, 34)
         givenName.Name = "givenName"
         givenName.PlaceholderText = "Given Name"
         givenName.Size = New Size(138, 27)
@@ -137,7 +137,7 @@ Partial Class Form1
         ' 
         ' middleName
         ' 
-        middleName.Location = New Point(12, 98)
+        middleName.Location = New Point(29, 99)
         middleName.Name = "middleName"
         middleName.PlaceholderText = "Middle Name"
         middleName.Size = New Size(142, 27)
@@ -145,7 +145,7 @@ Partial Class Form1
         ' 
         ' extensionName
         ' 
-        extensionName.Location = New Point(160, 97)
+        extensionName.Location = New Point(177, 98)
         extensionName.Name = "extensionName"
         extensionName.PlaceholderText = "Extension Name"
         extensionName.Size = New Size(138, 27)
@@ -154,7 +154,7 @@ Partial Class Form1
         ' surnameLabel
         ' 
         surnameLabel.AutoSize = True
-        surnameLabel.Location = New Point(12, 10)
+        surnameLabel.Location = New Point(29, 11)
         surnameLabel.Name = "surnameLabel"
         surnameLabel.Size = New Size(67, 20)
         surnameLabel.TabIndex = 11
@@ -163,7 +163,7 @@ Partial Class Form1
         ' givenNameLabel
         ' 
         givenNameLabel.AutoSize = True
-        givenNameLabel.Location = New Point(160, 10)
+        givenNameLabel.Location = New Point(177, 11)
         givenNameLabel.Name = "givenNameLabel"
         givenNameLabel.Size = New Size(90, 20)
         givenNameLabel.TabIndex = 12
@@ -172,7 +172,7 @@ Partial Class Form1
         ' middleNameLabel
         ' 
         middleNameLabel.AutoSize = True
-        middleNameLabel.Location = New Point(12, 75)
+        middleNameLabel.Location = New Point(29, 76)
         middleNameLabel.Name = "middleNameLabel"
         middleNameLabel.Size = New Size(100, 20)
         middleNameLabel.TabIndex = 13
@@ -181,7 +181,7 @@ Partial Class Form1
         ' extensionNameLabel
         ' 
         extensionNameLabel.AutoSize = True
-        extensionNameLabel.Location = New Point(160, 75)
+        extensionNameLabel.Location = New Point(177, 76)
         extensionNameLabel.Name = "extensionNameLabel"
         extensionNameLabel.Size = New Size(116, 20)
         extensionNameLabel.TabIndex = 14
@@ -189,7 +189,7 @@ Partial Class Form1
         ' 
         ' unitName
         ' 
-        unitName.Location = New Point(12, 156)
+        unitName.Location = New Point(29, 157)
         unitName.Name = "unitName"
         unitName.PlaceholderText = "Unit or House Number"
         unitName.Size = New Size(171, 27)
@@ -198,7 +198,7 @@ Partial Class Form1
         ' unitLabel
         ' 
         unitLabel.AutoSize = True
-        unitLabel.Location = New Point(12, 133)
+        unitLabel.Location = New Point(29, 134)
         unitLabel.Name = "unitLabel"
         unitLabel.Size = New Size(36, 20)
         unitLabel.TabIndex = 16
@@ -206,7 +206,7 @@ Partial Class Form1
         ' 
         ' streetName
         ' 
-        streetName.Location = New Point(189, 156)
+        streetName.Location = New Point(206, 157)
         streetName.Name = "streetName"
         streetName.PlaceholderText = "Street"
         streetName.Size = New Size(109, 27)
@@ -215,7 +215,7 @@ Partial Class Form1
         ' streetLabel
         ' 
         streetLabel.AutoSize = True
-        streetLabel.Location = New Point(189, 133)
+        streetLabel.Location = New Point(206, 134)
         streetLabel.Name = "streetLabel"
         streetLabel.Size = New Size(48, 20)
         streetLabel.TabIndex = 18
@@ -224,7 +224,7 @@ Partial Class Form1
         ' areaLabel
         ' 
         areaLabel.AutoSize = True
-        areaLabel.Location = New Point(12, 194)
+        areaLabel.Location = New Point(29, 195)
         areaLabel.Name = "areaLabel"
         areaLabel.Size = New Size(40, 20)
         areaLabel.TabIndex = 20
@@ -232,7 +232,7 @@ Partial Class Form1
         ' 
         ' areaName
         ' 
-        areaName.Location = New Point(12, 217)
+        areaName.Location = New Point(29, 218)
         areaName.Name = "areaName"
         areaName.PlaceholderText = "Area"
         areaName.Size = New Size(171, 27)
@@ -241,7 +241,7 @@ Partial Class Form1
         ' barangayLabel
         ' 
         barangayLabel.AutoSize = True
-        barangayLabel.Location = New Point(189, 194)
+        barangayLabel.Location = New Point(206, 195)
         barangayLabel.Name = "barangayLabel"
         barangayLabel.Size = New Size(71, 20)
         barangayLabel.TabIndex = 22
@@ -249,7 +249,7 @@ Partial Class Form1
         ' 
         ' barangayName
         ' 
-        barangayName.Location = New Point(189, 217)
+        barangayName.Location = New Point(206, 218)
         barangayName.Name = "barangayName"
         barangayName.PlaceholderText = "Barangay"
         barangayName.Size = New Size(109, 27)
@@ -258,7 +258,7 @@ Partial Class Form1
         ' cityLabel
         ' 
         cityLabel.AutoSize = True
-        cityLabel.Location = New Point(12, 256)
+        cityLabel.Location = New Point(29, 257)
         cityLabel.Name = "cityLabel"
         cityLabel.Size = New Size(34, 20)
         cityLabel.TabIndex = 24
@@ -266,7 +266,7 @@ Partial Class Form1
         ' 
         ' cityName
         ' 
-        cityName.Location = New Point(12, 279)
+        cityName.Location = New Point(29, 280)
         cityName.Name = "cityName"
         cityName.PlaceholderText = "City"
         cityName.Size = New Size(286, 27)
@@ -302,7 +302,7 @@ Partial Class Form1
         ' nextButton2
         ' 
         nextButton2.ForeColor = SystemColors.ActiveCaptionText
-        nextButton2.Location = New Point(56, 312)
+        nextButton2.Location = New Point(73, 313)
         nextButton2.Name = "nextButton2"
         nextButton2.Size = New Size(94, 29)
         nextButton2.TabIndex = 28
@@ -312,7 +312,7 @@ Partial Class Form1
         ' backButton
         ' 
         backButton.ForeColor = SystemColors.ActiveCaptionText
-        backButton.Location = New Point(156, 312)
+        backButton.Location = New Point(173, 313)
         backButton.Name = "backButton"
         backButton.Size = New Size(94, 29)
         backButton.TabIndex = 29
@@ -346,7 +346,7 @@ Partial Class Form1
         genderRadioButton.Controls.Add(maleRadioButton)
         genderRadioButton.Controls.Add(femaleRadioButton)
         genderRadioButton.ForeColor = SystemColors.Control
-        genderRadioButton.Location = New Point(3, 16)
+        genderRadioButton.Location = New Point(24, 19)
         genderRadioButton.Name = "genderRadioButton"
         genderRadioButton.Size = New Size(105, 104)
         genderRadioButton.TabIndex = 33
@@ -355,24 +355,16 @@ Partial Class Form1
         ' 
         ' birthday
         ' 
-        birthday.Location = New Point(21, 130)
+        birthday.Location = New Point(42, 133)
         birthday.Name = "birthday"
         birthday.Size = New Size(250, 27)
         birthday.TabIndex = 34
-        ' 
-        ' phoneNumberName
-        ' 
-        phoneNumberName.Location = New Point(114, 39)
-        phoneNumberName.Name = "phoneNumberName"
-        phoneNumberName.PlaceholderText = "Cellphone Number"
-        phoneNumberName.Size = New Size(182, 27)
-        phoneNumberName.TabIndex = 35
         ' 
         ' phoneNumberLabel
         ' 
         phoneNumberLabel.AutoSize = True
         phoneNumberLabel.ForeColor = SystemColors.Control
-        phoneNumberLabel.Location = New Point(114, 16)
+        phoneNumberLabel.Location = New Point(135, 19)
         phoneNumberLabel.Name = "phoneNumberLabel"
         phoneNumberLabel.Size = New Size(108, 20)
         phoneNumberLabel.TabIndex = 36
@@ -382,7 +374,7 @@ Partial Class Form1
         ' 
         emailLabel.AutoSize = True
         emailLabel.ForeColor = SystemColors.Control
-        emailLabel.Location = New Point(114, 72)
+        emailLabel.Location = New Point(135, 75)
         emailLabel.Name = "emailLabel"
         emailLabel.Size = New Size(46, 20)
         emailLabel.TabIndex = 38
@@ -390,7 +382,7 @@ Partial Class Form1
         ' 
         ' emailName
         ' 
-        emailName.Location = New Point(114, 97)
+        emailName.Location = New Point(135, 100)
         emailName.Name = "emailName"
         emailName.PlaceholderText = "Email"
         emailName.Size = New Size(182, 27)
@@ -398,7 +390,7 @@ Partial Class Form1
         ' 
         ' backButton2
         ' 
-        backButton2.Location = New Point(147, 163)
+        backButton2.Location = New Point(168, 166)
         backButton2.Name = "backButton2"
         backButton2.Size = New Size(94, 29)
         backButton2.TabIndex = 40
@@ -407,7 +399,7 @@ Partial Class Form1
         ' 
         ' confirmButton
         ' 
-        confirmButton.Location = New Point(47, 163)
+        confirmButton.Location = New Point(68, 166)
         confirmButton.Name = "confirmButton"
         confirmButton.Size = New Size(94, 29)
         confirmButton.TabIndex = 39
@@ -416,7 +408,7 @@ Partial Class Form1
         ' 
         ' panel1
         ' 
-        panel1.BackColor = Color.Transparent
+        panel1.BackColor = Color.DarkSlateGray
         panel1.Controls.Add(usernameLabel)
         panel1.Controls.Add(userName)
         panel1.Controls.Add(confirmPassword)
@@ -424,14 +416,14 @@ Partial Class Form1
         panel1.Controls.Add(nextButton)
         panel1.Controls.Add(passwordLabel)
         panel1.Controls.Add(confirmPasswordLabel)
-        panel1.Location = New Point(967, 48)
+        panel1.Location = New Point(9, 73)
         panel1.Name = "panel1"
-        panel1.Size = New Size(338, 267)
+        panel1.Size = New Size(346, 345)
         panel1.TabIndex = 41
         ' 
         ' panel2
         ' 
-        panel2.BackColor = Color.Transparent
+        panel2.BackColor = Color.DarkSlateGray
         panel2.Controls.Add(surnameLabel)
         panel2.Controls.Add(areaLabel)
         panel2.Controls.Add(barangayName)
@@ -452,40 +444,48 @@ Partial Class Form1
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(624, 71)
+        panel2.Location = New Point(12, 73)
         panel2.Name = "panel2"
-        panel2.Size = New Size(312, 348)
+        panel2.Size = New Size(343, 348)
         panel2.TabIndex = 42
         panel2.Visible = False
         ' 
         ' panel3
         ' 
-        panel3.BackColor = Color.Transparent
+        panel3.BackColor = Color.DarkSlateGray
+        panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(genderRadioButton)
         panel3.Controls.Add(birthday)
-        panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(backButton2)
         panel3.Controls.Add(phoneNumberLabel)
         panel3.Controls.Add(confirmButton)
         panel3.Controls.Add(emailName)
         panel3.Controls.Add(emailLabel)
         panel3.ForeColor = SystemColors.ActiveCaptionText
-        panel3.Location = New Point(181, 133)
+        panel3.Location = New Point(12, 73)
         panel3.Name = "panel3"
-        panel3.Size = New Size(307, 279)
+        panel3.Size = New Size(340, 348)
         panel3.TabIndex = 43
         panel3.Visible = False
+        ' 
+        ' phoneNumberName
+        ' 
+        phoneNumberName.Location = New Point(137, 44)
+        phoneNumberName.Mask = "999-000-0000"
+        phoneNumberName.Name = "phoneNumberName"
+        phoneNumberName.Size = New Size(180, 27)
+        phoneNumberName.TabIndex = 44
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSlateGray
-        ClientSize = New Size(1317, 450)
-        Controls.Add(panel3)
-        Controls.Add(panel2)
+        ClientSize = New Size(365, 450)
         Controls.Add(panel1)
+        Controls.Add(panel2)
         Controls.Add(Label1)
+        Controls.Add(panel3)
         ForeColor = SystemColors.Control
         Name = "Form1"
         Text = "Form1"
@@ -533,7 +533,6 @@ Partial Class Form1
     Friend WithEvents femaleRadioButton As RadioButton
     Friend WithEvents genderRadioButton As GroupBox
     Friend WithEvents birthday As DateTimePicker
-    Friend WithEvents phoneNumberName As TextBox
     Friend WithEvents phoneNumberLabel As Label
     Friend WithEvents emailLabel As Label
     Friend WithEvents emailName As TextBox
@@ -542,5 +541,6 @@ Partial Class Form1
     Friend WithEvents panel1 As Panel
     Friend WithEvents panel2 As Panel
     Friend WithEvents panel3 As Panel
+    Friend WithEvents phoneNumberName As MaskedTextBox
 
 End Class
