@@ -23,13 +23,13 @@
 
     Private Sub nextButton2_Click(sender As Object, e As EventArgs) Handles nextButton2.Click
 
-        If (Not (surname.Text.Length >= 1 And surname.Text.Length <= 20 And givenName.Text.Length >= 1 And
-            surname.Text.Length <= 20 And middleName.Text.Length >= 1 And middleName.Text.Length <= 20 And
-            extensionName.Text.Length >= 1 And extensionName.Text.Length <= 20 And
-            areaName.Text.Length >= 1 And areaName.Text.Length <= 20 And streetName.Text.Length >= 1 And
-            streetName.Text.Length <= 20 And barangayName.Text.Length >= 1 And barangayName.Text.Length <= 20 And
-            cityName.Text.Length >= 1 And cityName.Text.Length <= 20)) Then
-            MessageBox.Show("Error, some fields are invalid.")
+        If (surname.Text.Equals("") And surname.Text.Length > 20 And givenName.Text.Equals("") And
+            surname.Text.Length > 20 And middleName.Text.Equals("") And middleName.Text.Length > 20 And
+            extensionName.Text.Equals("") And extensionName.Text.Length > 20 And
+            areaName.Equals("") And areaName.Text.Length > 20 And streetName.Text.Equals("") And
+            streetName.Text.Length > 20 And barangayName.Text.Equals("") And barangayName.Text.Length > 20 And
+            cityName.Text.Equals("") And cityName.Text.Length > 20) Then
+            MessageBox.Show("Error, some field/s are invalid.")
         Else
             panel2.Visible = False
             panel3.Visible = True
@@ -49,6 +49,10 @@
 
     Private Sub confirmButton_Click(sender As Object, e As EventArgs) Handles confirmButton.Click
         Dim gender = ""
+        Dim age As String
+
+        age = Date.Today
+        MessageBox.Show(age)
 
         If (maleRadioButton.Checked = True) Then
             gender = maleRadioButton.Text
@@ -73,7 +77,6 @@
                             "Phone number: " & phoneNumberName.Text & vbNewLine &
                             "Email: " & emailName.Text & vbNewLine &
                             "Birthday: " & birthday.Text)
-            End
         Else
             MessageBox.Show("Error, some field/s are invalid.")
             MessageBox.Show(phoneNumberName.Text.Length)

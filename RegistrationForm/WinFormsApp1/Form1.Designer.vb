@@ -487,6 +487,7 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(panel3)
         ForeColor = SystemColors.Control
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "Form1"
         Text = "Form1"
         genderRadioButton.ResumeLayout(False)
