@@ -54,6 +54,21 @@
             MessageBox.Show("Error, Invalid email.")
         Else
             MessageBox.Show("Success.")
+            MessageBox.Show("Username: " & userName.Text &
+                            "Password: " & password.Text &
+                            "Surname: " & surname.Text &
+                            "Given name: " & givenName.Text &
+                            "Middle name: " & middleName.Text &
+                            "Extension name: " & extensionName.Text &
+                            "Unit/House number: " & unitName.Text &
+                            "Street: " & streetName.Text &
+                            "Area: " & areaName.Text &
+                            "Barangay: " & barangayName.Text &
+                            "City: " & cityName.Text &
+                            "Gender: " & genderRadioButton.Text &
+                            "Phone number: " & phoneNumberName.Text &
+                            "Email: " & emailName.Text &
+                            "Birthday: " & birthday.Text)
             End
         End If
 

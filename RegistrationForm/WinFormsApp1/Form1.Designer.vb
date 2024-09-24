@@ -53,7 +53,7 @@ Partial Class Form1
         maleRadioButton = New RadioButton()
         femaleRadioButton = New RadioButton()
         genderRadioButton = New GroupBox()
-        birtday = New DateTimePicker()
+        birthday = New DateTimePicker()
         phoneNumberName = New TextBox()
         phoneNumberLabel = New Label()
         emailLabel = New Label()
@@ -353,12 +353,12 @@ Partial Class Form1
         genderRadioButton.TabStop = False
         genderRadioButton.Text = "Gender"
         ' 
-        ' birtday
+        ' birthday
         ' 
-        birtday.Location = New Point(21, 130)
-        birtday.Name = "birtday"
-        birtday.Size = New Size(250, 27)
-        birtday.TabIndex = 34
+        birthday.Location = New Point(21, 130)
+        birthday.Name = "birthday"
+        birthday.Size = New Size(250, 27)
+        birthday.TabIndex = 34
         ' 
         ' phoneNumberName
         ' 
@@ -462,7 +462,7 @@ Partial Class Form1
         ' 
         panel3.BackColor = Color.Transparent
         panel3.Controls.Add(genderRadioButton)
-        panel3.Controls.Add(birtday)
+        panel3.Controls.Add(birthday)
         panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(backButton2)
         panel3.Controls.Add(phoneNumberLabel)
@@ -532,7 +532,7 @@ Partial Class Form1
     Friend WithEvents maleRadioButton As RadioButton
     Friend WithEvents femaleRadioButton As RadioButton
     Friend WithEvents genderRadioButton As GroupBox
-    Friend WithEvents birtday As DateTimePicker
+    Friend WithEvents birthday As DateTimePicker
     Friend WithEvents phoneNumberName As TextBox
     Friend WithEvents phoneNumberLabel As Label
     Friend WithEvents emailLabel As Label
