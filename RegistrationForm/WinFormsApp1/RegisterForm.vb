@@ -1,4 +1,4 @@
-﻿Public Class RegisterForm
+﻿Public Class Form1
 
     Private Sub nextButton_Click(sender As Object, e As EventArgs) Handles nextButton.Click
 
@@ -93,6 +93,7 @@
                             "Area: " & areaName.Text & vbNewLine &
                             "Barangay: " & barangayName.Text & vbNewLine &
                             "City: " & cityName.Text)
+            End
         Else
             MessageBox.Show("Error, some field/s are invalid.")
         End If
@@ -100,7 +101,4 @@
 
     End Sub
 
-    Private Sub registerForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class RegisterForm
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class RegisterForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         userName = New TextBox()
         Label1 = New Label()
         confirmPassword = New TextBox()
@@ -82,10 +83,11 @@ Partial Class RegisterForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 20F)
-        Label1.Location = New Point(117, 21)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(129, 27)
         Label1.Name = "Label1"
-        Label1.Size = New Size(141, 46)
+        Label1.Size = New Size(172, 45)
         Label1.TabIndex = 1
         Label1.Text = "Register"
         ' 
@@ -98,6 +100,7 @@ Partial Class RegisterForm
         confirmPassword.PlaceholderText = "Confirm Password"
         confirmPassword.Size = New Size(286, 27)
         confirmPassword.TabIndex = 3
+        confirmPassword.UseSystemPasswordChar = True
         ' 
         ' password
         ' 
@@ -108,6 +111,7 @@ Partial Class RegisterForm
         password.PlaceholderText = "Password"
         password.Size = New Size(286, 27)
         password.TabIndex = 4
+        password.UseSystemPasswordChar = True
         ' 
         ' nextButton
         ' 
@@ -408,7 +412,7 @@ Partial Class RegisterForm
         ' 
         ' panel1
         ' 
-        panel1.BackColor = Color.DarkSlateGray
+        panel1.BackColor = Color.Transparent
         panel1.Controls.Add(usernameLabel)
         panel1.Controls.Add(userName)
         panel1.Controls.Add(confirmPassword)
@@ -416,14 +420,14 @@ Partial Class RegisterForm
         panel1.Controls.Add(nextButton)
         panel1.Controls.Add(passwordLabel)
         panel1.Controls.Add(confirmPasswordLabel)
-        panel1.Location = New Point(9, 73)
+        panel1.Location = New Point(31, 79)
         panel1.Name = "panel1"
         panel1.Size = New Size(346, 345)
         panel1.TabIndex = 41
         ' 
         ' panel2
         ' 
-        panel2.BackColor = Color.DarkSlateGray
+        panel2.BackColor = Color.Transparent
         panel2.Controls.Add(surnameLabel)
         panel2.Controls.Add(areaLabel)
         panel2.Controls.Add(barangayName)
@@ -444,7 +448,7 @@ Partial Class RegisterForm
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(12, 73)
+        panel2.Location = New Point(31, 79)
         panel2.Name = "panel2"
         panel2.Size = New Size(343, 348)
         panel2.TabIndex = 42
@@ -452,7 +456,7 @@ Partial Class RegisterForm
         ' 
         ' panel3
         ' 
-        panel3.BackColor = Color.DarkSlateGray
+        panel3.BackColor = Color.Transparent
         panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(genderRadioButton)
         panel3.Controls.Add(birthday)
@@ -462,7 +466,7 @@ Partial Class RegisterForm
         panel3.Controls.Add(emailName)
         panel3.Controls.Add(emailLabel)
         panel3.ForeColor = SystemColors.ActiveCaptionText
-        panel3.Location = New Point(12, 73)
+        panel3.Location = New Point(31, 81)
         panel3.Name = "panel3"
         panel3.Size = New Size(340, 348)
         panel3.TabIndex = 43
@@ -476,19 +480,20 @@ Partial Class RegisterForm
         phoneNumberName.Size = New Size(180, 27)
         phoneNumberName.TabIndex = 44
         ' 
-        ' RegisterForm
+        ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSlateGray
-        ClientSize = New Size(363, 450)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(407, 450)
         Controls.Add(panel1)
         Controls.Add(panel2)
         Controls.Add(Label1)
         Controls.Add(panel3)
         ForeColor = SystemColors.Control
         FormBorderStyle = FormBorderStyle.FixedToolWindow
-        Name = "RegisterForm"
+        Name = "Form1"
         Text = "Register"
         genderRadioButton.ResumeLayout(False)
         genderRadioButton.PerformLayout()

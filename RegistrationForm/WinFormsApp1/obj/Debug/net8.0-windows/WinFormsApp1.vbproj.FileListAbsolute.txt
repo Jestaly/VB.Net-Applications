@@ -33,4 +33,3 @@ F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\n
 F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Resources.resources
 F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\bin\Debug\net8.0-windows\ApplicationEvents.vb
-F:\Github Projects\VB.Net-Applications\RegistrationForm\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.RegisterForm.resources
