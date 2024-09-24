@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|f:\\github projects\\vb.net-applications\\registrationform\\winformsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|f:\\github projects\\vb.net-applications\\registrationform\\winformsapp1\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|f:\\github projects\\vb.net-applications\\registrationform\\winformsapp1\\winformsapp1.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\winformsapp1.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|f:\\github projects\\vb.net-applications\\registrationform\\winformsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|f:\\github projects\\vb.net-applications\\registrationform\\winformsapp1\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9D41DCB0-87F3-4E1A-8F9D-9F44B6BD3C96}|WinFormsApp1\\WinFormsApp1.vbproj|solutionrelative:winformsapp1\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\Form1.vb",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.vb",
-              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\Form1.vb",
-              "RelativeToolTip": "WinFormsApp1\\Form1.vb",
-              "ViewState": "AQIAADAAAAAAAAAAAAAowDYAAAAeAAAA",
+              "DocumentIndex": 1,
+              "Title": "RegisterForm.vb",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\RegisterForm.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\RegisterForm.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\RegisterForm.vb",
+              "RelativeToolTip": "WinFormsApp1\\RegisterForm.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-09-20T00:01:22.363Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WinFormsApp1",
-              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\WinFormsApp1.vbproj",
-              "RelativeDocumentMoniker": "WinFormsApp1\\WinFormsApp1.vbproj",
-              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\WinFormsApp1.vbproj",
-              "RelativeToolTip": "WinFormsApp1\\WinFormsApp1.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2024-09-24T11:51:38.8Z",
               "EditorCaption": ""
             },
             {
@@ -56,12 +40,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\Form1.vb",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.vb",
-              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\Form1.vb [Design]",
-              "RelativeToolTip": "WinFormsApp1\\Form1.vb [Design]",
+              "DocumentIndex": 0,
+              "Title": "RegisterForm.vb [Design]",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\RegisterForm.vb",
+              "RelativeDocumentMoniker": "WinFormsApp1\\RegisterForm.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\RegistrationForm\\WinFormsApp1\\RegisterForm.vb [Design]",
+              "RelativeToolTip": "WinFormsApp1\\RegisterForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-09-19T23:58:34.943Z",
               "EditorCaption": " [Design]"
