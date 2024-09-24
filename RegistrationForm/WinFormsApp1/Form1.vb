@@ -52,6 +52,7 @@
         Dim age As String
 
         age = Date.Today
+        MessageBox.Show("sup")
         MessageBox.Show(age)
 
         If (maleRadioButton.Checked = True) Then
