@@ -72,9 +72,9 @@ Partial Class Form1
         ' 
         ' userName
         ' 
-        userName.BackColor = Color.White
+        userName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         userName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        userName.ForeColor = SystemColors.ControlText
+        userName.ForeColor = SystemColors.Control
         userName.Location = New Point(29, 39)
         userName.Name = "userName"
         userName.PlaceholderText = "Username"
@@ -86,17 +86,17 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(110, 32)
+        Label1.Location = New Point(64, 30)
         Label1.Name = "Label1"
-        Label1.Size = New Size(172, 45)
+        Label1.Size = New Size(265, 45)
         Label1.TabIndex = 1
-        Label1.Text = "Register"
+        Label1.Text = "Register Now"
         ' 
         ' confirmPassword
         ' 
-        confirmPassword.BackColor = Color.White
+        confirmPassword.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         confirmPassword.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        confirmPassword.ForeColor = SystemColors.ControlText
+        confirmPassword.ForeColor = SystemColors.Control
         confirmPassword.Location = New Point(27, 156)
         confirmPassword.Name = "confirmPassword"
         confirmPassword.PlaceholderText = "Confirm Password"
@@ -106,9 +106,9 @@ Partial Class Form1
         ' 
         ' password
         ' 
-        password.BackColor = Color.White
+        password.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         password.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        password.ForeColor = SystemColors.ControlText
+        password.ForeColor = SystemColors.Control
         password.Location = New Point(28, 96)
         password.Name = "password"
         password.PlaceholderText = "Password"
@@ -118,17 +118,20 @@ Partial Class Form1
         ' 
         ' nextButton
         ' 
+        nextButton.BackColor = Color.Silver
         nextButton.ForeColor = SystemColors.ActiveCaptionText
         nextButton.Location = New Point(115, 194)
         nextButton.Name = "nextButton"
         nextButton.Size = New Size(94, 35)
         nextButton.TabIndex = 5
         nextButton.Text = "Next"
-        nextButton.UseVisualStyleBackColor = True
+        nextButton.UseVisualStyleBackColor = False
         ' 
         ' surname
         ' 
+        surname.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         surname.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        surname.ForeColor = SystemColors.Control
         surname.Location = New Point(29, 33)
         surname.Name = "surname"
         surname.PlaceholderText = "Surname"
@@ -137,7 +140,9 @@ Partial Class Form1
         ' 
         ' givenName
         ' 
+        givenName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         givenName.Font = New Font("Segoe UI", 10.8F)
+        givenName.ForeColor = SystemColors.Control
         givenName.Location = New Point(177, 34)
         givenName.Name = "givenName"
         givenName.PlaceholderText = "Given Name"
@@ -146,7 +151,9 @@ Partial Class Form1
         ' 
         ' middleName
         ' 
+        middleName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         middleName.Font = New Font("Segoe UI", 10.8F)
+        middleName.ForeColor = SystemColors.Control
         middleName.Location = New Point(29, 93)
         middleName.Name = "middleName"
         middleName.PlaceholderText = "Middle Name"
@@ -155,7 +162,9 @@ Partial Class Form1
         ' 
         ' extensionName
         ' 
+        extensionName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         extensionName.Font = New Font("Segoe UI", 10.8F)
+        extensionName.ForeColor = SystemColors.Control
         extensionName.Location = New Point(177, 92)
         extensionName.Name = "extensionName"
         extensionName.PlaceholderText = "Extension Name"
@@ -200,7 +209,9 @@ Partial Class Form1
         ' 
         ' unitName
         ' 
+        unitName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         unitName.Font = New Font("Segoe UI", 10.8F)
+        unitName.ForeColor = SystemColors.Control
         unitName.Location = New Point(29, 150)
         unitName.Name = "unitName"
         unitName.PlaceholderText = "Unit or House Number"
@@ -218,7 +229,9 @@ Partial Class Form1
         ' 
         ' streetName
         ' 
+        streetName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         streetName.Font = New Font("Segoe UI", 10.8F)
+        streetName.ForeColor = SystemColors.Control
         streetName.Location = New Point(204, 150)
         streetName.Name = "streetName"
         streetName.PlaceholderText = "Street"
@@ -245,7 +258,9 @@ Partial Class Form1
         ' 
         ' areaName
         ' 
+        areaName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         areaName.Font = New Font("Segoe UI", 10.8F)
+        areaName.ForeColor = SystemColors.Control
         areaName.Location = New Point(27, 207)
         areaName.Name = "areaName"
         areaName.PlaceholderText = "Area"
@@ -263,7 +278,9 @@ Partial Class Form1
         ' 
         ' barangayName
         ' 
+        barangayName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         barangayName.Font = New Font("Segoe UI", 10.8F)
+        barangayName.ForeColor = SystemColors.Control
         barangayName.Location = New Point(206, 207)
         barangayName.Name = "barangayName"
         barangayName.PlaceholderText = "Barangay"
@@ -281,7 +298,9 @@ Partial Class Form1
         ' 
         ' cityName
         ' 
+        cityName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         cityName.Font = New Font("Segoe UI", 10.8F)
+        cityName.ForeColor = SystemColors.Control
         cityName.Location = New Point(27, 264)
         cityName.Name = "cityName"
         cityName.PlaceholderText = "City"
@@ -317,23 +336,25 @@ Partial Class Form1
         ' 
         ' nextButton2
         ' 
+        nextButton2.BackColor = Color.Silver
         nextButton2.ForeColor = SystemColors.ActiveCaptionText
         nextButton2.Location = New Point(73, 310)
         nextButton2.Name = "nextButton2"
         nextButton2.Size = New Size(94, 35)
         nextButton2.TabIndex = 28
         nextButton2.Text = "Next"
-        nextButton2.UseVisualStyleBackColor = True
+        nextButton2.UseVisualStyleBackColor = False
         ' 
         ' backButton
         ' 
+        backButton.BackColor = Color.Silver
         backButton.ForeColor = SystemColors.ActiveCaptionText
         backButton.Location = New Point(173, 310)
         backButton.Name = "backButton"
         backButton.Size = New Size(94, 35)
         backButton.TabIndex = 29
         backButton.Text = "Back"
-        backButton.UseVisualStyleBackColor = True
+        backButton.UseVisualStyleBackColor = False
         ' 
         ' maleRadioButton
         ' 
@@ -362,9 +383,9 @@ Partial Class Form1
         genderRadioButton.Controls.Add(maleRadioButton)
         genderRadioButton.Controls.Add(femaleRadioButton)
         genderRadioButton.ForeColor = SystemColors.Control
-        genderRadioButton.Location = New Point(24, 19)
+        genderRadioButton.Location = New Point(27, 70)
         genderRadioButton.Name = "genderRadioButton"
-        genderRadioButton.Size = New Size(105, 104)
+        genderRadioButton.Size = New Size(105, 114)
         genderRadioButton.TabIndex = 33
         genderRadioButton.TabStop = False
         genderRadioButton.Text = "Gender"
@@ -372,17 +393,23 @@ Partial Class Form1
         ' birthday
         ' 
         birthday.CalendarFont = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        birthday.CalendarForeColor = SystemColors.Control
+        birthday.CalendarMonthBackground = Color.FromArgb(CByte(60), CByte(61), CByte(55))
+        birthday.CalendarTitleBackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
+        birthday.CalendarTitleForeColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
+        birthday.CalendarTrailingForeColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         birthday.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        birthday.Location = New Point(39, 169)
+        birthday.Format = DateTimePickerFormat.Short
+        birthday.Location = New Point(143, 150)
         birthday.Name = "birthday"
-        birthday.Size = New Size(250, 27)
+        birthday.Size = New Size(174, 27)
         birthday.TabIndex = 34
         ' 
         ' phoneNumberLabel
         ' 
         phoneNumberLabel.AutoSize = True
         phoneNumberLabel.ForeColor = SystemColors.Control
-        phoneNumberLabel.Location = New Point(135, 19)
+        phoneNumberLabel.Location = New Point(143, 70)
         phoneNumberLabel.Name = "phoneNumberLabel"
         phoneNumberLabel.Size = New Size(108, 20)
         phoneNumberLabel.TabIndex = 36
@@ -392,7 +419,7 @@ Partial Class Form1
         ' 
         emailLabel.AutoSize = True
         emailLabel.ForeColor = SystemColors.Control
-        emailLabel.Location = New Point(135, 80)
+        emailLabel.Location = New Point(24, 11)
         emailLabel.Name = "emailLabel"
         emailLabel.Size = New Size(46, 20)
         emailLabel.TabIndex = 38
@@ -400,34 +427,39 @@ Partial Class Form1
         ' 
         ' emailName
         ' 
+        emailName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         emailName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        emailName.Location = New Point(137, 105)
+        emailName.ForeColor = SystemColors.Control
+        emailName.Location = New Point(24, 34)
         emailName.Name = "emailName"
         emailName.PlaceholderText = "Email"
-        emailName.Size = New Size(180, 31)
+        emailName.Size = New Size(293, 31)
         emailName.TabIndex = 37
         ' 
         ' backButton2
         ' 
-        backButton2.Location = New Point(165, 214)
+        backButton2.BackColor = Color.Silver
+        backButton2.Location = New Point(166, 203)
         backButton2.Name = "backButton2"
         backButton2.Size = New Size(94, 35)
         backButton2.TabIndex = 40
         backButton2.Text = "Back"
-        backButton2.UseVisualStyleBackColor = True
+        backButton2.UseVisualStyleBackColor = False
         ' 
         ' confirmButton
         ' 
-        confirmButton.Location = New Point(65, 214)
+        confirmButton.BackColor = Color.Silver
+        confirmButton.Location = New Point(66, 203)
         confirmButton.Name = "confirmButton"
         confirmButton.Size = New Size(94, 35)
         confirmButton.TabIndex = 39
         confirmButton.Text = "Confirm"
-        confirmButton.UseVisualStyleBackColor = True
+        confirmButton.UseVisualStyleBackColor = False
         ' 
         ' panel1
         ' 
         panel1.BackColor = Color.Transparent
+        panel1.BackgroundImageLayout = ImageLayout.Stretch
         panel1.Controls.Add(usernameLabel)
         panel1.Controls.Add(userName)
         panel1.Controls.Add(confirmPassword)
@@ -435,7 +467,7 @@ Partial Class Form1
         panel1.Controls.Add(nextButton)
         panel1.Controls.Add(passwordLabel)
         panel1.Controls.Add(confirmPasswordLabel)
-        panel1.Location = New Point(31, 81)
+        panel1.Location = New Point(28, 81)
         panel1.Name = "panel1"
         panel1.Size = New Size(346, 345)
         panel1.TabIndex = 41
@@ -492,7 +524,7 @@ Partial Class Form1
         ' 
         birthdayLabel.AutoSize = True
         birthdayLabel.ForeColor = SystemColors.Control
-        birthdayLabel.Location = New Point(36, 146)
+        birthdayLabel.Location = New Point(143, 127)
         birthdayLabel.Name = "birthdayLabel"
         birthdayLabel.Size = New Size(70, 20)
         birthdayLabel.TabIndex = 45
@@ -500,19 +532,23 @@ Partial Class Form1
         ' 
         ' phoneNumberName
         ' 
+        phoneNumberName.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         phoneNumberName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        phoneNumberName.Location = New Point(137, 44)
+        phoneNumberName.ForeColor = SystemColors.Control
+        phoneNumberName.Location = New Point(143, 93)
         phoneNumberName.Mask = "999-000-0000"
         phoneNumberName.Name = "phoneNumberName"
-        phoneNumberName.Size = New Size(180, 31)
+        phoneNumberName.PromptChar = "x"c
+        phoneNumberName.Size = New Size(174, 31)
         phoneNumberName.TabIndex = 44
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.MidnightBlue
-        ClientSize = New Size(409, 450)
+        BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
+        BackgroundImage = My.Resources.Resources.backmech
+        ClientSize = New Size(402, 450)
         Controls.Add(panel1)
         Controls.Add(panel2)
         Controls.Add(Label1)

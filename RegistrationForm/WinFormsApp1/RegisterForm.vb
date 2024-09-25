@@ -96,8 +96,7 @@
                              "Email: " & emailName.Text & vbNewLine &
                              "Phone number: " & phoneNumberName.Text, "USER INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information
                            )
-            MessageBox.Show("---ADDRESS INFORMATION---" & vbNewLine &
-                            "Unit/House number: " & unitName.Text & vbNewLine &
+            MessageBox.Show("Unit/House number: " & unitName.Text & vbNewLine &
                             "Street: " & streetName.Text & vbNewLine &
                             "Area: " & areaName.Text & vbNewLine &
                             "Barangay: " & barangayName.Text & vbNewLine &
