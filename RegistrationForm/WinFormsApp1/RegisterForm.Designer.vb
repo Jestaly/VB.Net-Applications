@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         userName = New TextBox()
         Label1 = New Label()
         confirmPassword = New TextBox()
@@ -63,6 +62,7 @@ Partial Class Form1
         panel1 = New Panel()
         panel2 = New Panel()
         panel3 = New Panel()
+        birthdayLabel = New Label()
         phoneNumberName = New MaskedTextBox()
         genderRadioButton.SuspendLayout()
         panel1.SuspendLayout()
@@ -85,7 +85,7 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(129, 27)
+        Label1.Location = New Point(110, 32)
         Label1.Name = "Label1"
         Label1.Size = New Size(172, 45)
         Label1.TabIndex = 1
@@ -359,7 +359,7 @@ Partial Class Form1
         ' 
         ' birthday
         ' 
-        birthday.Location = New Point(42, 133)
+        birthday.Location = New Point(41, 160)
         birthday.Name = "birthday"
         birthday.Size = New Size(250, 27)
         birthday.TabIndex = 34
@@ -394,7 +394,7 @@ Partial Class Form1
         ' 
         ' backButton2
         ' 
-        backButton2.Location = New Point(168, 166)
+        backButton2.Location = New Point(167, 205)
         backButton2.Name = "backButton2"
         backButton2.Size = New Size(94, 29)
         backButton2.TabIndex = 40
@@ -403,7 +403,7 @@ Partial Class Form1
         ' 
         ' confirmButton
         ' 
-        confirmButton.Location = New Point(68, 166)
+        confirmButton.Location = New Point(67, 205)
         confirmButton.Name = "confirmButton"
         confirmButton.Size = New Size(94, 29)
         confirmButton.TabIndex = 39
@@ -420,7 +420,7 @@ Partial Class Form1
         panel1.Controls.Add(nextButton)
         panel1.Controls.Add(passwordLabel)
         panel1.Controls.Add(confirmPasswordLabel)
-        panel1.Location = New Point(31, 79)
+        panel1.Location = New Point(28, 81)
         panel1.Name = "panel1"
         panel1.Size = New Size(346, 345)
         panel1.TabIndex = 41
@@ -448,7 +448,7 @@ Partial Class Form1
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(31, 79)
+        panel2.Location = New Point(28, 80)
         panel2.Name = "panel2"
         panel2.Size = New Size(343, 348)
         panel2.TabIndex = 42
@@ -457,6 +457,7 @@ Partial Class Form1
         ' panel3
         ' 
         panel3.BackColor = Color.Transparent
+        panel3.Controls.Add(birthdayLabel)
         panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(genderRadioButton)
         panel3.Controls.Add(birthday)
@@ -472,6 +473,16 @@ Partial Class Form1
         panel3.TabIndex = 43
         panel3.Visible = False
         ' 
+        ' birthdayLabel
+        ' 
+        birthdayLabel.AutoSize = True
+        birthdayLabel.ForeColor = SystemColors.Control
+        birthdayLabel.Location = New Point(38, 137)
+        birthdayLabel.Name = "birthdayLabel"
+        birthdayLabel.Size = New Size(70, 20)
+        birthdayLabel.TabIndex = 45
+        birthdayLabel.Text = "Birthdate"
+        ' 
         ' phoneNumberName
         ' 
         phoneNumberName.Location = New Point(137, 44)
@@ -484,9 +495,8 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.DarkSlateGray
-        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(407, 450)
+        BackColor = Color.MidnightBlue
+        ClientSize = New Size(401, 450)
         Controls.Add(panel1)
         Controls.Add(panel2)
         Controls.Add(Label1)
@@ -548,5 +558,6 @@ Partial Class Form1
     Friend WithEvents panel2 As Panel
     Friend WithEvents panel3 As Panel
     Friend WithEvents phoneNumberName As MaskedTextBox
+    Friend WithEvents birthdayLabel As Label
 
 End Class
