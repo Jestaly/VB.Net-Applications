@@ -73,11 +73,12 @@ Partial Class Form1
         ' userName
         ' 
         userName.BackColor = Color.White
+        userName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         userName.ForeColor = SystemColors.ControlText
         userName.Location = New Point(29, 39)
         userName.Name = "userName"
         userName.PlaceholderText = "Username"
-        userName.Size = New Size(286, 27)
+        userName.Size = New Size(286, 31)
         userName.TabIndex = 0
         ' 
         ' Label1
@@ -94,65 +95,71 @@ Partial Class Form1
         ' confirmPassword
         ' 
         confirmPassword.BackColor = Color.White
+        confirmPassword.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         confirmPassword.ForeColor = SystemColors.ControlText
-        confirmPassword.Location = New Point(29, 145)
+        confirmPassword.Location = New Point(27, 156)
         confirmPassword.Name = "confirmPassword"
         confirmPassword.PlaceholderText = "Confirm Password"
-        confirmPassword.Size = New Size(286, 27)
+        confirmPassword.Size = New Size(286, 31)
         confirmPassword.TabIndex = 3
         confirmPassword.UseSystemPasswordChar = True
         ' 
         ' password
         ' 
         password.BackColor = Color.White
+        password.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         password.ForeColor = SystemColors.ControlText
-        password.Location = New Point(28, 92)
+        password.Location = New Point(28, 96)
         password.Name = "password"
         password.PlaceholderText = "Password"
-        password.Size = New Size(286, 27)
+        password.Size = New Size(286, 31)
         password.TabIndex = 4
         password.UseSystemPasswordChar = True
         ' 
         ' nextButton
         ' 
         nextButton.ForeColor = SystemColors.ActiveCaptionText
-        nextButton.Location = New Point(117, 180)
+        nextButton.Location = New Point(115, 194)
         nextButton.Name = "nextButton"
-        nextButton.Size = New Size(94, 29)
+        nextButton.Size = New Size(94, 35)
         nextButton.TabIndex = 5
         nextButton.Text = "Next"
         nextButton.UseVisualStyleBackColor = True
         ' 
         ' surname
         ' 
+        surname.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         surname.Location = New Point(29, 33)
         surname.Name = "surname"
         surname.PlaceholderText = "Surname"
-        surname.Size = New Size(142, 27)
+        surname.Size = New Size(142, 31)
         surname.TabIndex = 7
         ' 
         ' givenName
         ' 
+        givenName.Font = New Font("Segoe UI", 10.8F)
         givenName.Location = New Point(177, 34)
         givenName.Name = "givenName"
         givenName.PlaceholderText = "Given Name"
-        givenName.Size = New Size(138, 27)
+        givenName.Size = New Size(138, 31)
         givenName.TabIndex = 8
         ' 
         ' middleName
         ' 
-        middleName.Location = New Point(29, 99)
+        middleName.Font = New Font("Segoe UI", 10.8F)
+        middleName.Location = New Point(29, 93)
         middleName.Name = "middleName"
         middleName.PlaceholderText = "Middle Name"
-        middleName.Size = New Size(142, 27)
+        middleName.Size = New Size(142, 31)
         middleName.TabIndex = 9
         ' 
         ' extensionName
         ' 
-        extensionName.Location = New Point(177, 98)
+        extensionName.Font = New Font("Segoe UI", 10.8F)
+        extensionName.Location = New Point(177, 92)
         extensionName.Name = "extensionName"
         extensionName.PlaceholderText = "Extension Name"
-        extensionName.Size = New Size(138, 27)
+        extensionName.Size = New Size(138, 31)
         extensionName.TabIndex = 10
         ' 
         ' surnameLabel
@@ -176,7 +183,7 @@ Partial Class Form1
         ' middleNameLabel
         ' 
         middleNameLabel.AutoSize = True
-        middleNameLabel.Location = New Point(29, 76)
+        middleNameLabel.Location = New Point(29, 70)
         middleNameLabel.Name = "middleNameLabel"
         middleNameLabel.Size = New Size(100, 20)
         middleNameLabel.TabIndex = 13
@@ -185,7 +192,7 @@ Partial Class Form1
         ' extensionNameLabel
         ' 
         extensionNameLabel.AutoSize = True
-        extensionNameLabel.Location = New Point(177, 76)
+        extensionNameLabel.Location = New Point(177, 70)
         extensionNameLabel.Name = "extensionNameLabel"
         extensionNameLabel.Size = New Size(116, 20)
         extensionNameLabel.TabIndex = 14
@@ -193,16 +200,17 @@ Partial Class Form1
         ' 
         ' unitName
         ' 
-        unitName.Location = New Point(29, 157)
+        unitName.Font = New Font("Segoe UI", 10.8F)
+        unitName.Location = New Point(29, 150)
         unitName.Name = "unitName"
         unitName.PlaceholderText = "Unit or House Number"
-        unitName.Size = New Size(171, 27)
+        unitName.Size = New Size(169, 31)
         unitName.TabIndex = 15
         ' 
         ' unitLabel
         ' 
         unitLabel.AutoSize = True
-        unitLabel.Location = New Point(29, 134)
+        unitLabel.Location = New Point(27, 127)
         unitLabel.Name = "unitLabel"
         unitLabel.Size = New Size(36, 20)
         unitLabel.TabIndex = 16
@@ -210,16 +218,17 @@ Partial Class Form1
         ' 
         ' streetName
         ' 
-        streetName.Location = New Point(206, 157)
+        streetName.Font = New Font("Segoe UI", 10.8F)
+        streetName.Location = New Point(204, 150)
         streetName.Name = "streetName"
         streetName.PlaceholderText = "Street"
-        streetName.Size = New Size(109, 27)
+        streetName.Size = New Size(109, 31)
         streetName.TabIndex = 17
         ' 
         ' streetLabel
         ' 
         streetLabel.AutoSize = True
-        streetLabel.Location = New Point(206, 134)
+        streetLabel.Location = New Point(204, 127)
         streetLabel.Name = "streetLabel"
         streetLabel.Size = New Size(48, 20)
         streetLabel.TabIndex = 18
@@ -228,7 +237,7 @@ Partial Class Form1
         ' areaLabel
         ' 
         areaLabel.AutoSize = True
-        areaLabel.Location = New Point(29, 195)
+        areaLabel.Location = New Point(29, 184)
         areaLabel.Name = "areaLabel"
         areaLabel.Size = New Size(40, 20)
         areaLabel.TabIndex = 20
@@ -236,16 +245,17 @@ Partial Class Form1
         ' 
         ' areaName
         ' 
-        areaName.Location = New Point(29, 218)
+        areaName.Font = New Font("Segoe UI", 10.8F)
+        areaName.Location = New Point(27, 207)
         areaName.Name = "areaName"
         areaName.PlaceholderText = "Area"
-        areaName.Size = New Size(171, 27)
+        areaName.Size = New Size(173, 31)
         areaName.TabIndex = 19
         ' 
         ' barangayLabel
         ' 
         barangayLabel.AutoSize = True
-        barangayLabel.Location = New Point(206, 195)
+        barangayLabel.Location = New Point(206, 184)
         barangayLabel.Name = "barangayLabel"
         barangayLabel.Size = New Size(71, 20)
         barangayLabel.TabIndex = 22
@@ -253,16 +263,17 @@ Partial Class Form1
         ' 
         ' barangayName
         ' 
-        barangayName.Location = New Point(206, 218)
+        barangayName.Font = New Font("Segoe UI", 10.8F)
+        barangayName.Location = New Point(206, 207)
         barangayName.Name = "barangayName"
         barangayName.PlaceholderText = "Barangay"
-        barangayName.Size = New Size(109, 27)
+        barangayName.Size = New Size(107, 31)
         barangayName.TabIndex = 21
         ' 
         ' cityLabel
         ' 
         cityLabel.AutoSize = True
-        cityLabel.Location = New Point(29, 257)
+        cityLabel.Location = New Point(27, 241)
         cityLabel.Name = "cityLabel"
         cityLabel.Size = New Size(34, 20)
         cityLabel.TabIndex = 24
@@ -270,10 +281,11 @@ Partial Class Form1
         ' 
         ' cityName
         ' 
-        cityName.Location = New Point(29, 280)
+        cityName.Font = New Font("Segoe UI", 10.8F)
+        cityName.Location = New Point(27, 264)
         cityName.Name = "cityName"
         cityName.PlaceholderText = "City"
-        cityName.Size = New Size(286, 27)
+        cityName.Size = New Size(286, 31)
         cityName.TabIndex = 23
         ' 
         ' usernameLabel
@@ -288,7 +300,7 @@ Partial Class Form1
         ' passwordLabel
         ' 
         passwordLabel.AutoSize = True
-        passwordLabel.Location = New Point(29, 69)
+        passwordLabel.Location = New Point(29, 73)
         passwordLabel.Name = "passwordLabel"
         passwordLabel.Size = New Size(70, 20)
         passwordLabel.TabIndex = 26
@@ -297,7 +309,7 @@ Partial Class Form1
         ' confirmPasswordLabel
         ' 
         confirmPasswordLabel.AutoSize = True
-        confirmPasswordLabel.Location = New Point(29, 122)
+        confirmPasswordLabel.Location = New Point(27, 133)
         confirmPasswordLabel.Name = "confirmPasswordLabel"
         confirmPasswordLabel.Size = New Size(127, 20)
         confirmPasswordLabel.TabIndex = 27
@@ -306,9 +318,9 @@ Partial Class Form1
         ' nextButton2
         ' 
         nextButton2.ForeColor = SystemColors.ActiveCaptionText
-        nextButton2.Location = New Point(73, 313)
+        nextButton2.Location = New Point(73, 310)
         nextButton2.Name = "nextButton2"
-        nextButton2.Size = New Size(94, 29)
+        nextButton2.Size = New Size(94, 35)
         nextButton2.TabIndex = 28
         nextButton2.Text = "Next"
         nextButton2.UseVisualStyleBackColor = True
@@ -316,9 +328,9 @@ Partial Class Form1
         ' backButton
         ' 
         backButton.ForeColor = SystemColors.ActiveCaptionText
-        backButton.Location = New Point(173, 313)
+        backButton.Location = New Point(173, 310)
         backButton.Name = "backButton"
-        backButton.Size = New Size(94, 29)
+        backButton.Size = New Size(94, 35)
         backButton.TabIndex = 29
         backButton.Text = "Back"
         backButton.UseVisualStyleBackColor = True
@@ -359,7 +371,9 @@ Partial Class Form1
         ' 
         ' birthday
         ' 
-        birthday.Location = New Point(41, 160)
+        birthday.CalendarFont = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        birthday.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        birthday.Location = New Point(39, 169)
         birthday.Name = "birthday"
         birthday.Size = New Size(250, 27)
         birthday.TabIndex = 34
@@ -378,7 +392,7 @@ Partial Class Form1
         ' 
         emailLabel.AutoSize = True
         emailLabel.ForeColor = SystemColors.Control
-        emailLabel.Location = New Point(135, 75)
+        emailLabel.Location = New Point(135, 80)
         emailLabel.Name = "emailLabel"
         emailLabel.Size = New Size(46, 20)
         emailLabel.TabIndex = 38
@@ -386,26 +400,27 @@ Partial Class Form1
         ' 
         ' emailName
         ' 
-        emailName.Location = New Point(135, 100)
+        emailName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        emailName.Location = New Point(137, 105)
         emailName.Name = "emailName"
         emailName.PlaceholderText = "Email"
-        emailName.Size = New Size(182, 27)
+        emailName.Size = New Size(180, 31)
         emailName.TabIndex = 37
         ' 
         ' backButton2
         ' 
-        backButton2.Location = New Point(167, 205)
+        backButton2.Location = New Point(165, 214)
         backButton2.Name = "backButton2"
-        backButton2.Size = New Size(94, 29)
+        backButton2.Size = New Size(94, 35)
         backButton2.TabIndex = 40
         backButton2.Text = "Back"
         backButton2.UseVisualStyleBackColor = True
         ' 
         ' confirmButton
         ' 
-        confirmButton.Location = New Point(67, 205)
+        confirmButton.Location = New Point(65, 214)
         confirmButton.Name = "confirmButton"
-        confirmButton.Size = New Size(94, 29)
+        confirmButton.Size = New Size(94, 35)
         confirmButton.TabIndex = 39
         confirmButton.Text = "Confirm"
         confirmButton.UseVisualStyleBackColor = True
@@ -420,7 +435,7 @@ Partial Class Form1
         panel1.Controls.Add(nextButton)
         panel1.Controls.Add(passwordLabel)
         panel1.Controls.Add(confirmPasswordLabel)
-        panel1.Location = New Point(28, 81)
+        panel1.Location = New Point(31, 81)
         panel1.Name = "panel1"
         panel1.Size = New Size(346, 345)
         panel1.TabIndex = 41
@@ -448,7 +463,7 @@ Partial Class Form1
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(28, 80)
+        panel2.Location = New Point(31, 81)
         panel2.Name = "panel2"
         panel2.Size = New Size(343, 348)
         panel2.TabIndex = 42
@@ -477,7 +492,7 @@ Partial Class Form1
         ' 
         birthdayLabel.AutoSize = True
         birthdayLabel.ForeColor = SystemColors.Control
-        birthdayLabel.Location = New Point(38, 137)
+        birthdayLabel.Location = New Point(36, 146)
         birthdayLabel.Name = "birthdayLabel"
         birthdayLabel.Size = New Size(70, 20)
         birthdayLabel.TabIndex = 45
@@ -485,10 +500,11 @@ Partial Class Form1
         ' 
         ' phoneNumberName
         ' 
+        phoneNumberName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         phoneNumberName.Location = New Point(137, 44)
         phoneNumberName.Mask = "999-000-0000"
         phoneNumberName.Name = "phoneNumberName"
-        phoneNumberName.Size = New Size(180, 27)
+        phoneNumberName.Size = New Size(180, 31)
         phoneNumberName.TabIndex = 44
         ' 
         ' Form1
@@ -496,7 +512,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MidnightBlue
-        ClientSize = New Size(401, 450)
+        ClientSize = New Size(409, 450)
         Controls.Add(panel1)
         Controls.Add(panel2)
         Controls.Add(Label1)
