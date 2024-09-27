@@ -62,6 +62,7 @@ Partial Class Form1
         panel1 = New Panel()
         panel2 = New Panel()
         panel3 = New Panel()
+        ageCalc = New Label()
         birthdayLabel = New Label()
         phoneNumberName = New MaskedTextBox()
         genderRadioButton.SuspendLayout()
@@ -400,7 +401,7 @@ Partial Class Form1
         birthday.CalendarTrailingForeColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
         birthday.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         birthday.Format = DateTimePickerFormat.Short
-        birthday.Location = New Point(143, 150)
+        birthday.Location = New Point(27, 210)
         birthday.Name = "birthday"
         birthday.Size = New Size(174, 27)
         birthday.TabIndex = 34
@@ -439,7 +440,7 @@ Partial Class Form1
         ' backButton2
         ' 
         backButton2.BackColor = Color.Silver
-        backButton2.Location = New Point(166, 203)
+        backButton2.Location = New Point(169, 243)
         backButton2.Name = "backButton2"
         backButton2.Size = New Size(94, 35)
         backButton2.TabIndex = 40
@@ -449,7 +450,7 @@ Partial Class Form1
         ' confirmButton
         ' 
         confirmButton.BackColor = Color.Silver
-        confirmButton.Location = New Point(66, 203)
+        confirmButton.Location = New Point(69, 243)
         confirmButton.Name = "confirmButton"
         confirmButton.Size = New Size(94, 35)
         confirmButton.TabIndex = 39
@@ -495,7 +496,7 @@ Partial Class Form1
         panel2.Controls.Add(unitLabel)
         panel2.Controls.Add(unitName)
         panel2.Controls.Add(extensionNameLabel)
-        panel2.Location = New Point(31, 81)
+        panel2.Location = New Point(28, 81)
         panel2.Name = "panel2"
         panel2.Size = New Size(343, 348)
         panel2.TabIndex = 42
@@ -504,6 +505,7 @@ Partial Class Form1
         ' panel3
         ' 
         panel3.BackColor = Color.Transparent
+        panel3.Controls.Add(ageCalc)
         panel3.Controls.Add(birthdayLabel)
         panel3.Controls.Add(phoneNumberName)
         panel3.Controls.Add(genderRadioButton)
@@ -520,11 +522,20 @@ Partial Class Form1
         panel3.TabIndex = 43
         panel3.Visible = False
         ' 
+        ' ageCalc
+        ' 
+        ageCalc.AutoSize = True
+        ageCalc.Location = New Point(210, 210)
+        ageCalc.Name = "ageCalc"
+        ageCalc.Size = New Size(53, 20)
+        ageCalc.TabIndex = 46
+        ageCalc.Text = "Label2"
+        ' 
         ' birthdayLabel
         ' 
         birthdayLabel.AutoSize = True
         birthdayLabel.ForeColor = SystemColors.Control
-        birthdayLabel.Location = New Point(143, 127)
+        birthdayLabel.Location = New Point(27, 187)
         birthdayLabel.Name = "birthdayLabel"
         birthdayLabel.Size = New Size(70, 20)
         birthdayLabel.TabIndex = 45
@@ -547,8 +558,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
-        BackgroundImage = My.Resources.Resources.backmech
-        ClientSize = New Size(402, 450)
+        ClientSize = New Size(401, 450)
         Controls.Add(panel1)
         Controls.Add(panel2)
         Controls.Add(Label1)
@@ -611,5 +621,6 @@ Partial Class Form1
     Friend WithEvents panel3 As Panel
     Friend WithEvents phoneNumberName As MaskedTextBox
     Friend WithEvents birthdayLabel As Label
+    Friend WithEvents ageCalc As Label
 
 End Class

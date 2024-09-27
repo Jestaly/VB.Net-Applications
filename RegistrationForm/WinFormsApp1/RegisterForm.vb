@@ -75,12 +75,13 @@
         Next
 
         age = Date.Today.Year - CInt(birthYear)
-
+        ageCalc.Text = age
         If (maleRadioButton.Checked = True) Then
             gender = maleRadioButton.Text
         ElseIf (femaleRadioButton.Checked = True) Then
             gender = femaleRadioButton.Text
         End If
+
 
         If (phoneNumberName.Text.Length = 12 And emailName.Text.Contains("@") And emailName.Text.Contains(".") And Not (gender.Equals(""))) Then
             MessageBox.Show("Registered Successfully!", "REGISTRATION SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -109,4 +110,7 @@
 
     End Sub
 
+    Private Sub birthday_ValueChanged(sender As Object, e As EventArgs) Handles birthday.ValueChanged
+
+    End Sub
 End Class
