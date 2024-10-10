@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\Github Projects\\VB.Net-Applications\\MainWindow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|f:\\github projects\\vb.net-applications\\mainwindow\\parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|solutionrelative:parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|f:\\github projects\\vb.net-applications\\mainwindow\\parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|solutionrelative:parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|f:\\github projects\\vb.net-applications\\mainwindow\\registrationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|solutionrelative:registrationform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|f:\\github projects\\vb.net-applications\\mainwindow\\parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|solutionrelative:parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|f:\\github projects\\vb.net-applications\\mainwindow\\parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{DD7C0774-AF56-4BCD-BA2E-EFF0CD46E5B2}|MainWindow.vbproj|solutionrelative:parentform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +30,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ParentForm.vb",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\MainWindow\\ParentForm.vb",
               "RelativeDocumentMoniker": "ParentForm.vb",
               "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\MainWindow\\ParentForm.vb",
               "RelativeToolTip": "ParentForm.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-04T02:04:54.142Z",
               "EditorCaption": ""
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ParentForm.vb [Design]",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\MainWindow\\ParentForm.vb",
               "RelativeDocumentMoniker": "ParentForm.vb",
