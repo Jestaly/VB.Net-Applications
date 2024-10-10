@@ -23,6 +23,7 @@ Partial Class GradeForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Label12 = New Label()
         Label4 = New Label()
         midtermExamTextBox = New TextBox()
         Label3 = New Label()
@@ -45,6 +46,7 @@ Partial Class GradeForm
         semGrade = New Label()
         Panel2 = New Panel()
         Label5 = New Label()
+        Label15 = New Label()
         TextBox1 = New TextBox()
         Label6 = New Label()
         TextBox2 = New TextBox()
@@ -59,18 +61,13 @@ Partial Class GradeForm
         Label10 = New Label()
         Label11 = New Label()
         TextBox6 = New TextBox()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(85), CByte(124), CByte(86))
-        Panel1.Controls.Add(Label13)
+        Panel1.BackColor = Color.FromArgb(CByte(160), CByte(71), CByte(71))
         Panel1.Controls.Add(Label12)
         Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(midtermExamTextBox)
@@ -89,8 +86,19 @@ Partial Class GradeForm
         Panel1.Controls.Add(attendanceTextBox)
         Panel1.Location = New Point(405, 24)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(445, 436)
+        Panel1.Size = New Size(542, 436)
         Panel1.TabIndex = 0
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = SystemColors.ButtonHighlight
+        Label12.Location = New Point(261, 48)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(242, 39)
+        Label12.TabIndex = 18
+        Label12.Text = "Midterm Grade"
         ' 
         ' Label4
         ' 
@@ -179,7 +187,7 @@ Partial Class GradeForm
         ' clearMidtermButton
         ' 
         clearMidtermButton.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        clearMidtermButton.Location = New Point(243, 156)
+        clearMidtermButton.Location = New Point(293, 164)
         clearMidtermButton.Name = "clearMidtermButton"
         clearMidtermButton.Size = New Size(169, 48)
         clearMidtermButton.TabIndex = 8
@@ -189,7 +197,7 @@ Partial Class GradeForm
         ' computeMidtermButton
         ' 
         computeMidtermButton.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        computeMidtermButton.Location = New Point(243, 102)
+        computeMidtermButton.Location = New Point(293, 110)
         computeMidtermButton.Name = "computeMidtermButton"
         computeMidtermButton.Size = New Size(169, 48)
         computeMidtermButton.TabIndex = 7
@@ -199,11 +207,11 @@ Partial Class GradeForm
         ' midtermGrade
         ' 
         midtermGrade.AutoSize = True
-        midtermGrade.BackColor = Color.FromArgb(CByte(26), CByte(77), CByte(46))
+        midtermGrade.BackColor = Color.Maroon
         midtermGrade.BorderStyle = BorderStyle.Fixed3D
         midtermGrade.Font = New Font("Segoe UI", 60F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         midtermGrade.ForeColor = SystemColors.ButtonHighlight
-        midtermGrade.Location = New Point(243, 215)
+        midtermGrade.Location = New Point(293, 223)
         midtermGrade.Name = "midtermGrade"
         midtermGrade.Size = New Size(167, 135)
         midtermGrade.TabIndex = 6
@@ -281,11 +289,11 @@ Partial Class GradeForm
         ' semGrade
         ' 
         semGrade.AutoSize = True
-        semGrade.BackColor = Color.FromArgb(CByte(26), CByte(77), CByte(46))
+        semGrade.BackColor = Color.Maroon
         semGrade.BorderStyle = BorderStyle.Fixed3D
         semGrade.Font = New Font("Segoe UI", 49.8000031F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         semGrade.ForeColor = SystemColors.ButtonHighlight
-        semGrade.Location = New Point(50, 495)
+        semGrade.Location = New Point(105, 501)
         semGrade.Name = "semGrade"
         semGrade.Size = New Size(139, 114)
         semGrade.TabIndex = 9
@@ -294,8 +302,7 @@ Partial Class GradeForm
         ' 
         ' Panel2
         ' 
-        Panel2.BackColor = Color.FromArgb(CByte(85), CByte(124), CByte(86))
-        Panel2.Controls.Add(Label14)
+        Panel2.BackColor = Color.FromArgb(CByte(160), CByte(71), CByte(71))
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(Label15)
         Panel2.Controls.Add(TextBox1)
@@ -314,7 +321,7 @@ Partial Class GradeForm
         Panel2.Controls.Add(TextBox6)
         Panel2.Location = New Point(405, 478)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(445, 436)
+        Panel2.Size = New Size(542, 436)
         Panel2.TabIndex = 18
         ' 
         ' Label5
@@ -327,6 +334,17 @@ Partial Class GradeForm
         Label5.Size = New Size(99, 22)
         Label5.TabIndex = 17
         Label5.Text = "Final Exam"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label15.ForeColor = SystemColors.ButtonHighlight
+        Label15.Location = New Point(282, 48)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(195, 39)
+        Label15.TabIndex = 20
+        Label15.Text = "Final Grade"
         ' 
         ' TextBox1
         ' 
@@ -404,7 +422,7 @@ Partial Class GradeForm
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(243, 156)
+        Button1.Location = New Point(293, 156)
         Button1.Name = "Button1"
         Button1.Size = New Size(169, 48)
         Button1.TabIndex = 8
@@ -414,7 +432,7 @@ Partial Class GradeForm
         ' Button2
         ' 
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(243, 102)
+        Button2.Location = New Point(293, 102)
         Button2.Name = "Button2"
         Button2.Size = New Size(169, 48)
         Button2.TabIndex = 7
@@ -424,11 +442,11 @@ Partial Class GradeForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.BackColor = Color.FromArgb(CByte(26), CByte(77), CByte(46))
+        Label9.BackColor = Color.Maroon
         Label9.BorderStyle = BorderStyle.Fixed3D
         Label9.Font = New Font("Segoe UI", 60F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = SystemColors.ButtonHighlight
-        Label9.Location = New Point(243, 215)
+        Label9.Location = New Point(293, 215)
         Label9.Name = "Label9"
         Label9.Size = New Size(167, 135)
         Label9.TabIndex = 6
@@ -465,56 +483,12 @@ Partial Class GradeForm
         TextBox6.Size = New Size(184, 31)
         TextBox6.TabIndex = 0
         ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = SystemColors.ButtonHighlight
-        Label12.Location = New Point(256, 10)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(139, 39)
-        Label12.TabIndex = 18
-        Label12.Text = "Midterm"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label13.ForeColor = SystemColors.ButtonHighlight
-        Label13.Location = New Point(272, 49)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(111, 39)
-        Label13.TabIndex = 19
-        Label13.Text = "Grade"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label14.ForeColor = SystemColors.ButtonHighlight
-        Label14.Location = New Point(272, 56)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(111, 39)
-        Label14.TabIndex = 21
-        Label14.Text = "Grade"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label15.ForeColor = SystemColors.ButtonHighlight
-        Label15.Location = New Point(281, 17)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(92, 39)
-        Label15.TabIndex = 20
-        Label15.Text = "Final"
-        ' 
         ' GradeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(22), CByte(66), CByte(60))
-        ClientSize = New Size(878, 937)
+        BackColor = Color.FromArgb(CByte(86), CByte(28), CByte(36))
+        ClientSize = New Size(998, 937)
         Controls.Add(Panel2)
         Controls.Add(semGrade)
         Controls.Add(studentNameLabel)
@@ -570,8 +544,6 @@ Partial Class GradeForm
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
 End Class

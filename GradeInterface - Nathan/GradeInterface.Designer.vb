@@ -31,7 +31,6 @@ Partial Class GradeInterface
         signUpMenu = New ToolStripMenuItem()
         ToolStrip1 = New ToolStrip()
         refreshButton = New ToolStripButton()
-        ToolStripButton1 = New ToolStripButton()
         MenuStrip1.SuspendLayout()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
@@ -86,7 +85,7 @@ Partial Class GradeInterface
         ' ToolStrip1
         ' 
         ToolStrip1.ImageScalingSize = New Size(20, 20)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {refreshButton, ToolStripButton1})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {refreshButton})
         ToolStrip1.Location = New Point(0, 28)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(800, 27)
@@ -101,15 +100,6 @@ Partial Class GradeInterface
         refreshButton.Name = "refreshButton"
         refreshButton.Size = New Size(29, 24)
         refreshButton.Text = "ToolStripButton1"
-        ' 
-        ' ToolStripButton1
-        ' 
-        ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Image = My.Resources.Resources._exit
-        ToolStripButton1.ImageTransparentColor = Color.Magenta
-        ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(29, 24)
-        ToolStripButton1.Text = "ToolStripButton1"
         ' 
         ' GradeInterface
         ' 
@@ -143,6 +133,5 @@ Partial Class GradeInterface
     Friend WithEvents signUpMenu As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents refreshButton As ToolStripButton
-    Friend WithEvents ToolStripButton1 As ToolStripButton
 
 End Class
