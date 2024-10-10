@@ -14,3 +14,20 @@ C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-wi
 C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.pdb
 C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.genruntimeconfig.cache
 C:\Users\acer\source\repos\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\ref\LoginApplication.dll
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.exe
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.deps.json
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.runtimeconfig.json
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.dll
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\bin\Debug\net8.0-windows\LoginApplication.pdb
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.Form1.resources
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.vbproj.GenerateResource.cache
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.GeneratedMSBuildEditorConfig.editorconfig
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.AssemblyInfoInputs.cache
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.AssemblyInfo.vb
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.vbproj.CoreCompileInputs.cache
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.sourcelink.json
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.dll
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\refint\LoginApplication.dll
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.pdb
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\LoginApplication.genruntimeconfig.cache
+F:\Github Projects\VB.Net-Applications\LoginApplication\LoginApplication\obj\Debug\net8.0-windows\ref\LoginApplication.dll

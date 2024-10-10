@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\source\\repos\\LoginApplication\\LoginApplication\\LoginApplication.vbproj": {}
+    "F:\\Github Projects\\VB.Net-Applications\\LoginApplication\\LoginApplication\\LoginApplication.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\source\\repos\\LoginApplication\\LoginApplication\\LoginApplication.vbproj": {
+    "F:\\Github Projects\\VB.Net-Applications\\LoginApplication\\LoginApplication\\LoginApplication.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\source\\repos\\LoginApplication\\LoginApplication\\LoginApplication.vbproj",
+        "projectUniqueName": "F:\\Github Projects\\VB.Net-Applications\\LoginApplication\\LoginApplication\\LoginApplication.vbproj",
         "projectName": "LoginApplication",
-        "projectPath": "C:\\Users\\acer\\source\\repos\\LoginApplication\\LoginApplication\\LoginApplication.vbproj",
+        "projectPath": "F:\\Github Projects\\VB.Net-Applications\\LoginApplication\\LoginApplication\\LoginApplication.vbproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\source\\repos\\LoginApplication\\LoginApplication\\obj\\",
+        "outputPath": "F:\\Github Projects\\VB.Net-Applications\\LoginApplication\\LoginApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
