@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface\\GradeInterface.vbproj",
+      "projectUniqueName": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vbproj",
       "projectName": "GradeInterface",
-      "projectPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface\\GradeInterface.vbproj",
+      "projectPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vbproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface\\obj\\",
+      "outputPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
