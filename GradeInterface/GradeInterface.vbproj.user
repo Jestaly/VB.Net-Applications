@@ -7,6 +7,9 @@
     <Compile Update="GradeInterface.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegisterForm.vb">
       <SubType>Form</SubType>
     </Compile>

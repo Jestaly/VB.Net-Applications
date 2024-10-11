@@ -62,13 +62,13 @@ Partial Class GradeInterface
         ' logoutMenu
         ' 
         logoutMenu.Name = "logoutMenu"
-        logoutMenu.Size = New Size(224, 26)
+        logoutMenu.Size = New Size(139, 26)
         logoutMenu.Text = "Logout"
         ' 
         ' exitMenu
         ' 
         exitMenu.Name = "exitMenu"
-        exitMenu.Size = New Size(224, 26)
+        exitMenu.Size = New Size(139, 26)
         exitMenu.Text = "Exit"
         ' 
         ' gradesMenu
@@ -96,7 +96,7 @@ Partial Class GradeInterface
         ' refreshButton
         ' 
         refreshButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        refreshButton.Image = My.Resources.refresh
+        refreshButton.Image = My.Resources.Resources.refresh
         refreshButton.ImageTransparentColor = Color.Magenta
         refreshButton.Name = "refreshButton"
         refreshButton.Size = New Size(29, 24)
@@ -105,7 +105,7 @@ Partial Class GradeInterface
         ' ToolStripButton1
         ' 
         ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Image = My.Resources.save
+        ToolStripButton1.Image = My.Resources.Resources.save
         ToolStripButton1.ImageTransparentColor = Color.Magenta
         ToolStripButton1.Name = "ToolStripButton1"
         ToolStripButton1.Size = New Size(29, 24)

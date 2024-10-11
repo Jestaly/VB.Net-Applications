@@ -15,4 +15,14 @@
     Private Sub exitMenu_Click(sender As Object, e As EventArgs) Handles exitMenu.Click
         End
     End Sub
+
+    Private Sub GradeInterface_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub loginMenu_Click(sender As Object, e As EventArgs) Handles loginMenu.Click
+        Dim loginForm = New LoginForm()
+        loginForm.MdiParent = Me
+        loginForm.Show()
+    End Sub
 End Class
