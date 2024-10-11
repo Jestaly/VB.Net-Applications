@@ -20,7 +20,6 @@ F:\Github Projects\VB.Net-Applications\GradeInterface\bin\Debug\net8.0-windows\R
 F:\Github Projects\VB.Net-Applications\GradeInterface\obj\Debug\net8.0-windows\GradeInterface.Form1.resources
 F:\Github Projects\VB.Net-Applications\GradeInterface\obj\Debug\net8.0-windows\GradeInterface.Resources.resources
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\GradeInterface.exe
-F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\RegisterForm.vb
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\GradeInterface.deps.json
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\GradeInterface.runtimeconfig.json
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\GradeInterface.dll
@@ -28,7 +27,6 @@ F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-wind
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.GradeForm.resources
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.GradeInterface.resources
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.Resources.resources
-F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.Form1.resources
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.vbproj.GenerateResource.cache
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.GeneratedMSBuildEditorConfig.editorconfig
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.AssemblyInfoInputs.cache
@@ -40,3 +38,6 @@ F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-wind
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.pdb
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.genruntimeconfig.cache
 F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\ref\GradeInterface.dll
+F:\Github Projects\VB.Net-Applications\GradeInterface - JM\bin\Debug\net8.0-windows\exercise3.vb
+F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.exercise3.resources
+F:\Github Projects\VB.Net-Applications\GradeInterface - JM\obj\Debug\net8.0-windows\GradeInterface.LoginFormForm.resources

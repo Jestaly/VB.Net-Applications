@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("GradeInterface"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca1d2ef5d07f9dfac89b5c6f534fbce39d92a38"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f08e602cc5b31255366f9c485c389c289117d302"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("GradeInterface"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("GradeInterface"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

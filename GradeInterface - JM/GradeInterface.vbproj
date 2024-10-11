@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="exercise3.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -24,9 +27,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Update="RegisterForm.vb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
 

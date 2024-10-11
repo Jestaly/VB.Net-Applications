@@ -22,16 +22,26 @@ Partial Class GradeInterface
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GradeInterface))
         MenuStrip1 = New MenuStrip()
         fileMenu = New ToolStripMenuItem()
         loginMenu = New ToolStripMenuItem()
         logoutMenu = New ToolStripMenuItem()
         exitMenu = New ToolStripMenuItem()
+        ExitToolStripMenuItem = New ToolStripMenuItem()
         gradesMenu = New ToolStripMenuItem()
         signUpMenu = New ToolStripMenuItem()
         ToolStrip1 = New ToolStrip()
-        refreshButton = New ToolStripButton()
-        ToolStripButton1 = New ToolStripButton()
+        NewToolStripButton = New ToolStripButton()
+        OpenToolStripButton = New ToolStripButton()
+        SaveToolStripButton = New ToolStripButton()
+        PrintToolStripButton = New ToolStripButton()
+        toolStripSeparator = New ToolStripSeparator()
+        CutToolStripButton = New ToolStripButton()
+        CopyToolStripButton = New ToolStripButton()
+        PasteToolStripButton = New ToolStripButton()
+        toolStripSeparator1 = New ToolStripSeparator()
+        HelpToolStripButton = New ToolStripButton()
         MenuStrip1.SuspendLayout()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
@@ -48,7 +58,7 @@ Partial Class GradeInterface
         ' 
         ' fileMenu
         ' 
-        fileMenu.DropDownItems.AddRange(New ToolStripItem() {loginMenu, logoutMenu, exitMenu})
+        fileMenu.DropDownItems.AddRange(New ToolStripItem() {loginMenu, logoutMenu, exitMenu, ExitToolStripMenuItem})
         fileMenu.Name = "fileMenu"
         fileMenu.Size = New Size(46, 24)
         fileMenu.Text = "File"
@@ -56,60 +66,130 @@ Partial Class GradeInterface
         ' loginMenu
         ' 
         loginMenu.Name = "loginMenu"
-        loginMenu.Size = New Size(139, 26)
+        loginMenu.Size = New Size(224, 26)
         loginMenu.Text = "Login"
         ' 
         ' logoutMenu
         ' 
         logoutMenu.Name = "logoutMenu"
-        logoutMenu.Size = New Size(139, 26)
-        logoutMenu.Text = "Logout"
+        logoutMenu.Size = New Size(224, 26)
+        logoutMenu.Text = "Registration"
         ' 
         ' exitMenu
         ' 
         exitMenu.Name = "exitMenu"
-        exitMenu.Size = New Size(139, 26)
-        exitMenu.Text = "Exit"
+        exitMenu.Size = New Size(224, 26)
+        exitMenu.Text = "Grading System"
+        ' 
+        ' ExitToolStripMenuItem
+        ' 
+        ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        ExitToolStripMenuItem.Size = New Size(224, 26)
+        ExitToolStripMenuItem.Text = "Exit"
         ' 
         ' gradesMenu
         ' 
         gradesMenu.Name = "gradesMenu"
-        gradesMenu.Size = New Size(69, 24)
-        gradesMenu.Text = "Grades"
+        gradesMenu.Size = New Size(49, 24)
+        gradesMenu.Text = "Edit"
         ' 
         ' signUpMenu
         ' 
         signUpMenu.Name = "signUpMenu"
-        signUpMenu.Size = New Size(75, 24)
-        signUpMenu.Text = "Sign Up"
+        signUpMenu.Size = New Size(55, 24)
+        signUpMenu.Text = "Help"
         ' 
         ' ToolStrip1
         ' 
         ToolStrip1.ImageScalingSize = New Size(20, 20)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {refreshButton, ToolStripButton1})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {NewToolStripButton, OpenToolStripButton, SaveToolStripButton, PrintToolStripButton, toolStripSeparator, CutToolStripButton, CopyToolStripButton, PasteToolStripButton, toolStripSeparator1, HelpToolStripButton})
         ToolStrip1.Location = New Point(0, 28)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(800, 27)
-        ToolStrip1.TabIndex = 3
+        ToolStrip1.TabIndex = 7
         ToolStrip1.Text = "ToolStrip1"
         ' 
-        ' refreshButton
+        ' NewToolStripButton
         ' 
-        refreshButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        refreshButton.Image = My.Resources.Resources.refresh
-        refreshButton.ImageTransparentColor = Color.Magenta
-        refreshButton.Name = "refreshButton"
-        refreshButton.Size = New Size(29, 24)
-        refreshButton.Text = "ToolStripButton1"
+        NewToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        NewToolStripButton.Image = CType(resources.GetObject("NewToolStripButton.Image"), Image)
+        NewToolStripButton.ImageTransparentColor = Color.Magenta
+        NewToolStripButton.Name = "NewToolStripButton"
+        NewToolStripButton.Size = New Size(29, 24)
+        NewToolStripButton.Text = "&New"
         ' 
-        ' ToolStripButton1
+        ' OpenToolStripButton
         ' 
-        ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Image = My.Resources.Resources._exit
-        ToolStripButton1.ImageTransparentColor = Color.Magenta
-        ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(29, 24)
-        ToolStripButton1.Text = "ToolStripButton1"
+        OpenToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        OpenToolStripButton.Image = CType(resources.GetObject("OpenToolStripButton.Image"), Image)
+        OpenToolStripButton.ImageTransparentColor = Color.Magenta
+        OpenToolStripButton.Name = "OpenToolStripButton"
+        OpenToolStripButton.Size = New Size(29, 24)
+        OpenToolStripButton.Text = "&Open"
+        ' 
+        ' SaveToolStripButton
+        ' 
+        SaveToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        SaveToolStripButton.Image = CType(resources.GetObject("SaveToolStripButton.Image"), Image)
+        SaveToolStripButton.ImageTransparentColor = Color.Magenta
+        SaveToolStripButton.Name = "SaveToolStripButton"
+        SaveToolStripButton.Size = New Size(29, 24)
+        SaveToolStripButton.Text = "&Save"
+        ' 
+        ' PrintToolStripButton
+        ' 
+        PrintToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        PrintToolStripButton.Image = CType(resources.GetObject("PrintToolStripButton.Image"), Image)
+        PrintToolStripButton.ImageTransparentColor = Color.Magenta
+        PrintToolStripButton.Name = "PrintToolStripButton"
+        PrintToolStripButton.Size = New Size(29, 24)
+        PrintToolStripButton.Text = "&Print"
+        ' 
+        ' toolStripSeparator
+        ' 
+        toolStripSeparator.Name = "toolStripSeparator"
+        toolStripSeparator.Size = New Size(6, 27)
+        ' 
+        ' CutToolStripButton
+        ' 
+        CutToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        CutToolStripButton.Image = CType(resources.GetObject("CutToolStripButton.Image"), Image)
+        CutToolStripButton.ImageTransparentColor = Color.Magenta
+        CutToolStripButton.Name = "CutToolStripButton"
+        CutToolStripButton.Size = New Size(29, 24)
+        CutToolStripButton.Text = "C&ut"
+        ' 
+        ' CopyToolStripButton
+        ' 
+        CopyToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        CopyToolStripButton.Image = CType(resources.GetObject("CopyToolStripButton.Image"), Image)
+        CopyToolStripButton.ImageTransparentColor = Color.Magenta
+        CopyToolStripButton.Name = "CopyToolStripButton"
+        CopyToolStripButton.Size = New Size(29, 24)
+        CopyToolStripButton.Text = "&Copy"
+        ' 
+        ' PasteToolStripButton
+        ' 
+        PasteToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        PasteToolStripButton.Image = CType(resources.GetObject("PasteToolStripButton.Image"), Image)
+        PasteToolStripButton.ImageTransparentColor = Color.Magenta
+        PasteToolStripButton.Name = "PasteToolStripButton"
+        PasteToolStripButton.Size = New Size(29, 24)
+        PasteToolStripButton.Text = "&Paste"
+        ' 
+        ' toolStripSeparator1
+        ' 
+        toolStripSeparator1.Name = "toolStripSeparator1"
+        toolStripSeparator1.Size = New Size(6, 27)
+        ' 
+        ' HelpToolStripButton
+        ' 
+        HelpToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        HelpToolStripButton.Image = CType(resources.GetObject("HelpToolStripButton.Image"), Image)
+        HelpToolStripButton.ImageTransparentColor = Color.Magenta
+        HelpToolStripButton.Name = "HelpToolStripButton"
+        HelpToolStripButton.Size = New Size(29, 24)
+        HelpToolStripButton.Text = "He&lp"
         ' 
         ' GradeInterface
         ' 
@@ -141,8 +221,17 @@ Partial Class GradeInterface
     Friend WithEvents exitMenu As ToolStripMenuItem
     Friend WithEvents gradesMenu As ToolStripMenuItem
     Friend WithEvents signUpMenu As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents refreshButton As ToolStripButton
-    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents NewToolStripButton As ToolStripButton
+    Friend WithEvents OpenToolStripButton As ToolStripButton
+    Friend WithEvents SaveToolStripButton As ToolStripButton
+    Friend WithEvents PrintToolStripButton As ToolStripButton
+    Friend WithEvents toolStripSeparator As ToolStripSeparator
+    Friend WithEvents CutToolStripButton As ToolStripButton
+    Friend WithEvents CopyToolStripButton As ToolStripButton
+    Friend WithEvents PasteToolStripButton As ToolStripButton
+    Friend WithEvents toolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents HelpToolStripButton As ToolStripButton
 
 End Class

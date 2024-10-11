@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeinterface.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeinterface.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeinterface.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeinterface.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeinterface.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeinterface.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeinterface.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeinterface.vbproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\exercise3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:exercise3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\loginformform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:loginformform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\loginformform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:loginformform.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - jm\\exercise3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:exercise3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,25 +45,75 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginFormForm.vb [Design]",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\LoginFormForm.vb",
+              "RelativeDocumentMoniker": "LoginFormForm.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\LoginFormForm.vb [Design]",
+              "RelativeToolTip": "LoginFormForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-11T01:33:39.266Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GradeInterface.Designer.vb",
-              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.Designer.vb",
-              "RelativeDocumentMoniker": "GradeInterface.Designer.vb",
-              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.Designer.vb",
-              "RelativeToolTip": "GradeInterface.Designer.vb",
-              "ViewState": "AQIAAEwAAAAAAAAAAIA0wGQAAAAsAAAA",
+              "DocumentIndex": 5,
+              "Title": "LoginFormForm.Designer.vb",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\LoginFormForm.Designer.vb",
+              "RelativeDocumentMoniker": "LoginFormForm.Designer.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\LoginFormForm.Designer.vb",
+              "RelativeToolTip": "LoginFormForm.Designer.vb",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAywHAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-10T15:05:23.139Z",
+              "WhenOpened": "2024-10-11T01:32:03.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GradeInterface",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vbproj",
+              "RelativeDocumentMoniker": "GradeInterface.vbproj",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vbproj",
+              "RelativeToolTip": "GradeInterface.vbproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
+              "WhenOpened": "2024-10-11T01:31:07.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GradeInterface.vb",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vb",
+              "RelativeDocumentMoniker": "GradeInterface.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vb",
+              "RelativeToolTip": "GradeInterface.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-11T01:26:43.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "exercise3.vb [Design]",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\exercise3.vb",
+              "RelativeDocumentMoniker": "exercise3.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\exercise3.vb [Design]",
+              "RelativeToolTip": "exercise3.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-11T01:24:40.698Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GradeInterface.vb [Design]",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeInterface.vb",
               "RelativeDocumentMoniker": "GradeInterface.vb",
@@ -59,19 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterForm.vb [Design]",
-              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\RegisterForm.vb",
-              "RelativeDocumentMoniker": "RegisterForm.vb",
-              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\RegisterForm.vb [Design]",
-              "RelativeToolTip": "RegisterForm.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-10T14:43:59.077Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "GradeForm.vb [Design]",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\GradeForm.vb",
               "RelativeDocumentMoniker": "GradeForm.vb",
@@ -80,6 +134,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-10T12:45:35.701Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "exercise3.vb",
+              "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\exercise3.vb",
+              "RelativeDocumentMoniker": "exercise3.vb",
+              "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - JM\\exercise3.vb",
+              "RelativeToolTip": "exercise3.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-11T01:24:27.106Z",
+              "EditorCaption": ""
             }
           ]
         }
