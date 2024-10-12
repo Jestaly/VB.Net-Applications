@@ -1,13 +1,13 @@
 ﻿Public Class GradeInterface
 
     Private Sub gradesMenu_Click(sender As Object, e As EventArgs) Handles gradesMenu.Click
-        Dim gradeForm = New GradeForm
+        Dim gradeForm As New GradeForm()
         gradeForm.MdiParent = Me
         gradeForm.Show()
     End Sub
 
     Private Sub signUpMenu_Click(sender As Object, e As EventArgs) Handles signUpMenu.Click
-        Dim registerForm = New Form1
+        Dim registerForm As New Form1()
         registerForm.MdiParent = Me
         registerForm.Show()
     End Sub
@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub loginMenu_Click(sender As Object, e As EventArgs) Handles loginMenu.Click
-        Dim loginForm = New LoginForm()
+        Dim loginForm As New LoginForm()
         loginForm.MdiParent = Me
         loginForm.Show()
     End Sub

@@ -22,7 +22,8 @@ Partial Class GradeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
+        midtermCSPanel = New Panel()
+        saveButtonMidterm = New Button()
         Label6 = New Label()
         Label4 = New Label()
         midtermExamTextBox = New TextBox()
@@ -39,7 +40,8 @@ Partial Class GradeForm
         quizzesLabel = New Label()
         attendanceLabel = New Label()
         attendanceTextBox = New TextBox()
-        Panel2 = New Panel()
+        finalCSPanel = New Panel()
+        saveButtonFinal = New Button()
         Label9 = New Label()
         Label5 = New Label()
         TextBox2 = New TextBox()
@@ -54,39 +56,56 @@ Partial Class GradeForm
         Label10 = New Label()
         Label11 = New Label()
         TextBox12 = New TextBox()
-        studentNumberTextBox = New TextBox()
         studentNameTextBox = New TextBox()
         studentNumberLabel = New Label()
         studentNameLabel = New Label()
         semGrade = New Label()
         Label12 = New Label()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
+        studentNumberTextBox = New MaskedTextBox()
+        courseLabel = New Label()
+        studentCourseTextBox = New TextBox()
+        sectionLabel = New Label()
+        studentSectionTextBox = New TextBox()
+        searchButton = New Button()
+        midtermCSPanel.SuspendLayout()
+        finalCSPanel.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Panel1
+        ' midtermCSPanel
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
-        Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(midtermExamTextBox)
-        Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(recitationTextBox)
-        Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(caseStudyTextBox)
-        Panel1.Controls.Add(labExerciseTexBox)
-        Panel1.Controls.Add(Label1)
-        Panel1.Controls.Add(quizzesTextBox)
-        Panel1.Controls.Add(clearMidtermButton)
-        Panel1.Controls.Add(computeMidtermButton)
-        Panel1.Controls.Add(midtermGrade)
-        Panel1.Controls.Add(quizzesLabel)
-        Panel1.Controls.Add(attendanceLabel)
-        Panel1.Controls.Add(attendanceTextBox)
-        Panel1.Location = New Point(38, 146)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(954, 266)
-        Panel1.TabIndex = 0
+        midtermCSPanel.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
+        midtermCSPanel.Controls.Add(saveButtonMidterm)
+        midtermCSPanel.Controls.Add(Label6)
+        midtermCSPanel.Controls.Add(Label4)
+        midtermCSPanel.Controls.Add(midtermExamTextBox)
+        midtermCSPanel.Controls.Add(Label3)
+        midtermCSPanel.Controls.Add(recitationTextBox)
+        midtermCSPanel.Controls.Add(Label2)
+        midtermCSPanel.Controls.Add(caseStudyTextBox)
+        midtermCSPanel.Controls.Add(labExerciseTexBox)
+        midtermCSPanel.Controls.Add(Label1)
+        midtermCSPanel.Controls.Add(quizzesTextBox)
+        midtermCSPanel.Controls.Add(clearMidtermButton)
+        midtermCSPanel.Controls.Add(computeMidtermButton)
+        midtermCSPanel.Controls.Add(midtermGrade)
+        midtermCSPanel.Controls.Add(quizzesLabel)
+        midtermCSPanel.Controls.Add(attendanceLabel)
+        midtermCSPanel.Controls.Add(attendanceTextBox)
+        midtermCSPanel.Location = New Point(36, 181)
+        midtermCSPanel.Name = "midtermCSPanel"
+        midtermCSPanel.Size = New Size(954, 266)
+        midtermCSPanel.TabIndex = 0
+        midtermCSPanel.Visible = False
+        ' 
+        ' saveButtonMidterm
+        ' 
+        saveButtonMidterm.Font = New Font("Lucida Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        saveButtonMidterm.Location = New Point(764, 208)
+        saveButtonMidterm.Name = "saveButtonMidterm"
+        saveButtonMidterm.Size = New Size(79, 36)
+        saveButtonMidterm.TabIndex = 19
+        saveButtonMidterm.Text = "Save"
+        saveButtonMidterm.UseVisualStyleBackColor = True
         ' 
         ' Label6
         ' 
@@ -112,10 +131,10 @@ Partial Class GradeForm
         ' 
         ' midtermExamTextBox
         ' 
-        midtermExamTextBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        midtermExamTextBox.Font = New Font("Lucida Sans", 12F)
         midtermExamTextBox.Location = New Point(278, 210)
         midtermExamTextBox.Name = "midtermExamTextBox"
-        midtermExamTextBox.Size = New Size(184, 34)
+        midtermExamTextBox.Size = New Size(184, 31)
         midtermExamTextBox.TabIndex = 16
         ' 
         ' Label3
@@ -131,10 +150,10 @@ Partial Class GradeForm
         ' 
         ' recitationTextBox
         ' 
-        recitationTextBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        recitationTextBox.Font = New Font("Lucida Sans", 12F)
         recitationTextBox.Location = New Point(278, 127)
         recitationTextBox.Name = "recitationTextBox"
-        recitationTextBox.Size = New Size(184, 34)
+        recitationTextBox.Size = New Size(184, 31)
         recitationTextBox.TabIndex = 14
         ' 
         ' Label2
@@ -150,18 +169,18 @@ Partial Class GradeForm
         ' 
         ' caseStudyTextBox
         ' 
-        caseStudyTextBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        caseStudyTextBox.Font = New Font("Lucida Sans", 12F)
         caseStudyTextBox.Location = New Point(278, 50)
         caseStudyTextBox.Name = "caseStudyTextBox"
-        caseStudyTextBox.Size = New Size(184, 34)
+        caseStudyTextBox.Size = New Size(184, 31)
         caseStudyTextBox.TabIndex = 12
         ' 
         ' labExerciseTexBox
         ' 
-        labExerciseTexBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        labExerciseTexBox.Font = New Font("Lucida Sans", 12F)
         labExerciseTexBox.Location = New Point(52, 210)
         labExerciseTexBox.Name = "labExerciseTexBox"
-        labExerciseTexBox.Size = New Size(184, 34)
+        labExerciseTexBox.Size = New Size(184, 31)
         labExerciseTexBox.TabIndex = 11
         ' 
         ' Label1
@@ -177,15 +196,15 @@ Partial Class GradeForm
         ' 
         ' quizzesTextBox
         ' 
-        quizzesTextBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        quizzesTextBox.Font = New Font("Lucida Sans", 12F)
         quizzesTextBox.Location = New Point(52, 127)
         quizzesTextBox.Name = "quizzesTextBox"
-        quizzesTextBox.Size = New Size(184, 34)
+        quizzesTextBox.Size = New Size(184, 31)
         quizzesTextBox.TabIndex = 9
         ' 
         ' clearMidtermButton
         ' 
-        clearMidtermButton.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clearMidtermButton.Font = New Font("Lucida Sans", 12F)
         clearMidtermButton.Location = New Point(504, 156)
         clearMidtermButton.Name = "clearMidtermButton"
         clearMidtermButton.Size = New Size(169, 48)
@@ -195,7 +214,7 @@ Partial Class GradeForm
         ' 
         ' computeMidtermButton
         ' 
-        computeMidtermButton.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        computeMidtermButton.Font = New Font("Lucida Sans", 12F)
         computeMidtermButton.Location = New Point(504, 91)
         computeMidtermButton.Name = "computeMidtermButton"
         computeMidtermButton.Size = New Size(169, 48)
@@ -208,7 +227,7 @@ Partial Class GradeForm
         midtermGrade.AutoSize = True
         midtermGrade.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
         midtermGrade.BorderStyle = BorderStyle.Fixed3D
-        midtermGrade.Font = New Font("Lucida Sans", 48.0F)
+        midtermGrade.Font = New Font("Lucida Sans", 48F)
         midtermGrade.ForeColor = SystemColors.ButtonHighlight
         midtermGrade.Location = New Point(731, 98)
         midtermGrade.Name = "midtermGrade"
@@ -241,33 +260,45 @@ Partial Class GradeForm
         ' 
         ' attendanceTextBox
         ' 
-        attendanceTextBox.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        attendanceTextBox.Font = New Font("Lucida Sans", 12F)
         attendanceTextBox.Location = New Point(52, 50)
         attendanceTextBox.Name = "attendanceTextBox"
-        attendanceTextBox.Size = New Size(184, 34)
+        attendanceTextBox.Size = New Size(184, 31)
         attendanceTextBox.TabIndex = 0
         ' 
-        ' Panel2
+        ' finalCSPanel
         ' 
-        Panel2.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
-        Panel2.Controls.Add(Label9)
-        Panel2.Controls.Add(Label5)
-        Panel2.Controls.Add(TextBox2)
-        Panel2.Controls.Add(Label7)
-        Panel2.Controls.Add(TextBox9)
-        Panel2.Controls.Add(TextBox10)
-        Panel2.Controls.Add(Label8)
-        Panel2.Controls.Add(TextBox11)
-        Panel2.Controls.Add(clearFinalButton)
-        Panel2.Controls.Add(computeFinalButton)
-        Panel2.Controls.Add(finalGrade)
-        Panel2.Controls.Add(Label10)
-        Panel2.Controls.Add(Label11)
-        Panel2.Controls.Add(TextBox12)
-        Panel2.Location = New Point(38, 427)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(954, 276)
-        Panel2.TabIndex = 1
+        finalCSPanel.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
+        finalCSPanel.Controls.Add(saveButtonFinal)
+        finalCSPanel.Controls.Add(Label9)
+        finalCSPanel.Controls.Add(Label5)
+        finalCSPanel.Controls.Add(TextBox2)
+        finalCSPanel.Controls.Add(Label7)
+        finalCSPanel.Controls.Add(TextBox9)
+        finalCSPanel.Controls.Add(TextBox10)
+        finalCSPanel.Controls.Add(Label8)
+        finalCSPanel.Controls.Add(TextBox11)
+        finalCSPanel.Controls.Add(clearFinalButton)
+        finalCSPanel.Controls.Add(computeFinalButton)
+        finalCSPanel.Controls.Add(finalGrade)
+        finalCSPanel.Controls.Add(Label10)
+        finalCSPanel.Controls.Add(Label11)
+        finalCSPanel.Controls.Add(TextBox12)
+        finalCSPanel.Location = New Point(36, 462)
+        finalCSPanel.Name = "finalCSPanel"
+        finalCSPanel.Size = New Size(954, 276)
+        finalCSPanel.TabIndex = 1
+        finalCSPanel.Visible = False
+        ' 
+        ' saveButtonFinal
+        ' 
+        saveButtonFinal.Font = New Font("Lucida Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        saveButtonFinal.Location = New Point(764, 217)
+        saveButtonFinal.Name = "saveButtonFinal"
+        saveButtonFinal.Size = New Size(79, 36)
+        saveButtonFinal.TabIndex = 20
+        saveButtonFinal.Text = "Save"
+        saveButtonFinal.UseVisualStyleBackColor = True
         ' 
         ' Label9
         ' 
@@ -293,10 +324,10 @@ Partial Class GradeForm
         ' 
         ' TextBox2
         ' 
-        TextBox2.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Font = New Font("Lucida Sans", 12F)
         TextBox2.Location = New Point(278, 139)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(184, 34)
+        TextBox2.Size = New Size(184, 31)
         TextBox2.TabIndex = 31
         ' 
         ' Label7
@@ -312,18 +343,18 @@ Partial Class GradeForm
         ' 
         ' TextBox9
         ' 
-        TextBox9.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox9.Font = New Font("Lucida Sans", 12F)
         TextBox9.Location = New Point(278, 62)
         TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(184, 34)
+        TextBox9.Size = New Size(184, 31)
         TextBox9.TabIndex = 27
         ' 
         ' TextBox10
         ' 
-        TextBox10.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox10.Font = New Font("Lucida Sans", 12F)
         TextBox10.Location = New Point(52, 222)
         TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(184, 34)
+        TextBox10.Size = New Size(184, 31)
         TextBox10.TabIndex = 26
         ' 
         ' Label8
@@ -339,15 +370,15 @@ Partial Class GradeForm
         ' 
         ' TextBox11
         ' 
-        TextBox11.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox11.Font = New Font("Lucida Sans", 12F)
         TextBox11.Location = New Point(52, 139)
         TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(184, 34)
+        TextBox11.Size = New Size(184, 31)
         TextBox11.TabIndex = 24
         ' 
         ' clearFinalButton
         ' 
-        clearFinalButton.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clearFinalButton.Font = New Font("Lucida Sans", 12F)
         clearFinalButton.Location = New Point(504, 166)
         clearFinalButton.Name = "clearFinalButton"
         clearFinalButton.Size = New Size(169, 48)
@@ -357,7 +388,7 @@ Partial Class GradeForm
         ' 
         ' computeFinalButton
         ' 
-        computeFinalButton.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        computeFinalButton.Font = New Font("Lucida Sans", 12F)
         computeFinalButton.Location = New Point(504, 101)
         computeFinalButton.Name = "computeFinalButton"
         computeFinalButton.Size = New Size(169, 48)
@@ -370,7 +401,7 @@ Partial Class GradeForm
         finalGrade.AutoSize = True
         finalGrade.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
         finalGrade.BorderStyle = BorderStyle.Fixed3D
-        finalGrade.Font = New Font("Lucida Sans", 48.0F)
+        finalGrade.Font = New Font("Lucida Sans", 48F)
         finalGrade.ForeColor = SystemColors.ButtonHighlight
         finalGrade.Location = New Point(731, 110)
         finalGrade.Name = "finalGrade"
@@ -403,36 +434,28 @@ Partial Class GradeForm
         ' 
         ' TextBox12
         ' 
-        TextBox12.Font = New Font("Segoe UI", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox12.Font = New Font("Lucida Sans", 12F)
         TextBox12.Location = New Point(52, 62)
         TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(184, 34)
+        TextBox12.Size = New Size(184, 31)
         TextBox12.TabIndex = 18
-        ' 
-        ' studentNumberTextBox
-        ' 
-        studentNumberTextBox.Font = New Font("Segoe UI", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        studentNumberTextBox.Location = New Point(280, 50)
-        studentNumberTextBox.Name = "studentNumberTextBox"
-        studentNumberTextBox.Size = New Size(167, 47)
-        studentNumberTextBox.TabIndex = 0
         ' 
         ' studentNameTextBox
         ' 
-        studentNameTextBox.Font = New Font("Segoe UI", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        studentNameTextBox.Location = New Point(485, 50)
+        studentNameTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        studentNameTextBox.Location = New Point(490, 63)
         studentNameTextBox.Name = "studentNameTextBox"
-        studentNameTextBox.Size = New Size(300, 47)
+        studentNameTextBox.Size = New Size(300, 31)
         studentNameTextBox.TabIndex = 2
         ' 
         ' studentNumberLabel
         ' 
         studentNumberLabel.AutoSize = True
-        studentNumberLabel.Font = New Font("Lucida Sans", 10.8F)
+        studentNumberLabel.Font = New Font("Lucida Sans", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         studentNumberLabel.ForeColor = SystemColors.ButtonHighlight
-        studentNumberLabel.Location = New Point(280, 26)
+        studentNumberLabel.Location = New Point(285, 39)
         studentNumberLabel.Name = "studentNumberLabel"
-        studentNumberLabel.Size = New Size(158, 21)
+        studentNumberLabel.Size = New Size(144, 19)
         studentNumberLabel.TabIndex = 3
         studentNumberLabel.Text = "Student Number"
         ' 
@@ -441,7 +464,7 @@ Partial Class GradeForm
         studentNameLabel.AutoSize = True
         studentNameLabel.Font = New Font("Lucida Sans", 10.8F)
         studentNameLabel.ForeColor = SystemColors.ButtonHighlight
-        studentNameLabel.Location = New Point(485, 26)
+        studentNameLabel.Location = New Point(490, 39)
         studentNameLabel.Name = "studentNameLabel"
         studentNameLabel.Size = New Size(136, 21)
         studentNameLabel.TabIndex = 4
@@ -472,34 +495,97 @@ Partial Class GradeForm
         Label12.TabIndex = 10
         Label12.Text = "Semestral Grade"
         ' 
+        ' studentNumberTextBox
+        ' 
+        studentNumberTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        studentNumberTextBox.Location = New Point(285, 63)
+        studentNumberTextBox.Mask = "00-00000"
+        studentNumberTextBox.Name = "studentNumberTextBox"
+        studentNumberTextBox.PromptChar = "X"c
+        studentNumberTextBox.Size = New Size(158, 31)
+        studentNumberTextBox.TabIndex = 11
+        studentNumberTextBox.ValidatingType = GetType(Date)
+        ' 
+        ' courseLabel
+        ' 
+        courseLabel.AutoSize = True
+        courseLabel.Font = New Font("Lucida Sans", 10.8F)
+        courseLabel.ForeColor = SystemColors.ButtonHighlight
+        courseLabel.Location = New Point(490, 107)
+        courseLabel.Name = "courseLabel"
+        courseLabel.Size = New Size(71, 21)
+        courseLabel.TabIndex = 13
+        courseLabel.Text = "Course"
+        ' 
+        ' studentCourseTextBox
+        ' 
+        studentCourseTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        studentCourseTextBox.Location = New Point(490, 131)
+        studentCourseTextBox.Name = "studentCourseTextBox"
+        studentCourseTextBox.Size = New Size(156, 31)
+        studentCourseTextBox.TabIndex = 12
+        ' 
+        ' sectionLabel
+        ' 
+        sectionLabel.AutoSize = True
+        sectionLabel.Font = New Font("Lucida Sans", 10.8F)
+        sectionLabel.ForeColor = SystemColors.ButtonHighlight
+        sectionLabel.Location = New Point(652, 107)
+        sectionLabel.Name = "sectionLabel"
+        sectionLabel.Size = New Size(74, 21)
+        sectionLabel.TabIndex = 15
+        sectionLabel.Text = "Section"
+        ' 
+        ' studentSectionTextBox
+        ' 
+        studentSectionTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        studentSectionTextBox.Location = New Point(652, 131)
+        studentSectionTextBox.Name = "studentSectionTextBox"
+        studentSectionTextBox.Size = New Size(138, 31)
+        studentSectionTextBox.TabIndex = 14
+        ' 
+        ' searchButton
+        ' 
+        searchButton.Font = New Font("Lucida Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        searchButton.Location = New Point(325, 105)
+        searchButton.Name = "searchButton"
+        searchButton.Size = New Size(82, 29)
+        searchButton.TabIndex = 16
+        searchButton.Text = "Search"
+        searchButton.UseVisualStyleBackColor = True
+        ' 
         ' GradeForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(52), CByte(49), CByte(49))
-        ClientSize = New Size(1030, 722)
+        ClientSize = New Size(1030, 772)
+        Controls.Add(searchButton)
+        Controls.Add(sectionLabel)
+        Controls.Add(studentSectionTextBox)
+        Controls.Add(courseLabel)
+        Controls.Add(studentCourseTextBox)
+        Controls.Add(studentNumberTextBox)
         Controls.Add(Label12)
         Controls.Add(semGrade)
         Controls.Add(studentNameLabel)
         Controls.Add(studentNumberLabel)
         Controls.Add(studentNameTextBox)
-        Controls.Add(studentNumberTextBox)
-        Controls.Add(Panel2)
-        Controls.Add(Panel1)
+        Controls.Add(finalCSPanel)
+        Controls.Add(midtermCSPanel)
         FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "GradeForm"
         Text = "Grade Form"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
+        midtermCSPanel.ResumeLayout(False)
+        midtermCSPanel.PerformLayout()
+        finalCSPanel.ResumeLayout(False)
+        finalCSPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents studentNumberTextBox As TextBox
+    Friend WithEvents midtermCSPanel As Panel
+    Friend WithEvents finalCSPanel As Panel
     Friend WithEvents studentNameTextBox As TextBox
     Friend WithEvents studentNumberLabel As Label
     Friend WithEvents studentNameLabel As Label
@@ -535,4 +621,12 @@ Partial Class GradeForm
     Friend WithEvents Label6 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents studentNumberTextBox As MaskedTextBox
+    Friend WithEvents saveButtonMidterm As Button
+    Friend WithEvents saveButtonFinal As Button
+    Friend WithEvents courseLabel As Label
+    Friend WithEvents studentCourseTextBox As TextBox
+    Friend WithEvents sectionLabel As Label
+    Friend WithEvents studentSectionTextBox As TextBox
+    Friend WithEvents searchButton As Button
 End Class
