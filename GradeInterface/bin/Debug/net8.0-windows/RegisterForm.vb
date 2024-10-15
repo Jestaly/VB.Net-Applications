@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class RegisterForm
 
     Private Sub nextButton_Click(sender As Object, e As EventArgs) Handles nextButton.Click
 

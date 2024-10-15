@@ -56,7 +56,7 @@ Partial Class GradeInterface
         ' loginMenu
         ' 
         loginMenu.Name = "loginMenu"
-        loginMenu.Size = New Size(224, 26)
+        loginMenu.Size = New Size(139, 26)
         loginMenu.Text = "Login"
         ' 
         ' logoutMenu

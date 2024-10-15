@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class RegisterForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -553,7 +553,7 @@ Partial Class Form1
         phoneNumberName.Size = New Size(174, 31)
         phoneNumberName.TabIndex = 44
         ' 
-        ' Form1
+        ' RegisterForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
@@ -565,7 +565,7 @@ Partial Class Form1
         Controls.Add(panel3)
         ForeColor = SystemColors.Control
         FormBorderStyle = FormBorderStyle.FixedToolWindow
-        Name = "Form1"
+        Name = "RegisterForm"
         Text = "Register"
         genderRadioButton.ResumeLayout(False)
         genderRadioButton.PerformLayout()
