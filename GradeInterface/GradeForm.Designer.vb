@@ -25,7 +25,7 @@ Partial Class GradeForm
         midtermPanel = New Panel()
         setPercentageMidButton = New Button()
         saveMidtermButton = New Button()
-        midtermGradeLabel = New Label()
+        midtermPercLabel = New Label()
         examMidLabel = New Label()
         examMidTextBox = New TextBox()
         recitationMidLabel = New Label()
@@ -37,7 +37,7 @@ Partial Class GradeForm
         quizMidTextBox = New TextBox()
         clearMidtermButton = New Button()
         computeMidtermButton = New Button()
-        midtermGrade = New Label()
+        midtermGradeLabel = New Label()
         quizMidLabel = New Label()
         attendanceMidLabel = New Label()
         attMidTextBox = New TextBox()
@@ -88,7 +88,7 @@ Partial Class GradeForm
         midtermPanel.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
         midtermPanel.Controls.Add(setPercentageMidButton)
         midtermPanel.Controls.Add(saveMidtermButton)
-        midtermPanel.Controls.Add(midtermGradeLabel)
+        midtermPanel.Controls.Add(midtermPercLabel)
         midtermPanel.Controls.Add(examMidLabel)
         midtermPanel.Controls.Add(examMidTextBox)
         midtermPanel.Controls.Add(recitationMidLabel)
@@ -100,7 +100,7 @@ Partial Class GradeForm
         midtermPanel.Controls.Add(quizMidTextBox)
         midtermPanel.Controls.Add(clearMidtermButton)
         midtermPanel.Controls.Add(computeMidtermButton)
-        midtermPanel.Controls.Add(midtermGrade)
+        midtermPanel.Controls.Add(midtermGradeLabel)
         midtermPanel.Controls.Add(quizMidLabel)
         midtermPanel.Controls.Add(attendanceMidLabel)
         midtermPanel.Controls.Add(attMidTextBox)
@@ -130,16 +130,16 @@ Partial Class GradeForm
         saveMidtermButton.Text = "Save"
         saveMidtermButton.UseVisualStyleBackColor = True
         ' 
-        ' midtermGradeLabel
+        ' midtermPercLabel
         ' 
-        midtermGradeLabel.AutoSize = True
-        midtermGradeLabel.Font = New Font("Lucida Sans", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        midtermGradeLabel.ForeColor = SystemColors.ButtonHighlight
-        midtermGradeLabel.Location = New Point(533, 22)
-        midtermGradeLabel.Name = "midtermGradeLabel"
-        midtermGradeLabel.Size = New Size(253, 26)
-        midtermGradeLabel.TabIndex = 18
-        midtermGradeLabel.Text = "MIDTERM GRADE: 0%"
+        midtermPercLabel.AutoSize = True
+        midtermPercLabel.Font = New Font("Lucida Sans", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        midtermPercLabel.ForeColor = SystemColors.ButtonHighlight
+        midtermPercLabel.Location = New Point(533, 22)
+        midtermPercLabel.Name = "midtermPercLabel"
+        midtermPercLabel.Size = New Size(253, 26)
+        midtermPercLabel.TabIndex = 18
+        midtermPercLabel.Text = "MIDTERM GRADE: 0%"
         ' 
         ' examMidLabel
         ' 
@@ -245,19 +245,19 @@ Partial Class GradeForm
         computeMidtermButton.Text = "Compute"
         computeMidtermButton.UseVisualStyleBackColor = True
         ' 
-        ' midtermGrade
+        ' midtermGradeLabel
         ' 
-        midtermGrade.AutoSize = True
-        midtermGrade.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
-        midtermGrade.BorderStyle = BorderStyle.Fixed3D
-        midtermGrade.Font = New Font("Lucida Sans", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        midtermGrade.ForeColor = SystemColors.ButtonHighlight
-        midtermGrade.Location = New Point(691, 114)
-        midtermGrade.Name = "midtermGrade"
-        midtermGrade.Size = New Size(143, 93)
-        midtermGrade.TabIndex = 6
-        midtermGrade.Text = "00"
-        midtermGrade.TextAlign = ContentAlignment.MiddleCenter
+        midtermGradeLabel.AutoSize = True
+        midtermGradeLabel.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
+        midtermGradeLabel.BorderStyle = BorderStyle.Fixed3D
+        midtermGradeLabel.Font = New Font("Lucida Sans", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        midtermGradeLabel.ForeColor = SystemColors.ButtonHighlight
+        midtermGradeLabel.Location = New Point(691, 114)
+        midtermGradeLabel.Name = "midtermGradeLabel"
+        midtermGradeLabel.Size = New Size(143, 93)
+        midtermGradeLabel.TabIndex = 6
+        midtermGradeLabel.Text = "00"
+        midtermGradeLabel.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' quizMidLabel
         ' 
@@ -697,7 +697,7 @@ Partial Class GradeForm
     Friend WithEvents attMidTextBox As TextBox
     Friend WithEvents quizMidLabel As Label
     Friend WithEvents attendanceMidLabel As Label
-    Friend WithEvents midtermGrade As Label
+    Friend WithEvents midtermGradeLabel As Label
     Friend WithEvents clearMidtermButton As Button
     Friend WithEvents computeMidtermButton As Button
     Friend WithEvents semGrade As Label
@@ -723,7 +723,7 @@ Partial Class GradeForm
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents attCSFinTextBox As TextBox
-    Friend WithEvents midtermGradeLabel As Label
+    Friend WithEvents midtermPercLabel As Label
     Friend WithEvents finalCSGradeLabel As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents studentNumberTextBox As MaskedTextBox

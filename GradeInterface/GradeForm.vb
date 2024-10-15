@@ -2,21 +2,37 @@
 Public Class GradeForm
     Private attDouble, quizDouble, labExerDouble, caseStudyDouble, recitationDouble, examMidtermDouble As Double
     Private attStr, quizStr, labExerStr, caseStudyStr, recitationStr, examMidtermStr As String
-    Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
-        setDefaultForm()
+    Private studentOrder As Integer
+    Dim student As New Student()
 
-        Dim student As New Student()
+    'NOTE: MUST SAVE THE PERCENTAGES ALSO IN AN ARRAY
+    Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
+
+        studentOrder = 0
         Dim studentNumber As String = studentNumberTextBox.Text
         Dim studentName As String = studentNameTextBox.Text
         Dim studentCourse As String = studentCourseTextBox.Text
         Dim studentSection As String = studentSectionTextBox.Text
         Dim found As Boolean = False
-        For i = 0 To student.studentNumArr.Length - 1
+        For i = studentOrder To student.studentNumArr.Length - 1
             If (studentNumber.Equals(student.studentNumArr(i))) Then
                 studentNumberTextBox.Text = student.studentNumArr(i)
                 studentNameTextBox.Text = student.studentNameArr(i)
                 studentCourseTextBox.Text = student.studentCourseArr(i)
                 studentSectionTextBox.Text = student.studentSectionArr(i)
+                studentOrder = i
+                If (student.studentSaveArr(i)) Then
+                    attMidTextBox.Text = student.studentAttendanceArr(i)
+                    quizMidTextBox.Text = student.studentQuizzesArr(i)
+                    labExerMidTextBox.Text = student.studentlabExerciseArr(i)
+                    caseStudyMidTextBox.Text = student.studentcaseStudyArr(i)
+                    recitationMidTextBox.Text = student.studentRecitationArr(i)
+                    examMidTextBox.Text = student.studentmidtermExamArr(i)
+                    midtermGradeLabel.Text = student.studentMidtermGradeArr(i)
+                    midtermPercLabel.Text = student.studentMidtermPercArr(i)
+                Else
+                    setDefaultForm()
+                End If
 
                 studentCourse = studentCourseTextBox.Text
                 found = True
@@ -46,8 +62,8 @@ Public Class GradeForm
         caseStudyMidTextBox.Clear()
         recitationMidTextBox.Clear()
         examMidTextBox.Clear()
-        midtermGradeLabel.Text = "MIDTERM GRADE: 0%"
-        midtermGrade.Text = "00"
+        midtermPercLabel.Text = "MIDTERM GRADE: 0%"
+        midtermGradeLabel.Text = "00"
         attendanceMidLabel.Text = "Attendance %"
         quizMidLabel.Text = "Quizzes %"
         labExerMidLabel.Text = "Lab Exercise %"
@@ -112,7 +128,7 @@ Public Class GradeForm
         End If
     End Sub
 
-    Private Sub clearCSMidtermButton_Click(sender As Object, e As EventArgs) Handles clearMidtermButton.Click
+    Private Sub clearMidtermButton_Click(sender As Object, e As EventArgs) Handles clearMidtermButton.Click
         attMidTextBox.Clear()
         quizMidTextBox.Clear()
         labExerMidTextBox.Clear()
@@ -121,7 +137,7 @@ Public Class GradeForm
         examMidTextBox.Clear()
     End Sub
 
-    Private Sub attCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles attMidTextBox.KeyPress
+    Private Sub attMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles attMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 attStr = attMidTextBox.Text & "." & "0"
@@ -143,7 +159,7 @@ Public Class GradeForm
         End Try
     End Sub
 
-    Private Sub quizCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles quizMidTextBox.KeyPress
+    Private Sub quizMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles quizMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 quizStr = quizMidTextBox.Text & "." & "0"
@@ -165,7 +181,7 @@ Public Class GradeForm
         End Try
     End Sub
 
-    Private Sub labExerCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles labExerMidTextBox.KeyPress
+    Private Sub labExerMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles labExerMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 labExerStr = labExerMidTextBox.Text & "." & "0"
@@ -187,7 +203,7 @@ Public Class GradeForm
         End Try
     End Sub
 
-    Private Sub caseStudyCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles caseStudyMidTextBox.KeyPress
+    Private Sub caseStudyMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles caseStudyMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 caseStudyStr = caseStudyMidTextBox.Text & "." & "0"
@@ -209,7 +225,7 @@ Public Class GradeForm
         End Try
     End Sub
 
-    Private Sub recitationCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles recitationMidTextBox.KeyPress
+    Private Sub recitationMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles recitationMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 recitationStr = recitationMidTextBox.Text & "." & "0"
@@ -232,7 +248,7 @@ Public Class GradeForm
         End Try
     End Sub
 
-    Private Sub examCSMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles examMidTextBox.KeyPress
+    Private Sub examMidTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles examMidTextBox.KeyPress
         Try
             If (e.KeyChar = ".") Then
                 examMidtermStr = examMidTextBox.Text & "." & "0"
@@ -352,10 +368,11 @@ Public Class GradeForm
         recitationMidLabel.Text = "Recitation " & recitationPercStr & "%"
         examMidLabel.Text = "Midterm Exam " & examMidtermPercStr & "%"
     End Sub
-    Private midtermPercentage As Double
+    Private midtermGrade As Double
+    Private midtermPerc As Double
     'Private attDouble, quizDouble, labExerDouble, caseStudyDouble, recitationDouble, examMidtermDouble As Double
     'Private attStr, quizStr, labExerStr, caseStudyStr, recitationStr, examMidtermStr As String
-    Private Sub computeCSMidtermButton_Click(sender As Object, e As EventArgs) Handles computeMidtermButton.Click
+    Private Sub computeMidtermButton_Click(sender As Object, e As EventArgs) Handles computeMidtermButton.Click
         attDouble = Double.Parse(attStr)
         quizDouble = Double.Parse(quizStr)
         labExerDouble = Double.Parse(labExerStr)
@@ -363,9 +380,32 @@ Public Class GradeForm
         recitationDouble = Double.Parse(recitationStr)
         examMidtermDouble = Double.Parse(examMidtermStr)
 
-        midtermPercentage = attDouble + quizDouble + labExerDouble + caseStudyDouble + recitationDouble + examMidtermDouble
-        midtermGrade.Text = midtermPercentage
-        midtermGradeLabel.Text = "MIDTERM GRADE: " & (midtermPercentage * 0.5) & "%"
+        midtermGrade = attDouble + quizDouble + labExerDouble + caseStudyDouble + recitationDouble + examMidtermDouble
+        midtermGradeLabel.Text = midtermGrade
+        midtermPerc = midtermGrade * 0.5
+        midtermPercLabel.Text = "MIDTERM GRADE: " & midtermPerc & "%"
+    End Sub
+
+    Private Sub saveMidtermButton_Click(sender As Object, e As EventArgs) Handles saveMidtermButton.Click
+        MessageBox.Show(studentOrder)
+        student.studentAttendanceArr(studentOrder) = Double.Parse(attStr)
+        student.studentQuizzesArr(studentOrder) = Double.Parse(quizStr)
+        student.studentlabExerciseArr(studentOrder) = Double.Parse(labExerStr)
+        student.studentcaseStudyArr(studentOrder) = Double.Parse(caseStudyStr)
+        student.studentRecitationArr(studentOrder) = Double.Parse(recitationStr)
+        student.studentmidtermExamArr(studentOrder) = Double.Parse(examMidtermStr)
+        student.studentMidtermGradeArr(studentOrder) = midtermGrade
+        student.studentMidtermPercArr(studentOrder) = midtermPerc
+        student.studentSaveArr(studentOrder) = True
+
+        MessageBox.Show(student.studentAttendanceArr(studentOrder))
+        MessageBox.Show(student.studentQuizzesArr(studentOrder))
+        MessageBox.Show(student.studentlabExerciseArr(studentOrder))
+        MessageBox.Show(student.studentcaseStudyArr(studentOrder))
+        MessageBox.Show(student.studentRecitationArr(studentOrder))
+        MessageBox.Show(student.studentmidtermExamArr(studentOrder))
+        MessageBox.Show(student.studentMidtermGradeArr(studentOrder))
+        MessageBox.Show(student.studentMidtermPercArr(studentOrder))
     End Sub
 End Class
 
@@ -374,5 +414,13 @@ Public Class Student
     Public studentNameArr() As String = {"JESTALY JOSEPH CASTILLO", "CAL NEWPORT", "ROBERT KIYOSAKI", "MICHAEL GRANT"}
     Public studentCourseArr() As String = {"BSCS", "BSN", "BSCE", "BSCS"}
     Public studentSectionArr() As String = {"2A", "1B", "3F", "1A"}
-
+    Public studentAttendanceArr() As Double = {0, 0, 0, 0}
+    Public studentQuizzesArr() As Double = {0, 0, 0, 0}
+    Public studentlabExerciseArr() As Double = {0, 0, 0, 0}
+    Public studentcaseStudyArr() As Double = {0, 0, 0, 0}
+    Public studentRecitationArr() As Double = {0, 0, 0, 0}
+    Public studentmidtermExamArr() As Double = {0, 0, 0, 0}
+    Public studentMidtermGradeArr() As Double = {0, 0, 0, 0}
+    Public studentMidtermPercArr() As Double = {0, 0, 0, 0}
+    Public studentSaveArr() As Boolean = {False, False, False, False}
 End Class
