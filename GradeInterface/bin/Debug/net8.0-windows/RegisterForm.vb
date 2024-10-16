@@ -102,7 +102,8 @@
                             "Area: " & areaName.Text & vbNewLine &
                             "Barangay: " & barangayName.Text & vbNewLine &
                             "City: " & cityName.Text, "ADDRESS INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            End
+
+            Dispose()
         Else
             MessageBox.Show("Error, some field/s are invalid.", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error)
         End If

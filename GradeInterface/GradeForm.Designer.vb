@@ -41,23 +41,6 @@ Partial Class GradeForm
         quizMidLabel = New Label()
         attendanceMidLabel = New Label()
         attMidTextBox = New TextBox()
-        finalPanel = New Panel()
-        setPercentageFinalButton = New Button()
-        saveCSFinalButton = New Button()
-        finalCSGradeLabel = New Label()
-        Label5 = New Label()
-        examCSFinTextBox = New TextBox()
-        Label7 = New Label()
-        caseStudyCSFinTextBox = New TextBox()
-        LabExerCSFinTextBox = New TextBox()
-        Label8 = New Label()
-        quizCSFinTextBox = New TextBox()
-        clearCSFinalButton = New Button()
-        computeCSFinalButton = New Button()
-        finalCSGrade = New Label()
-        Label10 = New Label()
-        Label11 = New Label()
-        attCSFinTextBox = New TextBox()
         studentNameTextBox = New TextBox()
         studentNumberLabel = New Label()
         studentNameLabel = New Label()
@@ -75,12 +58,34 @@ Partial Class GradeForm
         nullFinalPanel = New Panel()
         nullRecordPanel2 = New Panel()
         nullRecordFinal = New Label()
+        finalPanel = New Panel()
+        setPercentageFinButton = New Button()
+        saveFinalButton = New Button()
+        finalPercLabel = New Label()
+        examFinLabel = New Label()
+        examFinTextBox = New TextBox()
+        caseStudyFinLabel = New Label()
+        caseStudyFinTextBox = New TextBox()
+        labExerFinTextBox = New TextBox()
+        labExerFinLabel = New Label()
+        quizFinTextBox = New TextBox()
+        clearFinalButton = New Button()
+        computeFinalButton = New Button()
+        FinalGradeLabel = New Label()
+        quizFinLabel = New Label()
+        attendanceFinLabel = New Label()
+        attFinTextBox = New TextBox()
+        noRecordsYetPanel = New Panel()
+        Panel2 = New Panel()
+        noRecordsYetLabel = New Label()
         midtermPanel.SuspendLayout()
-        finalPanel.SuspendLayout()
         nullMidtermPanel.SuspendLayout()
         nullRecordPanel1.SuspendLayout()
         nullFinalPanel.SuspendLayout()
         nullRecordPanel2.SuspendLayout()
+        finalPanel.SuspendLayout()
+        noRecordsYetPanel.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' midtermPanel
@@ -154,6 +159,7 @@ Partial Class GradeForm
         ' 
         ' examMidTextBox
         ' 
+        examMidTextBox.Enabled = False
         examMidTextBox.Font = New Font("Lucida Sans", 12F)
         examMidTextBox.Location = New Point(278, 210)
         examMidTextBox.Name = "examMidTextBox"
@@ -173,6 +179,7 @@ Partial Class GradeForm
         ' 
         ' recitationMidTextBox
         ' 
+        recitationMidTextBox.Enabled = False
         recitationMidTextBox.Font = New Font("Lucida Sans", 12F)
         recitationMidTextBox.Location = New Point(278, 127)
         recitationMidTextBox.Name = "recitationMidTextBox"
@@ -192,6 +199,7 @@ Partial Class GradeForm
         ' 
         ' caseStudyMidTextBox
         ' 
+        caseStudyMidTextBox.Enabled = False
         caseStudyMidTextBox.Font = New Font("Lucida Sans", 12F)
         caseStudyMidTextBox.Location = New Point(278, 50)
         caseStudyMidTextBox.Name = "caseStudyMidTextBox"
@@ -200,6 +208,7 @@ Partial Class GradeForm
         ' 
         ' labExerMidTextBox
         ' 
+        labExerMidTextBox.Enabled = False
         labExerMidTextBox.Font = New Font("Lucida Sans", 12F)
         labExerMidTextBox.Location = New Point(52, 210)
         labExerMidTextBox.Name = "labExerMidTextBox"
@@ -219,6 +228,7 @@ Partial Class GradeForm
         ' 
         ' quizMidTextBox
         ' 
+        quizMidTextBox.Enabled = False
         quizMidTextBox.Font = New Font("Lucida Sans", 12F)
         quizMidTextBox.Location = New Point(52, 127)
         quizMidTextBox.Name = "quizMidTextBox"
@@ -283,196 +293,12 @@ Partial Class GradeForm
         ' 
         ' attMidTextBox
         ' 
+        attMidTextBox.Enabled = False
         attMidTextBox.Font = New Font("Lucida Sans", 12F)
         attMidTextBox.Location = New Point(52, 50)
         attMidTextBox.Name = "attMidTextBox"
         attMidTextBox.Size = New Size(184, 31)
         attMidTextBox.TabIndex = 0
-        ' 
-        ' finalPanel
-        ' 
-        finalPanel.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
-        finalPanel.Controls.Add(setPercentageFinalButton)
-        finalPanel.Controls.Add(saveCSFinalButton)
-        finalPanel.Controls.Add(finalCSGradeLabel)
-        finalPanel.Controls.Add(Label5)
-        finalPanel.Controls.Add(examCSFinTextBox)
-        finalPanel.Controls.Add(Label7)
-        finalPanel.Controls.Add(caseStudyCSFinTextBox)
-        finalPanel.Controls.Add(LabExerCSFinTextBox)
-        finalPanel.Controls.Add(Label8)
-        finalPanel.Controls.Add(quizCSFinTextBox)
-        finalPanel.Controls.Add(clearCSFinalButton)
-        finalPanel.Controls.Add(computeCSFinalButton)
-        finalPanel.Controls.Add(finalCSGrade)
-        finalPanel.Controls.Add(Label10)
-        finalPanel.Controls.Add(Label11)
-        finalPanel.Controls.Add(attCSFinTextBox)
-        finalPanel.Location = New Point(36, 462)
-        finalPanel.Name = "finalPanel"
-        finalPanel.Size = New Size(954, 276)
-        finalPanel.TabIndex = 1
-        finalPanel.Visible = False
-        ' 
-        ' setPercentageFinalButton
-        ' 
-        setPercentageFinalButton.Font = New Font("Lucida Sans", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        setPercentageFinalButton.Location = New Point(504, 214)
-        setPercentageFinalButton.Name = "setPercentageFinalButton"
-        setPercentageFinalButton.Size = New Size(169, 48)
-        setPercentageFinalButton.TabIndex = 21
-        setPercentageFinalButton.Text = "Set Percentage"
-        setPercentageFinalButton.UseVisualStyleBackColor = True
-        ' 
-        ' saveCSFinalButton
-        ' 
-        saveCSFinalButton.Font = New Font("Lucida Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        saveCSFinalButton.Location = New Point(764, 217)
-        saveCSFinalButton.Name = "saveCSFinalButton"
-        saveCSFinalButton.Size = New Size(79, 36)
-        saveCSFinalButton.TabIndex = 20
-        saveCSFinalButton.Text = "Save"
-        saveCSFinalButton.UseVisualStyleBackColor = True
-        ' 
-        ' finalCSGradeLabel
-        ' 
-        finalCSGradeLabel.AutoSize = True
-        finalCSGradeLabel.Font = New Font("Lucida Sans", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        finalCSGradeLabel.ForeColor = SystemColors.ButtonHighlight
-        finalCSGradeLabel.Location = New Point(533, 37)
-        finalCSGradeLabel.Name = "finalCSGradeLabel"
-        finalCSGradeLabel.Size = New Size(310, 39)
-        finalCSGradeLabel.TabIndex = 19
-        finalCSGradeLabel.Text = "FINAL GRADE 50%"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Lucida Sans", 12F)
-        Label5.ForeColor = SystemColors.ButtonHighlight
-        Label5.Location = New Point(278, 114)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(117, 23)
-        Label5.TabIndex = 32
-        Label5.Text = "Final Exam"
-        ' 
-        ' examCSFinTextBox
-        ' 
-        examCSFinTextBox.Font = New Font("Lucida Sans", 12F)
-        examCSFinTextBox.Location = New Point(278, 139)
-        examCSFinTextBox.Name = "examCSFinTextBox"
-        examCSFinTextBox.Size = New Size(184, 31)
-        examCSFinTextBox.TabIndex = 31
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Lucida Sans", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.ForeColor = SystemColors.ButtonHighlight
-        Label7.Location = New Point(278, 37)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(188, 21)
-        Label7.TabIndex = 28
-        Label7.Text = "Project / Case Study"
-        ' 
-        ' caseStudyCSFinTextBox
-        ' 
-        caseStudyCSFinTextBox.Font = New Font("Lucida Sans", 12F)
-        caseStudyCSFinTextBox.Location = New Point(278, 62)
-        caseStudyCSFinTextBox.Name = "caseStudyCSFinTextBox"
-        caseStudyCSFinTextBox.Size = New Size(184, 31)
-        caseStudyCSFinTextBox.TabIndex = 27
-        ' 
-        ' LabExerCSFinTextBox
-        ' 
-        LabExerCSFinTextBox.Font = New Font("Lucida Sans", 12F)
-        LabExerCSFinTextBox.Location = New Point(52, 222)
-        LabExerCSFinTextBox.Name = "LabExerCSFinTextBox"
-        LabExerCSFinTextBox.Size = New Size(184, 31)
-        LabExerCSFinTextBox.TabIndex = 26
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.ForeColor = SystemColors.ButtonHighlight
-        Label8.Location = New Point(52, 196)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(134, 23)
-        Label8.TabIndex = 25
-        Label8.Text = "Lab Exercise"
-        ' 
-        ' quizCSFinTextBox
-        ' 
-        quizCSFinTextBox.Font = New Font("Lucida Sans", 12F)
-        quizCSFinTextBox.Location = New Point(52, 139)
-        quizCSFinTextBox.Name = "quizCSFinTextBox"
-        quizCSFinTextBox.Size = New Size(184, 31)
-        quizCSFinTextBox.TabIndex = 24
-        ' 
-        ' clearCSFinalButton
-        ' 
-        clearCSFinalButton.Font = New Font("Lucida Sans", 12F)
-        clearCSFinalButton.Location = New Point(504, 157)
-        clearCSFinalButton.Name = "clearCSFinalButton"
-        clearCSFinalButton.Size = New Size(169, 48)
-        clearCSFinalButton.TabIndex = 23
-        clearCSFinalButton.Text = "Clear"
-        clearCSFinalButton.UseVisualStyleBackColor = True
-        ' 
-        ' computeCSFinalButton
-        ' 
-        computeCSFinalButton.Font = New Font("Lucida Sans", 12F)
-        computeCSFinalButton.Location = New Point(504, 101)
-        computeCSFinalButton.Name = "computeCSFinalButton"
-        computeCSFinalButton.Size = New Size(169, 48)
-        computeCSFinalButton.TabIndex = 22
-        computeCSFinalButton.Text = "Compute"
-        computeCSFinalButton.UseVisualStyleBackColor = True
-        ' 
-        ' finalCSGrade
-        ' 
-        finalCSGrade.AutoSize = True
-        finalCSGrade.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
-        finalCSGrade.BorderStyle = BorderStyle.Fixed3D
-        finalCSGrade.Font = New Font("Lucida Sans", 48F)
-        finalCSGrade.ForeColor = SystemColors.ButtonHighlight
-        finalCSGrade.Location = New Point(731, 110)
-        finalCSGrade.Name = "finalCSGrade"
-        finalCSGrade.Size = New Size(143, 93)
-        finalCSGrade.TabIndex = 21
-        finalCSGrade.Text = "00"
-        finalCSGrade.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Lucida Sans", 12F)
-        Label10.ForeColor = SystemColors.ButtonHighlight
-        Label10.Location = New Point(52, 113)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(89, 23)
-        Label10.TabIndex = 20
-        Label10.Text = "Quizzes"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Lucida Sans", 12F)
-        Label11.ForeColor = SystemColors.ButtonHighlight
-        Label11.Location = New Point(52, 37)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(123, 23)
-        Label11.TabIndex = 19
-        Label11.Text = "Attendance"
-        ' 
-        ' attCSFinTextBox
-        ' 
-        attCSFinTextBox.Font = New Font("Lucida Sans", 12F)
-        attCSFinTextBox.Location = New Point(52, 62)
-        attCSFinTextBox.Name = "attCSFinTextBox"
-        attCSFinTextBox.Size = New Size(184, 31)
-        attCSFinTextBox.TabIndex = 18
         ' 
         ' studentNameTextBox
         ' 
@@ -512,21 +338,21 @@ Partial Class GradeForm
         semGrade.BorderStyle = BorderStyle.Fixed3D
         semGrade.Font = New Font("Lucida Sans", 40.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         semGrade.ForeColor = SystemColors.ButtonHighlight
-        semGrade.Location = New Point(122, 26)
+        semGrade.Location = New Point(75, 39)
         semGrade.Name = "semGrade"
-        semGrade.Size = New Size(118, 78)
+        semGrade.Size = New Size(180, 78)
         semGrade.TabIndex = 9
-        semGrade.Text = "00"
+        semGrade.Text = "5.00"
         semGrade.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Lucida Sans", 10.8F)
+        Label12.Font = New Font("Lucida Sans", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = SystemColors.ButtonHighlight
-        Label12.Location = New Point(104, 113)
+        Label12.Location = New Point(88, 131)
         Label12.Name = "Label12"
-        Label12.Size = New Size(155, 21)
+        Label12.Size = New Size(142, 19)
         Label12.TabIndex = 10
         Label12.Text = "Semestral Grade"
         ' 
@@ -651,12 +477,233 @@ Partial Class GradeForm
         nullRecordFinal.TabIndex = 0
         nullRecordFinal.Text = "RECORD NOT FOUND..."
         ' 
+        ' finalPanel
+        ' 
+        finalPanel.BackColor = Color.FromArgb(CByte(16), CByte(55), CByte(92))
+        finalPanel.Controls.Add(setPercentageFinButton)
+        finalPanel.Controls.Add(saveFinalButton)
+        finalPanel.Controls.Add(finalPercLabel)
+        finalPanel.Controls.Add(examFinLabel)
+        finalPanel.Controls.Add(examFinTextBox)
+        finalPanel.Controls.Add(caseStudyFinLabel)
+        finalPanel.Controls.Add(caseStudyFinTextBox)
+        finalPanel.Controls.Add(labExerFinTextBox)
+        finalPanel.Controls.Add(labExerFinLabel)
+        finalPanel.Controls.Add(quizFinTextBox)
+        finalPanel.Controls.Add(clearFinalButton)
+        finalPanel.Controls.Add(computeFinalButton)
+        finalPanel.Controls.Add(FinalGradeLabel)
+        finalPanel.Controls.Add(quizFinLabel)
+        finalPanel.Controls.Add(attendanceFinLabel)
+        finalPanel.Controls.Add(attFinTextBox)
+        finalPanel.Location = New Point(36, 459)
+        finalPanel.Name = "finalPanel"
+        finalPanel.Size = New Size(954, 276)
+        finalPanel.TabIndex = 19
+        finalPanel.Visible = False
+        ' 
+        ' setPercentageFinButton
+        ' 
+        setPercentageFinButton.Font = New Font("Lucida Sans", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        setPercentageFinButton.Location = New Point(504, 183)
+        setPercentageFinButton.Name = "setPercentageFinButton"
+        setPercentageFinButton.Size = New Size(169, 48)
+        setPercentageFinButton.TabIndex = 20
+        setPercentageFinButton.Text = "Set Percentage"
+        setPercentageFinButton.UseVisualStyleBackColor = True
+        ' 
+        ' saveFinalButton
+        ' 
+        saveFinalButton.Font = New Font("Lucida Sans", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        saveFinalButton.Location = New Point(846, 19)
+        saveFinalButton.Name = "saveFinalButton"
+        saveFinalButton.Size = New Size(79, 36)
+        saveFinalButton.TabIndex = 19
+        saveFinalButton.Text = "Save"
+        saveFinalButton.UseVisualStyleBackColor = True
+        ' 
+        ' finalPercLabel
+        ' 
+        finalPercLabel.AutoSize = True
+        finalPercLabel.Font = New Font("Lucida Sans", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        finalPercLabel.ForeColor = SystemColors.ButtonHighlight
+        finalPercLabel.Location = New Point(533, 22)
+        finalPercLabel.Name = "finalPercLabel"
+        finalPercLabel.Size = New Size(210, 26)
+        finalPercLabel.TabIndex = 18
+        finalPercLabel.Text = "FINAL GRADE: 0%"
+        ' 
+        ' examFinLabel
+        ' 
+        examFinLabel.AutoSize = True
+        examFinLabel.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        examFinLabel.ForeColor = SystemColors.ButtonHighlight
+        examFinLabel.Location = New Point(278, 101)
+        examFinLabel.Name = "examFinLabel"
+        examFinLabel.Size = New Size(136, 23)
+        examFinLabel.TabIndex = 17
+        examFinLabel.Text = "Final Exam %"
+        ' 
+        ' examFinTextBox
+        ' 
+        examFinTextBox.Enabled = False
+        examFinTextBox.Font = New Font("Lucida Sans", 12F)
+        examFinTextBox.Location = New Point(278, 127)
+        examFinTextBox.Name = "examFinTextBox"
+        examFinTextBox.Size = New Size(184, 31)
+        examFinTextBox.TabIndex = 16
+        ' 
+        ' caseStudyFinLabel
+        ' 
+        caseStudyFinLabel.AutoSize = True
+        caseStudyFinLabel.Font = New Font("Lucida Sans", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        caseStudyFinLabel.ForeColor = SystemColors.ButtonHighlight
+        caseStudyFinLabel.Location = New Point(278, 22)
+        caseStudyFinLabel.Name = "caseStudyFinLabel"
+        caseStudyFinLabel.Size = New Size(206, 21)
+        caseStudyFinLabel.TabIndex = 13
+        caseStudyFinLabel.Text = "Case Study / Project %"
+        ' 
+        ' caseStudyFinTextBox
+        ' 
+        caseStudyFinTextBox.Enabled = False
+        caseStudyFinTextBox.Font = New Font("Lucida Sans", 12F)
+        caseStudyFinTextBox.Location = New Point(278, 50)
+        caseStudyFinTextBox.Name = "caseStudyFinTextBox"
+        caseStudyFinTextBox.Size = New Size(184, 31)
+        caseStudyFinTextBox.TabIndex = 12
+        ' 
+        ' labExerFinTextBox
+        ' 
+        labExerFinTextBox.Enabled = False
+        labExerFinTextBox.Font = New Font("Lucida Sans", 12F)
+        labExerFinTextBox.Location = New Point(52, 210)
+        labExerFinTextBox.Name = "labExerFinTextBox"
+        labExerFinTextBox.Size = New Size(184, 31)
+        labExerFinTextBox.TabIndex = 11
+        ' 
+        ' labExerFinLabel
+        ' 
+        labExerFinLabel.AutoSize = True
+        labExerFinLabel.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        labExerFinLabel.ForeColor = SystemColors.ButtonHighlight
+        labExerFinLabel.Location = New Point(52, 184)
+        labExerFinLabel.Name = "labExerFinLabel"
+        labExerFinLabel.Size = New Size(153, 23)
+        labExerFinLabel.TabIndex = 10
+        labExerFinLabel.Text = "Lab Exercise %"
+        ' 
+        ' quizFinTextBox
+        ' 
+        quizFinTextBox.Enabled = False
+        quizFinTextBox.Font = New Font("Lucida Sans", 12F)
+        quizFinTextBox.Location = New Point(52, 127)
+        quizFinTextBox.Name = "quizFinTextBox"
+        quizFinTextBox.Size = New Size(184, 31)
+        quizFinTextBox.TabIndex = 9
+        ' 
+        ' clearFinalButton
+        ' 
+        clearFinalButton.Font = New Font("Lucida Sans", 12F)
+        clearFinalButton.Location = New Point(504, 127)
+        clearFinalButton.Name = "clearFinalButton"
+        clearFinalButton.Size = New Size(169, 48)
+        clearFinalButton.TabIndex = 8
+        clearFinalButton.Text = "Clear"
+        clearFinalButton.UseVisualStyleBackColor = True
+        ' 
+        ' computeFinalButton
+        ' 
+        computeFinalButton.Font = New Font("Lucida Sans", 12F)
+        computeFinalButton.Location = New Point(504, 73)
+        computeFinalButton.Name = "computeFinalButton"
+        computeFinalButton.Size = New Size(169, 48)
+        computeFinalButton.TabIndex = 7
+        computeFinalButton.Text = "Compute"
+        computeFinalButton.UseVisualStyleBackColor = True
+        ' 
+        ' FinalGradeLabel
+        ' 
+        FinalGradeLabel.AutoSize = True
+        FinalGradeLabel.BackColor = Color.FromArgb(CByte(36), CByte(54), CByte(66))
+        FinalGradeLabel.BorderStyle = BorderStyle.Fixed3D
+        FinalGradeLabel.Font = New Font("Lucida Sans", 48F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FinalGradeLabel.ForeColor = SystemColors.ButtonHighlight
+        FinalGradeLabel.Location = New Point(691, 114)
+        FinalGradeLabel.Name = "FinalGradeLabel"
+        FinalGradeLabel.Size = New Size(143, 93)
+        FinalGradeLabel.TabIndex = 6
+        FinalGradeLabel.Text = "00"
+        FinalGradeLabel.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' quizFinLabel
+        ' 
+        quizFinLabel.AutoSize = True
+        quizFinLabel.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        quizFinLabel.ForeColor = SystemColors.ButtonHighlight
+        quizFinLabel.Location = New Point(52, 101)
+        quizFinLabel.Name = "quizFinLabel"
+        quizFinLabel.Size = New Size(108, 23)
+        quizFinLabel.TabIndex = 4
+        quizFinLabel.Text = "Quizzes %"
+        ' 
+        ' attendanceFinLabel
+        ' 
+        attendanceFinLabel.AutoSize = True
+        attendanceFinLabel.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        attendanceFinLabel.ForeColor = SystemColors.ButtonHighlight
+        attendanceFinLabel.Location = New Point(52, 24)
+        attendanceFinLabel.Name = "attendanceFinLabel"
+        attendanceFinLabel.Size = New Size(142, 23)
+        attendanceFinLabel.TabIndex = 3
+        attendanceFinLabel.Text = "Attendance %"
+        ' 
+        ' attFinTextBox
+        ' 
+        attFinTextBox.Enabled = False
+        attFinTextBox.Font = New Font("Lucida Sans", 12F)
+        attFinTextBox.Location = New Point(52, 50)
+        attFinTextBox.Name = "attFinTextBox"
+        attFinTextBox.Size = New Size(184, 31)
+        attFinTextBox.TabIndex = 0
+        ' 
+        ' noRecordsYetPanel
+        ' 
+        noRecordsYetPanel.BackColor = Color.FromArgb(CByte(60), CByte(61), CByte(55))
+        noRecordsYetPanel.Controls.Add(Panel2)
+        noRecordsYetPanel.Location = New Point(36, 462)
+        noRecordsYetPanel.Name = "noRecordsYetPanel"
+        noRecordsYetPanel.Size = New Size(954, 276)
+        noRecordsYetPanel.TabIndex = 19
+        noRecordsYetPanel.Visible = False
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.Gray
+        Panel2.Controls.Add(noRecordsYetLabel)
+        Panel2.Location = New Point(77, 79)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(796, 107)
+        Panel2.TabIndex = 2
+        ' 
+        ' noRecordsYetLabel
+        ' 
+        noRecordsYetLabel.AutoSize = True
+        noRecordsYetLabel.Font = New Font("Lucida Sans", 40.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        noRecordsYetLabel.ForeColor = SystemColors.Control
+        noRecordsYetLabel.Location = New Point(104, 15)
+        noRecordsYetLabel.Name = "noRecordsYetLabel"
+        noRecordsYetLabel.Size = New Size(562, 76)
+        noRecordsYetLabel.TabIndex = 0
+        noRecordsYetLabel.Text = "NO RECORD YET"
+        ' 
         ' GradeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(52), CByte(49), CByte(49))
         ClientSize = New Size(1030, 772)
+        Controls.Add(finalPanel)
         Controls.Add(searchButton)
         Controls.Add(sectionLabel)
         Controls.Add(studentSectionTextBox)
@@ -668,29 +715,31 @@ Partial Class GradeForm
         Controls.Add(studentNameLabel)
         Controls.Add(studentNumberLabel)
         Controls.Add(studentNameTextBox)
-        Controls.Add(finalPanel)
         Controls.Add(midtermPanel)
         Controls.Add(nullMidtermPanel)
         Controls.Add(nullFinalPanel)
+        Controls.Add(noRecordsYetPanel)
         FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "GradeForm"
         Text = "Grade Form"
         midtermPanel.ResumeLayout(False)
         midtermPanel.PerformLayout()
-        finalPanel.ResumeLayout(False)
-        finalPanel.PerformLayout()
         nullMidtermPanel.ResumeLayout(False)
         nullRecordPanel1.ResumeLayout(False)
         nullRecordPanel1.PerformLayout()
         nullFinalPanel.ResumeLayout(False)
         nullRecordPanel2.ResumeLayout(False)
         nullRecordPanel2.PerformLayout()
+        finalPanel.ResumeLayout(False)
+        finalPanel.PerformLayout()
+        noRecordsYetPanel.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents midtermPanel As Panel
-    Friend WithEvents finalPanel As Panel
     Friend WithEvents studentNameTextBox As TextBox
     Friend WithEvents studentNumberLabel As Label
     Friend WithEvents studentNameLabel As Label
@@ -710,36 +759,40 @@ Partial Class GradeForm
     Friend WithEvents examMidTextBox As TextBox
     Friend WithEvents recitationMidLabel As Label
     Friend WithEvents recitationMidTextBox As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents examCSFinTextBox As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents caseStudyCSFinTextBox As TextBox
-    Friend WithEvents LabExerCSFinTextBox As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents quizCSFinTextBox As TextBox
-    Friend WithEvents clearCSFinalButton As Button
-    Friend WithEvents computeCSFinalButton As Button
-    Friend WithEvents finalCSGrade As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents attCSFinTextBox As TextBox
     Friend WithEvents midtermPercLabel As Label
-    Friend WithEvents finalCSGradeLabel As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents studentNumberTextBox As MaskedTextBox
     Friend WithEvents saveMidtermButton As Button
-    Friend WithEvents saveCSFinalButton As Button
     Friend WithEvents courseLabel As Label
     Friend WithEvents studentCourseTextBox As TextBox
     Friend WithEvents sectionLabel As Label
     Friend WithEvents studentSectionTextBox As TextBox
     Friend WithEvents searchButton As Button
     Friend WithEvents setPercentageMidButton As Button
-    Friend WithEvents setPercentageFinalButton As Button
     Friend WithEvents nullMidtermPanel As Panel
     Friend WithEvents nullFinalPanel As Panel
     Friend WithEvents nullRecordMidterm As Label
     Friend WithEvents nullRecordPanel1 As Panel
     Friend WithEvents nullRecordPanel2 As Panel
     Friend WithEvents nullRecordFinal As Label
+    Friend WithEvents finalPanel As Panel
+    Friend WithEvents setPercentageFinButton As Button
+    Friend WithEvents saveFinalButton As Button
+    Friend WithEvents finalPercLabel As Label
+    Friend WithEvents examFinLabel As Label
+    Friend WithEvents examFinTextBox As TextBox
+    Friend WithEvents caseStudyFinLabel As Label
+    Friend WithEvents caseStudyFinTextBox As TextBox
+    Friend WithEvents labExerFinTextBox As TextBox
+    Friend WithEvents labExerFinLabel As Label
+    Friend WithEvents quizFinTextBox As TextBox
+    Friend WithEvents clearFinalButton As Button
+    Friend WithEvents computeFinalButton As Button
+    Friend WithEvents FinalGradeLabel As Label
+    Friend WithEvents quizFinLabel As Label
+    Friend WithEvents attendanceFinLabel As Label
+    Friend WithEvents attFinTextBox As TextBox
+    Friend WithEvents noRecordsYetPanel As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents noRecordsYetLabel As Label
 End Class
