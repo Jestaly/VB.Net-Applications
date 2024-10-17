@@ -103,7 +103,8 @@
                             "Barangay: " & barangayName.Text & vbNewLine &
                             "City: " & cityName.Text, "ADDRESS INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            Dispose()
+            GradeInterface.showLoginForm()
+            Close()
         Else
             MessageBox.Show("Error, some field/s are invalid.", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error)
         End If

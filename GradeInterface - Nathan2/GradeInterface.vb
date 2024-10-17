@@ -1,14 +1,22 @@
 ﻿Public Class GradeInterface
-    Dim gradeForm As New GradeForm()
-    Dim registerForm As New RegisterFormNathan()
-    Dim loginForm As New LoginForm()
+    Public Sub showGradeForm()
+        Dim gradeForm As New GradeForm()
+        gradeForm.MdiParent = Me
+        gradeForm.Show()
+    End Sub
+    Public Sub showLoginForm()
+        Dim loginForm As New LoginForm()
+        loginForm.MdiParent = Me
+        LoginForm.Show()
+    End Sub
     Private Sub gradesMenu_Click(sender As Object, e As EventArgs) Handles gradesMenu.Click
-
+        Dim gradeForm As New GradeForm()
         gradeForm.MdiParent = Me
         gradeForm.Show()
     End Sub
 
     Private Sub signUpMenu_Click(sender As Object, e As EventArgs) Handles signUpMenu.Click
+        Dim registerForm As New RegisterFormNathan()
         registerForm.MdiParent = Me
         registerForm.Show()
     End Sub
@@ -18,25 +26,30 @@
     End Sub
 
     Private Sub loginMenu_Click(sender As Object, e As EventArgs) Handles loginMenu.Click
-
-        LoginForm.MdiParent = Me
+        Dim loginForm As New LoginForm()
+        loginForm.MdiParent = Me
         loginForm.Show()
     End Sub
 
     Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles refreshButton.Click
-        gradeForm.setDefaultForm()
-        gradeForm.setDefaultFormFinal()
-        gradeForm.studentNumberTextBox.Clear()
-        gradeForm.studentNameTextBox.Clear()
-        gradeForm.studentCourseTextBox.Clear()
-        gradeForm.studentSectionTextBox.Clear()
-        gradeForm.midtermPanel.Visible = False
-        gradeForm.finalPanel.Visible = False
-        gradeForm.nullMidtermPanel.Visible = False
-        gradeForm.nullFinalPanel.Visible = False
-        gradeForm.noRecordsYetPanel.Visible = False
-        gradeForm.semGrade.Text = "X.XX"
+        GradeForm.setDefaultForm()
+        GradeForm.setDefaultFormFinal()
+        GradeForm.studentNumberTextBox.Clear()
+        GradeForm.studentNameTextBox.Clear()
+        GradeForm.studentCourseTextBox.Clear()
+        GradeForm.studentSectionTextBox.Clear()
+        GradeForm.midtermPanel.Visible = False
+        GradeForm.finalPanel.Visible = False
+        GradeForm.nullMidtermPanel.Visible = False
+        GradeForm.nullFinalPanel.Visible = False
+        GradeForm.noRecordsYetPanel.Visible = False
+        GradeForm.semGrade.Text = "X.XX"
     End Sub
 
+    Private Sub GradeInterface_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim registerForm As New RegisterFormNathan()
+        registerForm.MdiParent = Me
+        registerForm.Show()
 
+    End Sub
 End Class

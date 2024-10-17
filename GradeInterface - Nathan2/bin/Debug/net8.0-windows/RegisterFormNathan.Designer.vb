@@ -70,7 +70,7 @@ Partial Class RegisterFormNathan
         ' userName
         ' 
         userName.BackColor = Color.White
-        userName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        userName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         userName.ForeColor = SystemColors.ControlText
         userName.Location = New Point(30, 92)
         userName.Name = "userName"
@@ -82,7 +82,7 @@ Partial Class RegisterFormNathan
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        Label1.Font = New Font("Verdana", 22.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(399, 18)
         Label1.Name = "Label1"
         Label1.Size = New Size(265, 45)
@@ -92,7 +92,7 @@ Partial Class RegisterFormNathan
         ' confirmPassword
         ' 
         confirmPassword.BackColor = Color.White
-        confirmPassword.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        confirmPassword.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         confirmPassword.ForeColor = SystemColors.ControlText
         confirmPassword.Location = New Point(30, 209)
         confirmPassword.Name = "confirmPassword"
@@ -104,7 +104,7 @@ Partial Class RegisterFormNathan
         ' password
         ' 
         password.BackColor = Color.White
-        password.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        password.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         password.ForeColor = SystemColors.ControlText
         password.Location = New Point(30, 149)
         password.Name = "password"
@@ -177,8 +177,8 @@ Partial Class RegisterFormNathan
         ' 
         ' birthday
         ' 
-        birthday.CalendarFont = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
-        birthday.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        birthday.CalendarFont = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        birthday.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         birthday.Location = New Point(30, 268)
         birthday.Name = "birthday"
         birthday.Size = New Size(271, 30)
@@ -206,7 +206,7 @@ Partial Class RegisterFormNathan
         ' 
         ' emailName
         ' 
-        emailName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        emailName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         emailName.Location = New Point(30, 35)
         emailName.Name = "emailName"
         emailName.PlaceholderText = "Email"
@@ -362,7 +362,7 @@ Partial Class RegisterFormNathan
         ' 
         ' phoneNumberName
         ' 
-        phoneNumberName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        phoneNumberName.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         phoneNumberName.Location = New Point(28, 160)
         phoneNumberName.Mask = "999-000-0000"
         phoneNumberName.Name = "phoneNumberName"
@@ -407,7 +407,7 @@ Partial Class RegisterFormNathan
         ' 
         ' surname
         ' 
-        surname.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        surname.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         surname.Location = New Point(29, 34)
         surname.Name = "surname"
         surname.PlaceholderText = "Surname"
@@ -474,9 +474,9 @@ Partial Class RegisterFormNathan
         ' 
         ' RegisterFormNathan
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.DarkRed
+        BackColor = Color.FromArgb(CByte(46), CByte(7), CByte(63))
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(991, 450)
         Controls.Add(panel1)
@@ -484,7 +484,7 @@ Partial Class RegisterFormNathan
         Controls.Add(Label1)
         Controls.Add(panel3)
         ForeColor = SystemColors.Control
-        FormBorderStyle = FormBorderStyle.FixedDialog
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "RegisterFormNathan"
         Text = "Register"
         genderRadioButton.ResumeLayout(False)

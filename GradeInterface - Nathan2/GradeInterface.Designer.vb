@@ -72,6 +72,7 @@ Partial Class GradeInterface
         ' 
         ' gradesMenu
         ' 
+        gradesMenu.Enabled = False
         gradesMenu.Name = "gradesMenu"
         gradesMenu.Size = New Size(69, 24)
         gradesMenu.Text = "Grades"
@@ -99,7 +100,7 @@ Partial Class GradeInterface
         refreshButton.ImageTransparentColor = Color.Magenta
         refreshButton.Name = "refreshButton"
         refreshButton.Size = New Size(29, 24)
-        refreshButton.Text = "ToolStripButton1"
+        refreshButton.Text = "Reset"
         ' 
         ' GradeInterface
         ' 

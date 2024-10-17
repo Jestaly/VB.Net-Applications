@@ -10,7 +10,9 @@
         If (usernameTextBoxForm.Text.Equals("Jestaly") And passwordTextBoxForm.Text.Equals("Castillo")) Then
             MessageBox.Show("Login Success!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            Dispose()
+            GradeInterface.gradesMenu.Enabled = True
+            GradeInterface.showGradeForm()
+            Close()
         ElseIf counter = 0 Then
             MessageBox.Show("Login Failed. Max Attempt", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Close()

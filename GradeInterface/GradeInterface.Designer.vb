@@ -31,7 +31,7 @@ Partial Class GradeInterface
         signUpMenu = New ToolStripMenuItem()
         ToolStrip1 = New ToolStrip()
         refreshButton = New ToolStripButton()
-        ToolStripButton1 = New ToolStripButton()
+        saveButton = New ToolStripButton()
         MenuStrip1.SuspendLayout()
         ToolStrip1.SuspendLayout()
         SuspendLayout()
@@ -50,43 +50,50 @@ Partial Class GradeInterface
         ' 
         fileMenu.DropDownItems.AddRange(New ToolStripItem() {loginMenu, logoutMenu, exitMenu})
         fileMenu.Name = "fileMenu"
+        fileMenu.ShortcutKeys = Keys.Alt Or Keys.F
         fileMenu.Size = New Size(46, 24)
         fileMenu.Text = "File"
         ' 
         ' loginMenu
         ' 
         loginMenu.Name = "loginMenu"
-        loginMenu.Size = New Size(139, 26)
+        loginMenu.ShortcutKeys = Keys.Control Or Keys.L
+        loginMenu.Size = New Size(224, 26)
         loginMenu.Text = "Login"
         ' 
         ' logoutMenu
         ' 
         logoutMenu.Name = "logoutMenu"
-        logoutMenu.Size = New Size(139, 26)
+        logoutMenu.ShortcutKeys = Keys.Control Or Keys.Y
+        logoutMenu.Size = New Size(224, 26)
         logoutMenu.Text = "Logout"
         ' 
         ' exitMenu
         ' 
         exitMenu.Name = "exitMenu"
-        exitMenu.Size = New Size(139, 26)
+        exitMenu.ShortcutKeys = Keys.Control Or Keys.X
+        exitMenu.Size = New Size(224, 26)
         exitMenu.Text = "Exit"
         ' 
         ' gradesMenu
         ' 
+        gradesMenu.Enabled = False
         gradesMenu.Name = "gradesMenu"
+        gradesMenu.ShortcutKeys = Keys.Alt Or Keys.G
         gradesMenu.Size = New Size(69, 24)
         gradesMenu.Text = "Grades"
         ' 
         ' signUpMenu
         ' 
         signUpMenu.Name = "signUpMenu"
+        signUpMenu.ShortcutKeys = Keys.Alt Or Keys.S
         signUpMenu.Size = New Size(75, 24)
         signUpMenu.Text = "Sign Up"
         ' 
         ' ToolStrip1
         ' 
         ToolStrip1.ImageScalingSize = New Size(20, 20)
-        ToolStrip1.Items.AddRange(New ToolStripItem() {refreshButton, ToolStripButton1})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {refreshButton, saveButton})
         ToolStrip1.Location = New Point(0, 28)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(800, 27)
@@ -100,16 +107,16 @@ Partial Class GradeInterface
         refreshButton.ImageTransparentColor = Color.Magenta
         refreshButton.Name = "refreshButton"
         refreshButton.Size = New Size(29, 24)
-        refreshButton.Text = "ToolStripButton1"
+        refreshButton.Text = "Reset"
         ' 
-        ' ToolStripButton1
+        ' saveButton
         ' 
-        ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Image = My.Resources.Resources.save
-        ToolStripButton1.ImageTransparentColor = Color.Magenta
-        ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(29, 24)
-        ToolStripButton1.Text = "ToolStripButton1"
+        saveButton.DisplayStyle = ToolStripItemDisplayStyle.Image
+        saveButton.Image = My.Resources.Resources.save
+        saveButton.ImageTransparentColor = Color.Magenta
+        saveButton.Name = "saveButton"
+        saveButton.Size = New Size(29, 24)
+        saveButton.Text = "Save"
         ' 
         ' GradeInterface
         ' 
@@ -143,6 +150,6 @@ Partial Class GradeInterface
     Friend WithEvents signUpMenu As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents refreshButton As ToolStripButton
-    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents saveButton As ToolStripButton
 
 End Class

@@ -1,20 +1,40 @@
 ﻿
 Public Class GradeForm
-    'Midterm Variables
-    Private attDouble, quizDouble, labExerDouble, caseStudyDouble, recitationDouble, examMidtermDouble As Double
-    Private attStr, quizStr, labExerStr, caseStudyStr, recitationStr, examMidtermStr As String
 
-    'Final Variables
-    Private attDoubleFin, quizDoubleFin, labExerDoubleFin, caseStudyDoubleFin, examFinalDouble As Double
-    Private attStrFin, quizStrFin, labExerStrFin, caseStudyStrFin, examFinalStr As String
-
-    Private studentOrder As Integer
-    Dim student As New Student()
+    Public Sub courseChecker(studentCourse)
+        If (studentCourse.Equals("BSCS")) Then
+            midtermPanel.Visible = True
+            If (student.studentSaveArr(studentOrder)) Then
+                finalPanel.Visible = True
+            End If
+            midtermPanel.BackColor = Color.FromArgb(73, 36, 62)
+            finalPanel.BackColor = Color.FromArgb(73, 36, 62)
+        ElseIf (studentCourse.Equals("BSIT")) Then
+            midtermPanel.Visible = True
+            If (student.studentSaveArr(studentOrder)) Then
+                finalPanel.Visible = True
+            End If
+            midtermPanel.BackColor = Color.FromArgb(73, 36, 62)
+            finalPanel.BackColor = Color.FromArgb(73, 36, 62)
+        ElseIf (studentCourse.Equals("BAED")) Then
+            midtermPanel.Visible = True
+            If (student.studentSaveArr(studentOrder)) Then
+                finalPanel.Visible = True
+            End If
+            midtermPanel.BackColor = Color.FromArgb(73, 36, 62)
+            finalPanel.BackColor = Color.FromArgb(73, 36, 62)
+        Else
+            midtermPanel.Visible = False
+            finalPanel.Visible = False
+            nullMidtermPanel.Visible = True
+            nullFinalPanel.Visible = True
+        End If
+    End Sub
 
     Private Sub searchButton_Click(sender As Object, e As EventArgs) Handles searchButton.Click
 
         studentOrder = 0
-        semGrade.Text = "5.00"
+        semGrade.Text = "X.XX"
         Dim studentNumber As String = studentNumberTextBox.Text
         Dim studentName As String = studentNameTextBox.Text
         Dim studentCourse As String = studentCourseTextBox.Text
@@ -36,6 +56,7 @@ Public Class GradeForm
                     examMidTextBox.Text = student.studentMidtermExamArr(i)
                     midtermGradeLabel.Text = student.studentMidtermGradeArr(i)
                     midtermPercLabel.Text = "MIDTERM GRADE: " & student.studentMidtermPercArr(i) & "%"
+                    midtermPerc = student.studentMidtermPercArr(i)
                     attPerc = student.studentAttPercArr(i)
                     quizPerc = student.studentQuizPercArr(i)
                     labExerPerc = student.studentLabExerPercArr(i)
@@ -79,6 +100,7 @@ Public Class GradeForm
                     examFinTextBox.Text = student.studentFinalExamArr(i)
                     FinalGradeLabel.Text = student.studentFinalGradeArr(i)
                     finalPercLabel.Text = "FINAL GRADE: " & student.studentFinalPercArr(i) & "%"
+                    finalPerc = student.studentFinalPercArr(i)
                     attPercFin = student.studentAttPercArrFin(i)
                     quizPercFin = student.studentQuizPercArrFin(i)
                     labExerPercFin = student.studentLabExerPercArrFin(i)
@@ -134,7 +156,16 @@ Public Class GradeForm
         courseChecker(studentCourse)
 
     End Sub
+    'Midterm Variables
+    Private attDouble, quizDouble, labExerDouble, caseStudyDouble, recitationDouble, examMidtermDouble As Double
+    Private attStr, quizStr, labExerStr, caseStudyStr, recitationStr, examMidtermStr As String
 
+    'Final Variables
+    Private attDoubleFin, quizDoubleFin, labExerDoubleFin, caseStudyDoubleFin, examFinalDouble As Double
+    Private attStrFin, quizStrFin, labExerStrFin, caseStudyStrFin, examFinalStr As String
+
+    Private studentOrder As Integer
+    Dim student As New Student()
     Public Sub setDefaultForm()
         attMidTextBox.Clear()
         quizMidTextBox.Clear()
@@ -177,6 +208,7 @@ Public Class GradeForm
         percentageName = ""
         totalPercentage = 0
         percentageTracker = 0
+        midtermPerc = 0
         attMidTextBox.Enabled = False
         quizMidTextBox.Enabled = False
         labExerMidTextBox.Enabled = False
@@ -226,42 +258,13 @@ Public Class GradeForm
         percentageNameFin = ""
         totalPercentageFin = 0
         percentageTrackerFin = 0
+        finalPerc = 0
         attFinTextBox.Enabled = False
         quizFinTextBox.Enabled = False
         labExerFinTextBox.Enabled = False
         caseStudyFinTextBox.Enabled = False
         examFinTextBox.Enabled = False
 
-    End Sub
-
-    Public Sub courseChecker(studentCourse)
-        If (studentCourse.Equals("BSCS")) Then
-            midtermPanel.Visible = True
-            If (student.studentSaveArr(studentOrder)) Then
-                finalPanel.Visible = True
-            End If
-            midtermPanel.BackColor = Color.FromArgb(16, 55, 92)
-            finalPanel.BackColor = Color.FromArgb(16, 55, 92)
-        ElseIf (studentCourse.Equals("BSN")) Then
-            midtermPanel.Visible = True
-            If (student.studentSaveArr(studentOrder)) Then
-                finalPanel.Visible = True
-            End If
-            midtermPanel.BackColor = Color.FromArgb(210, 100, 154)
-            finalPanel.BackColor = Color.FromArgb(210, 100, 154)
-        ElseIf (studentCourse.Equals("BSCE")) Then
-            midtermPanel.Visible = True
-            If (student.studentSaveArr(studentOrder)) Then
-                finalPanel.Visible = True
-            End If
-            midtermPanel.BackColor = Color.FromArgb(179, 19, 18)
-            finalPanel.BackColor = Color.FromArgb(179, 19, 18)
-        Else
-            midtermPanel.Visible = False
-            finalPanel.Visible = False
-            nullMidtermPanel.Visible = True
-            nullFinalPanel.Visible = True
-        End If
     End Sub
 
     Private Sub clearMidtermButton_Click(sender As Object, e As EventArgs) Handles clearMidtermButton.Click
@@ -283,7 +286,7 @@ Public Class GradeForm
                 attDouble = Double.Parse(e.KeyChar)
                 attStr &= attDouble
             End If
-            If Double.Parse(attStr) < 0 Or Double.Parse(attStr) > Integer.Parse(attPercStr) Then
+            If Double.Parse(attStr) < 0 Or Double.Parse(attStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 attMidTextBox.Clear()
@@ -305,7 +308,7 @@ Public Class GradeForm
                 quizDouble = Integer.Parse(e.KeyChar)
                 quizStr &= quizDouble
             End If
-            If Double.Parse(quizStr) < 0 Or Double.Parse(quizStr) > Double.Parse(quizPercStr) Then
+            If Double.Parse(quizStr) < 0 Or Double.Parse(quizStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 quizMidTextBox.Clear()
@@ -327,7 +330,7 @@ Public Class GradeForm
                 labExerDouble = Integer.Parse(e.KeyChar)
                 labExerStr &= labExerDouble
             End If
-            If Double.Parse(labExerStr) < 0 Or Double.Parse(labExerStr) > Double.Parse(labExerPercStr) Then
+            If Double.Parse(labExerStr) < 0 Or Double.Parse(labExerStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 labExerMidTextBox.Clear()
@@ -349,7 +352,7 @@ Public Class GradeForm
                 caseStudyDouble = Integer.Parse(e.KeyChar)
                 caseStudyStr &= caseStudyDouble
             End If
-            If Double.Parse(caseStudyStr) < 0 Or Double.Parse(caseStudyStr) > Double.Parse(caseStudyPercStr) Then
+            If Double.Parse(caseStudyStr) < 0 Or Double.Parse(caseStudyStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 caseStudyMidTextBox.Clear()
@@ -372,7 +375,7 @@ Public Class GradeForm
                 recitationStr &= recitationDouble
             End If
 
-            If Double.Parse(recitationStr) < 0 Or Double.Parse(recitationStr) > Double.Parse(recitationPercStr) Then
+            If Double.Parse(recitationStr) < 0 Or Double.Parse(recitationStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 recitationMidTextBox.Clear()
@@ -394,7 +397,7 @@ Public Class GradeForm
                 examMidtermDouble = Integer.Parse(e.KeyChar)
                 examMidtermStr &= examMidtermDouble
             End If
-            If Double.Parse(examMidtermStr) < 0 Or Double.Parse(examMidtermStr) > Double.Parse(examMidtermPercStr) Then
+            If Double.Parse(examMidtermStr) < 0 Or Double.Parse(examMidtermStr) > 100 Then
                 e.Handled = True
                 Console.Beep()
                 examMidTextBox.Clear()
@@ -412,18 +415,18 @@ Public Class GradeForm
     Public Function setPercentage(percentage As Integer, percentageStr As String, percentageName As String)
         While True
             Try
-                percentageStr = InputBox("Enter " & percentageName & " Percentage")
+                percentageStr = InputBox("Enter " & percentageName & " Percentage", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 percentage = Integer.Parse(percentageStr)
                 If (percentage >= 0) Then
                     percentageTracker += 1
                     Return percentageStr
                 End If
-                MessageBox.Show("No negative numbers allowed.")
+                MessageBox.Show("No negative numbers allowed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Catch ex As Exception
                 If (percentageStr.Equals("")) Then
                     Return percentageStr
                 End If
-                MessageBox.Show("Only numbers Allowed.")
+                MessageBox.Show("Only numbers Allowed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End While
         Return percentageStr
@@ -432,18 +435,18 @@ Public Class GradeForm
     Public Function setPercentageFin(percentage As Integer, percentageStr As String, percentageName As String)
         While True
             Try
-                percentageStr = InputBox("Enter " & percentageName & " Percentage")
+                percentageStr = InputBox("Enter " & percentageName & " Percentage", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 percentage = Integer.Parse(percentageStr)
                 If (percentage >= 0) Then
                     percentageTrackerFin += 1
                     Return percentageStr
                 End If
-                MessageBox.Show("No negative numbers allowed.")
+                MessageBox.Show("No negative numbers allowed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Catch ex As Exception
                 If (percentageStr.Equals("")) Then
                     Return percentageStr
                 End If
-                MessageBox.Show("Only numbers Allowed.")
+                MessageBox.Show("Only numbers Allowed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End While
         Return percentageStr
@@ -513,10 +516,9 @@ Public Class GradeForm
             End If
         Next
         totalPercentage = attPerc + quizPerc + labExerPerc + caseStudyPerc + recitationPerc + examMidtermPerc
-        MessageBox.Show(totalPercentage)
 
         If Not totalPercentage = 100 Then
-            MessageBox.Show("Total Percentage must equal to 100.")
+            MessageBox.Show("Total Percentage must equal to 100.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             attPercStr = ""
             quizPercStr = ""
             labExerPercStr = ""
@@ -551,19 +553,19 @@ Public Class GradeForm
 
     Private Sub computeMidtermButton_Click(sender As Object, e As EventArgs) Handles computeMidtermButton.Click
         Try
-            attDouble = Double.Parse(attStr)
-            quizDouble = Double.Parse(quizStr)
-            labExerDouble = Double.Parse(labExerStr)
-            caseStudyDouble = Double.Parse(caseStudyStr)
-            recitationDouble = Double.Parse(recitationStr)
-            examMidtermDouble = Double.Parse(examMidtermStr)
+            attDouble = Double.Parse(attStr) * (attPercStr / 100)
+            quizDouble = Double.Parse(quizStr) * (quizPercStr / 100)
+            labExerDouble = Double.Parse(labExerStr) * (labExerPercStr / 100)
+            caseStudyDouble = Double.Parse(caseStudyStr) * (caseStudyPercStr / 100)
+            recitationDouble = Double.Parse(recitationStr) * (recitationPercStr / 100)
+            examMidtermDouble = Double.Parse(examMidtermStr) * (examMidtermPercStr / 100)
 
             midtermGrade = attDouble + quizDouble + labExerDouble + caseStudyDouble + recitationDouble + examMidtermDouble
-            midtermGradeLabel.Text = midtermGrade
-            midtermPerc = midtermGrade * 0.5
-            midtermPercLabel.Text = "MIDTERM GRADE: " & midtermPerc & "%"
+            midtermGradeLabel.Text = Math.Round(midtermGrade, 2)
+            midtermPerc = Math.Round(midtermGrade, 2) * 0.5
+            midtermPercLabel.Text = "MIDTERM GRADE: " & Math.Round(midtermPerc, 2) & "%"
         Catch ex As Exception
-            MessageBox.Show("Enter a Percentages First.")
+            MessageBox.Show("Enter a Percentages First.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub
@@ -590,7 +592,7 @@ Public Class GradeForm
                 finalPanel.Visible = True
             End If
         Catch ex As Exception
-            MessageBox.Show("Fill all fields first.")
+            MessageBox.Show("Fill all fields first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
 
@@ -650,10 +652,9 @@ Public Class GradeForm
             End If
         Next
         totalPercentageFin = attPercFin + quizPercFin + labExerPercFin + caseStudyPercFin + recitationPercFin + examFinalPerc
-        MessageBox.Show(totalPercentageFin)
 
         If Not totalPercentageFin = 100 Then
-            MessageBox.Show("Total Percentage must equal to 100.")
+            MessageBox.Show("Total Percentage must equal to 100.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             attPercStrFin = ""
             quizPercStrFin = ""
             labExerPercStrFin = ""
@@ -685,7 +686,7 @@ Public Class GradeForm
                 attDoubleFin = Double.Parse(e.KeyChar)
                 attStrFin &= attDoubleFin
             End If
-            If Double.Parse(attStrFin) < 0 Or Double.Parse(attStrFin) > Integer.Parse(attPercStrFin) Then
+            If Double.Parse(attStrFin) < 0 Or Double.Parse(attStrFin) > 100 Then
                 e.Handled = True
                 attFinTextBox.Clear()
                 attStrFin = ""
@@ -705,7 +706,7 @@ Public Class GradeForm
                 quizDoubleFin = Double.Parse(e.KeyChar)
                 quizStrFin &= quizDoubleFin
             End If
-            If Double.Parse(quizStrFin) < 0 Or Double.Parse(quizStrFin) > Integer.Parse(quizPercStrFin) Then
+            If Double.Parse(quizStrFin) < 0 Or Double.Parse(quizStrFin) > 100 Then
                 e.Handled = True
                 quizFinTextBox.Clear()
                 quizStrFin = ""
@@ -725,7 +726,7 @@ Public Class GradeForm
                 labExerDoubleFin = Double.Parse(e.KeyChar)
                 labExerStrFin &= labExerDoubleFin
             End If
-            If Double.Parse(labExerStrFin) < 0 Or Double.Parse(labExerStrFin) > Integer.Parse(labExerPercStrFin) Then
+            If Double.Parse(labExerStrFin) < 0 Or Double.Parse(labExerStrFin) > 100 Then
                 e.Handled = True
                 labExerFinTextBox.Clear()
                 labExerStrFin = ""
@@ -745,7 +746,7 @@ Public Class GradeForm
                 caseStudyDoubleFin = Double.Parse(e.KeyChar)
                 caseStudyStrFin &= caseStudyDoubleFin
             End If
-            If Double.Parse(caseStudyStrFin) < 0 Or Double.Parse(caseStudyStrFin) > Integer.Parse(caseStudyPercStrFin) Then
+            If Double.Parse(caseStudyStrFin) < 0 Or Double.Parse(caseStudyStrFin) > 100 Then
                 e.Handled = True
                 caseStudyFinTextBox.Clear()
                 caseStudyStrFin = ""
@@ -765,7 +766,7 @@ Public Class GradeForm
                 examFinalDouble = Double.Parse(e.KeyChar)
                 examFinalStr &= examFinalDouble
             End If
-            If Double.Parse(examFinalStr) < 0 Or Double.Parse(examFinalStr) > Integer.Parse(examFinalPercStr) Then
+            If Double.Parse(examFinalStr) < 0 Or Double.Parse(examFinalStr) > 100 Then
                 e.Handled = True
                 examFinTextBox.Clear()
                 examFinalStr = ""
@@ -777,18 +778,18 @@ Public Class GradeForm
 
     Private Sub computeFinalButton_Click(sender As Object, e As EventArgs) Handles computeFinalButton.Click
         Try
-            attDoubleFin = Double.Parse(attStrFin)
-            quizDoubleFin = Double.Parse(quizStrFin)
-            labExerDoubleFin = Double.Parse(labExerStrFin)
-            caseStudyDoubleFin = Double.Parse(caseStudyStrFin)
-            examFinalDouble = Double.Parse(examFinalStr)
+            attDoubleFin = Double.Parse(attStrFin) * (attPercStrFin / 100)
+            quizDoubleFin = Double.Parse(quizStrFin) * (quizPercStrFin / 100)
+            labExerDoubleFin = Double.Parse(labExerStrFin) * (labExerPercStrFin / 100)
+            caseStudyDoubleFin = Double.Parse(caseStudyStrFin) * (caseStudyPercStrFin / 100)
+            examFinalDouble = Double.Parse(examFinalStr) * (examFinalPercStr / 100)
 
             finalGrade = attDoubleFin + quizDoubleFin + labExerDoubleFin + caseStudyDoubleFin + examFinalDouble
-            FinalGradeLabel.Text = finalGrade
-            finalPerc = finalGrade * 0.5
-            finalPercLabel.Text = "FINAL GRADE: " & finalPerc & "%"
+            FinalGradeLabel.Text = Math.Round(finalGrade, 2)
+            finalPerc = Math.Round(finalGrade, 2) * 0.5
+            finalPercLabel.Text = "FINAL GRADE: " & Math.Round(finalPerc, 2) & "%"
         Catch ex As Exception
-            MessageBox.Show("Enter a Percentages first.")
+            MessageBox.Show("Enter a Percentages first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
     Private semestralGrade As Double
@@ -796,28 +797,30 @@ Public Class GradeForm
     Private Sub saveFinalButton_Click(sender As Object, e As EventArgs) Handles saveFinalButton.Click
 
         Try
-            semestralPerc = finalPerc + midtermPerc
+            If (Not (finalPerc = 0.0)) Then
+                semestralPerc = finalPerc + midtermPerc
 
-            Select Case semestralPerc
-                Case Is >= 98
-                    semGrade.Text = "1.00"
-                Case Is >= 96
-                    semGrade.Text = "1.25"
-                Case Is >= 93
-                    semGrade.Text = "1.50"
-                Case Is >= 89
-                    semGrade.Text = "1.75"
-                Case Is >= 85
-                    semGrade.Text = "2.00"
-                Case Is >= 82
-                    semGrade.Text = "2.25"
-                Case Is >= 79
-                    semGrade.Text = "2.50"
-                Case Is >= 75
-                    semGrade.Text = "2.75"
-                Case Is < 75
-                    semGrade.Text = "3.00"
-            End Select
+                Select Case semestralPerc
+                    Case Is >= 98
+                        semGrade.Text = "1.00"
+                    Case Is >= 96
+                        semGrade.Text = "1.25"
+                    Case Is >= 93
+                        semGrade.Text = "1.50"
+                    Case Is >= 89
+                        semGrade.Text = "1.75"
+                    Case Is >= 85
+                        semGrade.Text = "2.00"
+                    Case Is >= 82
+                        semGrade.Text = "2.25"
+                    Case Is >= 79
+                        semGrade.Text = "2.50"
+                    Case Is >= 75
+                        semGrade.Text = "2.75"
+                    Case Is < 75
+                        semGrade.Text = "3.00"
+                End Select
+            End If
 
             student.studentAttendanceArrFin(studentOrder) = Double.Parse(attStrFin)
             student.studentQuizzesArrFin(studentOrder) = Double.Parse(quizStrFin)
@@ -834,19 +837,18 @@ Public Class GradeForm
             student.studentSemestralGrade(studentOrder) = semGrade.Text
             student.studentSaveArrFin(studentOrder) = True
         Catch ex As Exception
-            MessageBox.Show("Fill all fields first.")
+            MessageBox.Show("Fill all fields first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub
 
-
 End Class
 
 Public Class Student
-    Public studentNumArr() As String = {"23-00219", "23-00418", "22-01024", "21-00325"}
-    Public studentNameArr() As String = {"JESTALY JOSEPH CASTILLO", "CAL NEWPORT", "ROBERT KIYOSAKI", "MICHAEL GRANT"}
-    Public studentCourseArr() As String = {"BSCS", "BSN", "BSCE", "BSCS"}
-    Public studentSectionArr() As String = {"2A", "1B", "3F", "1A"}
+    Public studentNumArr() As String = {"23-00154", "24-01212", "22-00924", "21-00839"}
+    Public studentNameArr() As String = {"ARMANDO PACAMPARA", "NATHAN MARTINEZ", "MANDOAR ABARADO", "JOSHUA GARCIA"}
+    Public studentCourseArr() As String = {"BSCS", "BSIT", "BAED", "BSIT"}
+    Public studentSectionArr() As String = {"2A", "4A", "1B", "3D"}
     Public studentAttendanceArr() As Double = {0, 0, 0, 0}
     Public studentQuizzesArr() As Double = {0, 0, 0, 0}
     Public studentLabExerciseArr() As Double = {0, 0, 0, 0}
@@ -879,5 +881,5 @@ Public Class Student
     Public studentSaveArrFin() As Boolean = {False, False, False, False}
 
     'SEMESTER VARIABLE
-    Public studentSemestralGrade() As String = {"5.00", "5.00", "5.00", "5.00"}
+    Public studentSemestralGrade() As String = {"X.XX", "X.XX", "X.XX", "X.XX"}
 End Class

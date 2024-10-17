@@ -1,5 +1,6 @@
 ﻿Public Class RegisterFormNathan
-
+    Public registered As Boolean
+    'Public gradeInterface As New GradeInterface
     Private Sub confirmButton_Click(sender As Object, e As EventArgs) Handles confirmButton.Click
 
         Dim userNameError = False
@@ -82,7 +83,10 @@
                             "City: " & cityName.Text, "Information", MessageBoxButtons.OK,
                                                                       MessageBoxIcon.Information
                            )
+            registered = True
 
+            GradeInterface.showLoginForm()
+            Close()
         Else
             MessageBox.Show("Check invalid field/s.", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error)
         End If
@@ -94,7 +98,7 @@
         End
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub RegisterFormNathan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

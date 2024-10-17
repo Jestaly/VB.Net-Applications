@@ -698,7 +698,7 @@ Partial Class GradeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Maroon
+        BackColor = Color.FromArgb(CByte(46), CByte(7), CByte(63))
         ClientSize = New Size(990, 772)
         Controls.Add(finalPanel)
         Controls.Add(midtermPanel)

@@ -342,7 +342,7 @@ Partial Class GradeForm
         semGrade.Name = "semGrade"
         semGrade.Size = New Size(180, 78)
         semGrade.TabIndex = 9
-        semGrade.Text = "5.00"
+        semGrade.Text = "0.00"
         semGrade.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label12

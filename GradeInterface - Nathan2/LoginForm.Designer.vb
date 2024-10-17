@@ -33,18 +33,18 @@ Partial Class LoginForm
         ' 
         ' usernameTextBoxForm
         ' 
-        usernameTextBoxForm.Location = New Point(114, 110)
+        usernameTextBoxForm.Location = New Point(142, 119)
         usernameTextBoxForm.Name = "usernameTextBoxForm"
         usernameTextBoxForm.PlaceholderText = "Username"
-        usernameTextBoxForm.Size = New Size(195, 27)
+        usernameTextBoxForm.Size = New Size(228, 27)
         usernameTextBoxForm.TabIndex = 0
         ' 
         ' passwordTextBoxForm
         ' 
-        passwordTextBoxForm.Location = New Point(114, 189)
+        passwordTextBoxForm.Location = New Point(142, 190)
         passwordTextBoxForm.Name = "passwordTextBoxForm"
         passwordTextBoxForm.PlaceholderText = "Password"
-        passwordTextBoxForm.Size = New Size(195, 27)
+        passwordTextBoxForm.Size = New Size(228, 27)
         passwordTextBoxForm.TabIndex = 1
         ' 
         ' usernameLabelForm
@@ -52,7 +52,7 @@ Partial Class LoginForm
         usernameLabelForm.AutoSize = True
         usernameLabelForm.Font = New Font("Segoe UI", 12F)
         usernameLabelForm.ForeColor = Color.WhiteSmoke
-        usernameLabelForm.Location = New Point(114, 79)
+        usernameLabelForm.Location = New Point(142, 88)
         usernameLabelForm.Name = "usernameLabelForm"
         usernameLabelForm.Size = New Size(99, 28)
         usernameLabelForm.TabIndex = 2
@@ -63,7 +63,7 @@ Partial Class LoginForm
         passwordLabelForm.AutoSize = True
         passwordLabelForm.Font = New Font("Segoe UI", 12F)
         passwordLabelForm.ForeColor = Color.WhiteSmoke
-        passwordLabelForm.Location = New Point(114, 158)
+        passwordLabelForm.Location = New Point(142, 159)
         passwordLabelForm.Name = "passwordLabelForm"
         passwordLabelForm.Size = New Size(93, 28)
         passwordLabelForm.TabIndex = 3
@@ -73,7 +73,7 @@ Partial Class LoginForm
         ' 
         loginButtonForm.Font = New Font("Segoe UI", 12F)
         loginButtonForm.ForeColor = Color.FromArgb(CByte(30), CByte(32), CByte(30))
-        loginButtonForm.Location = New Point(111, 250)
+        loginButtonForm.Location = New Point(153, 242)
         loginButtonForm.Name = "loginButtonForm"
         loginButtonForm.Size = New Size(96, 36)
         loginButtonForm.TabIndex = 4
@@ -84,7 +84,7 @@ Partial Class LoginForm
         ' 
         exitButtonForm.Font = New Font("Segoe UI", 12F)
         exitButtonForm.ForeColor = Color.FromArgb(CByte(30), CByte(32), CByte(30))
-        exitButtonForm.Location = New Point(213, 249)
+        exitButtonForm.Location = New Point(255, 242)
         exitButtonForm.Name = "exitButtonForm"
         exitButtonForm.Size = New Size(96, 36)
         exitButtonForm.TabIndex = 5
@@ -96,7 +96,7 @@ Partial Class LoginForm
         loginLabelForm.AutoSize = True
         loginLabelForm.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         loginLabelForm.ForeColor = Color.WhiteSmoke
-        loginLabelForm.Location = New Point(100, 33)
+        loginLabelForm.Location = New Point(142, 41)
         loginLabelForm.Name = "loginLabelForm"
         loginLabelForm.Size = New Size(221, 46)
         loginLabelForm.TabIndex = 6
@@ -106,8 +106,8 @@ Partial Class LoginForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Maroon
-        ClientSize = New Size(413, 395)
+        BackColor = Color.FromArgb(CByte(46), CByte(7), CByte(63))
+        ClientSize = New Size(506, 358)
         Controls.Add(loginLabelForm)
         Controls.Add(exitButtonForm)
         Controls.Add(loginButtonForm)
@@ -115,6 +115,7 @@ Partial Class LoginForm
         Controls.Add(usernameLabelForm)
         Controls.Add(passwordTextBoxForm)
         Controls.Add(usernameTextBoxForm)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "LoginForm"
         Text = "S"
         ResumeLayout(False)
