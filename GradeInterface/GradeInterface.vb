@@ -1,6 +1,8 @@
 ﻿Public Class GradeInterface
 
 
+
+
     Public Sub showGradeForm()
         Dim gradeForm As New GradeForm()
         gradeForm.MdiParent = Me
@@ -14,7 +16,7 @@
     Public Sub showLoginForm()
         Dim loginForm As New LoginForm()
         loginForm.MdiParent = Me
-        LoginForm.Show()
+        loginForm.Show()
     End Sub
     Private Sub gradesMenu_Click(sender As Object, e As EventArgs) Handles gradesMenu.Click
         Dim gradeForm As New GradeForm()
@@ -58,7 +60,7 @@
     End Sub
 
     Private Sub logoutMenu_Click(sender As Object, e As EventArgs) Handles logoutMenu.Click
-        GradeForm.Close()
+        gradesMenu.Enabled = False
         showLoginForm()
     End Sub
 End Class
