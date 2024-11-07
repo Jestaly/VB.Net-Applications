@@ -78,6 +78,9 @@ Partial Class GradeForm
         noRecordsYetPanel = New Panel()
         Panel2 = New Panel()
         noRecordsYetLabel = New Label()
+        CSsubjectComboBox = New ComboBox()
+        NsubjectComboBox = New ComboBox()
+        ENGsubjectComboBox = New ComboBox()
         midtermPanel.SuspendLayout()
         nullMidtermPanel.SuspendLayout()
         nullRecordPanel1.SuspendLayout()
@@ -697,12 +700,46 @@ Partial Class GradeForm
         noRecordsYetLabel.TabIndex = 0
         noRecordsYetLabel.Text = "NO RECORD YET"
         ' 
+        ' CSsubjectComboBox
+        ' 
+        CSsubjectComboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        CSsubjectComboBox.FormattingEnabled = True
+        CSsubjectComboBox.Items.AddRange(New Object() {"COMP 102", "CS 2", "COMP 104", "GE02"})
+        CSsubjectComboBox.Location = New Point(834, 63)
+        CSsubjectComboBox.Name = "CSsubjectComboBox"
+        CSsubjectComboBox.Size = New Size(156, 28)
+        CSsubjectComboBox.TabIndex = 20
+        CSsubjectComboBox.Visible = False
+        ' 
+        ' NsubjectComboBox
+        ' 
+        NsubjectComboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        NsubjectComboBox.FormattingEnabled = True
+        NsubjectComboBox.Items.AddRange(New Object() {"GE01", "N01"})
+        NsubjectComboBox.Location = New Point(834, 63)
+        NsubjectComboBox.Name = "NsubjectComboBox"
+        NsubjectComboBox.Size = New Size(156, 28)
+        NsubjectComboBox.TabIndex = 21
+        NsubjectComboBox.Visible = False
+        ' 
+        ' ENGsubjectComboBox
+        ' 
+        ENGsubjectComboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        ENGsubjectComboBox.FormattingEnabled = True
+        ENGsubjectComboBox.Items.AddRange(New Object() {"ENG1", "GE03", "COMP 102"})
+        ENGsubjectComboBox.Location = New Point(834, 63)
+        ENGsubjectComboBox.Name = "ENGsubjectComboBox"
+        ENGsubjectComboBox.Size = New Size(156, 28)
+        ENGsubjectComboBox.TabIndex = 22
+        ENGsubjectComboBox.Visible = False
+        ' 
         ' GradeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(52), CByte(49), CByte(49))
         ClientSize = New Size(1030, 772)
+        Controls.Add(CSsubjectComboBox)
         Controls.Add(finalPanel)
         Controls.Add(searchButton)
         Controls.Add(sectionLabel)
@@ -719,6 +756,8 @@ Partial Class GradeForm
         Controls.Add(nullMidtermPanel)
         Controls.Add(nullFinalPanel)
         Controls.Add(noRecordsYetPanel)
+        Controls.Add(NsubjectComboBox)
+        Controls.Add(ENGsubjectComboBox)
         FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "GradeForm"
         Text = "Grade Form"
@@ -795,4 +834,7 @@ Partial Class GradeForm
     Friend WithEvents noRecordsYetPanel As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents noRecordsYetLabel As Label
+    Friend WithEvents CSsubjectComboBox As ComboBox
+    Friend WithEvents NsubjectComboBox As ComboBox
+    Friend WithEvents ENGsubjectComboBox As ComboBox
 End Class

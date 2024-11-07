@@ -41,18 +41,20 @@
     End Sub
 
     Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles refreshButton.Click
-        GradeForm.setDefaultForm()
-        GradeForm.setDefaultFormFinal()
-        GradeForm.studentNumberTextBox.Clear()
-        GradeForm.studentNameTextBox.Clear()
-        GradeForm.studentCourseTextBox.Clear()
-        GradeForm.studentSectionTextBox.Clear()
-        GradeForm.midtermPanel.Visible = False
-        GradeForm.finalPanel.Visible = False
-        GradeForm.nullMidtermPanel.Visible = False
-        GradeForm.nullFinalPanel.Visible = False
-        GradeForm.noRecordsYetPanel.Visible = False
-        GradeForm.semGrade.Text = "0.00"
+        Dim gradeForm As New GradeForm()
+        gradeForm.MdiParent = Me
+        gradeForm.setDefaultForm()
+        gradeForm.setDefaultFormFinal()
+        gradeForm.studentNumberTextBox.Clear()
+        gradeForm.studentNameTextBox.Clear()
+        gradeForm.studentCourseTextBox.Clear()
+        gradeForm.studentSectionTextBox.Clear()
+        gradeForm.midtermPanel.Visible = False
+        gradeForm.finalPanel.Visible = False
+        gradeForm.nullMidtermPanel.Visible = False
+        gradeForm.nullFinalPanel.Visible = False
+        gradeForm.noRecordsYetPanel.Visible = False
+        gradeForm.semGrade.Text = "0.00"
     End Sub
 
     Private Sub GradeInterface_Load(sender As Object, e As EventArgs) Handles MyBase.Load

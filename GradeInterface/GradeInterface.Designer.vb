@@ -58,21 +58,21 @@ Partial Class GradeInterface
         ' 
         loginMenu.Name = "loginMenu"
         loginMenu.ShortcutKeys = Keys.Control Or Keys.L
-        loginMenu.Size = New Size(224, 26)
+        loginMenu.Size = New Size(189, 26)
         loginMenu.Text = "Login"
         ' 
         ' logoutMenu
         ' 
         logoutMenu.Name = "logoutMenu"
         logoutMenu.ShortcutKeys = Keys.Control Or Keys.Y
-        logoutMenu.Size = New Size(224, 26)
+        logoutMenu.Size = New Size(189, 26)
         logoutMenu.Text = "Logout"
         ' 
         ' exitMenu
         ' 
         exitMenu.Name = "exitMenu"
         exitMenu.ShortcutKeys = Keys.Control Or Keys.X
-        exitMenu.Size = New Size(224, 26)
+        exitMenu.Size = New Size(189, 26)
         exitMenu.Text = "Exit"
         ' 
         ' gradesMenu

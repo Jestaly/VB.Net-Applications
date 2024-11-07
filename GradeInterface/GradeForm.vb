@@ -241,6 +241,9 @@ Public Class GradeForm
     Public Sub courseChecker(studentCourse)
         If (studentCourse.Equals("BSCS")) Then
             midtermPanel.Visible = True
+            CSsubjectComboBox.Visible = True
+            NsubjectComboBox.Visible = False
+            ENGsubjectComboBox.Visible = False
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -248,6 +251,9 @@ Public Class GradeForm
             finalPanel.BackColor = Color.FromArgb(16, 55, 92)
         ElseIf (studentCourse.Equals("BSN")) Then
             midtermPanel.Visible = True
+            CSsubjectComboBox.Visible = False
+            NsubjectComboBox.Visible = True
+            ENGsubjectComboBox.Visible = False
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -255,6 +261,9 @@ Public Class GradeForm
             finalPanel.BackColor = Color.FromArgb(210, 100, 154)
         ElseIf (studentCourse.Equals("BSCE")) Then
             midtermPanel.Visible = True
+            CSsubjectComboBox.Visible = False
+            NsubjectComboBox.Visible = False
+            ENGsubjectComboBox.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -265,6 +274,9 @@ Public Class GradeForm
             finalPanel.Visible = False
             nullMidtermPanel.Visible = True
             nullFinalPanel.Visible = True
+            CSsubjectComboBox.Visible = False
+            NsubjectComboBox.Visible = False
+            ENGsubjectComboBox.Visible = False
         End If
     End Sub
 
