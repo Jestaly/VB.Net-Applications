@@ -58,7 +58,10 @@
     End Sub
 
     Private Sub GradeInterface_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        showRegisterForm()
+        'showRegisterForm()
+        Dim gradeForm As New GradeForm()
+        gradeForm.MdiParent = Me
+        gradeForm.Show()
     End Sub
 
     Private Sub logoutMenu_Click(sender As Object, e As EventArgs) Handles logoutMenu.Click

@@ -244,6 +244,7 @@ Public Class GradeForm
             CSsubjectComboBox.Visible = True
             NsubjectComboBox.Visible = False
             ENGsubjectComboBox.Visible = False
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -254,6 +255,7 @@ Public Class GradeForm
             CSsubjectComboBox.Visible = False
             NsubjectComboBox.Visible = True
             ENGsubjectComboBox.Visible = False
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -264,6 +266,7 @@ Public Class GradeForm
             CSsubjectComboBox.Visible = False
             NsubjectComboBox.Visible = False
             ENGsubjectComboBox.Visible = True
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -277,6 +280,7 @@ Public Class GradeForm
             CSsubjectComboBox.Visible = False
             NsubjectComboBox.Visible = False
             ENGsubjectComboBox.Visible = False
+            courseLabel.Visible = False
         End If
     End Sub
 
@@ -856,6 +860,9 @@ Public Class GradeForm
 
     End Sub
 
+    Private Sub midtermGradeLabel_Click(sender As Object, e As EventArgs) Handles midtermGradeLabel.Click
+
+    End Sub
 End Class
 
 Public Class Student
