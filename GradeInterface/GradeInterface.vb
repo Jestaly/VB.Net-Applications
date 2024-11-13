@@ -2,9 +2,9 @@
 
 
 
+    Dim gradeForm As New GradeForm()
 
     Public Sub showGradeForm()
-        Dim gradeForm As New GradeForm()
         gradeForm.MdiParent = Me
         gradeForm.Show()
     End Sub
@@ -19,7 +19,6 @@
         loginForm.Show()
     End Sub
     Private Sub gradesMenu_Click(sender As Object, e As EventArgs) Handles gradesMenu.Click
-        Dim gradeForm As New GradeForm()
         gradeForm.MdiParent = Me
         gradeForm.Show()
     End Sub
@@ -41,10 +40,12 @@
     End Sub
 
     Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles refreshButton.Click
-        Dim gradeForm As New GradeForm()
-        gradeForm.MdiParent = Me
         gradeForm.setDefaultForm()
         gradeForm.setDefaultFormFinal()
+        gradeForm.courseLabel.Visible = False
+        gradeForm.CSsubjectComboBox.Visible = False
+        gradeForm.NsubjectComboBox.Visible = False
+        gradeForm.ENGsubjectComboBox.Visible = False
         gradeForm.studentNumberTextBox.Clear()
         gradeForm.studentNameTextBox.Clear()
         gradeForm.studentCourseTextBox.Clear()
@@ -58,10 +59,7 @@
     End Sub
 
     Private Sub GradeInterface_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'showRegisterForm()
-        Dim gradeForm As New GradeForm()
-        gradeForm.MdiParent = Me
-        gradeForm.Show()
+        showRegisterForm()
     End Sub
 
     Private Sub logoutMenu_Click(sender As Object, e As EventArgs) Handles logoutMenu.Click

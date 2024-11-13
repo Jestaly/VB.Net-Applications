@@ -4,6 +4,10 @@ Public Class GradeForm
     Public Sub courseChecker(studentCourse)
         If (studentCourse.Equals("BSCS")) Then
             midtermPanel.Visible = True
+            CScomboBox.Visible = True
+            ITcomboBox.Visible = False
+            EDUCcomboBox.Visible = False
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -11,6 +15,10 @@ Public Class GradeForm
             finalPanel.BackColor = Color.FromArgb(73, 36, 62)
         ElseIf (studentCourse.Equals("BSIT")) Then
             midtermPanel.Visible = True
+            CScomboBox.Visible = False
+            ITcomboBox.Visible = True
+            EDUCcomboBox.Visible = False
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -18,6 +26,10 @@ Public Class GradeForm
             finalPanel.BackColor = Color.FromArgb(73, 36, 62)
         ElseIf (studentCourse.Equals("BAED")) Then
             midtermPanel.Visible = True
+            CScomboBox.Visible = False
+            ITcomboBox.Visible = False
+            EDUCcomboBox.Visible = True
+            courseLabel.Visible = True
             If (student.studentSaveArr(studentOrder)) Then
                 finalPanel.Visible = True
             End If
@@ -28,6 +40,10 @@ Public Class GradeForm
             finalPanel.Visible = False
             nullMidtermPanel.Visible = True
             nullFinalPanel.Visible = True
+            CScomboBox.Visible = False
+            ITcomboBox.Visible = False
+            EDUCcomboBox.Visible = False
+            courseLabel.Visible = False
         End If
     End Sub
 
@@ -37,14 +53,14 @@ Public Class GradeForm
         semGrade.Text = "X.XX"
         Dim studentNumber As String = studentNumberTextBox.Text
         Dim studentName As String = studentNameTextBox.Text
-        Dim studentCourse As String = studentCourseTextBox.Text
+        Dim studentCourse As String = studentProgramTextBox.Text
         Dim studentSection As String = studentSectionTextBox.Text
         Dim found As Boolean = False
         For i = studentOrder To student.studentNumArr.Length - 1
             If (studentNumber.Equals(student.studentNumArr(i))) Then
                 studentNumberTextBox.Text = student.studentNumArr(i)
                 studentNameTextBox.Text = student.studentNameArr(i)
-                studentCourseTextBox.Text = student.studentCourseArr(i)
+                studentProgramTextBox.Text = student.studentCourseArr(i)
                 studentSectionTextBox.Text = student.studentSectionArr(i)
                 studentOrder = i
                 If (student.studentSaveArr(i)) Then
@@ -133,7 +149,7 @@ Public Class GradeForm
                     setDefaultFormFinal()
                 End If
 
-                studentCourse = studentCourseTextBox.Text
+                studentCourse = studentProgramTextBox.Text
                 found = True
                 Exit For
             End If
@@ -143,7 +159,7 @@ Public Class GradeForm
         If (Not found) Then
             studentNumberTextBox.Clear()
             studentNameTextBox.Clear()
-            studentCourseTextBox.Clear()
+            studentProgramTextBox.Clear()
             studentSectionTextBox.Clear()
             studentCourse = ""
             nullRecordMidterm.Visible = True

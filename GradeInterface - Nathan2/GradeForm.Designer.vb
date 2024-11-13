@@ -47,8 +47,8 @@ Partial Class GradeForm
         semGrade = New Label()
         Label12 = New Label()
         studentNumberTextBox = New MaskedTextBox()
-        courseLabel = New Label()
-        studentCourseTextBox = New TextBox()
+        programLabel = New Label()
+        studentProgramTextBox = New TextBox()
         sectionLabel = New Label()
         studentSectionTextBox = New TextBox()
         searchButton = New Button()
@@ -78,6 +78,10 @@ Partial Class GradeForm
         noRecordsYetPanel = New Panel()
         Panel2 = New Panel()
         noRecordsYetLabel = New Label()
+        CScomboBox = New ComboBox()
+        courseLabel = New Label()
+        ITcomboBox = New ComboBox()
+        EDUCcomboBox = New ComboBox()
         midtermPanel.SuspendLayout()
         nullMidtermPanel.SuspendLayout()
         nullRecordPanel1.SuspendLayout()
@@ -367,25 +371,25 @@ Partial Class GradeForm
         studentNumberTextBox.TabIndex = 11
         studentNumberTextBox.ValidatingType = GetType(Date)
         ' 
-        ' courseLabel
+        ' programLabel
         ' 
-        courseLabel.AutoSize = True
-        courseLabel.Font = New Font("Lucida Sans", 10.8F)
-        courseLabel.ForeColor = SystemColors.ButtonHighlight
-        courseLabel.Location = New Point(76, 417)
-        courseLabel.Name = "courseLabel"
-        courseLabel.Size = New Size(71, 21)
-        courseLabel.TabIndex = 13
-        courseLabel.Text = "Course"
+        programLabel.AutoSize = True
+        programLabel.Font = New Font("Lucida Sans", 10.8F)
+        programLabel.ForeColor = SystemColors.ButtonHighlight
+        programLabel.Location = New Point(76, 417)
+        programLabel.Name = "programLabel"
+        programLabel.Size = New Size(87, 21)
+        programLabel.TabIndex = 13
+        programLabel.Text = "Program"
         ' 
-        ' studentCourseTextBox
+        ' studentProgramTextBox
         ' 
-        studentCourseTextBox.Enabled = False
-        studentCourseTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        studentCourseTextBox.Location = New Point(76, 441)
-        studentCourseTextBox.Name = "studentCourseTextBox"
-        studentCourseTextBox.Size = New Size(136, 31)
-        studentCourseTextBox.TabIndex = 12
+        studentProgramTextBox.Enabled = False
+        studentProgramTextBox.Font = New Font("Lucida Sans", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        studentProgramTextBox.Location = New Point(76, 441)
+        studentProgramTextBox.Name = "studentProgramTextBox"
+        studentProgramTextBox.Size = New Size(136, 31)
+        studentProgramTextBox.TabIndex = 12
         ' 
         ' sectionLabel
         ' 
@@ -694,19 +698,66 @@ Partial Class GradeForm
         noRecordsYetLabel.Size = New Size(0, 76)
         noRecordsYetLabel.TabIndex = 0
         ' 
+        ' CScomboBox
+        ' 
+        CScomboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        CScomboBox.FormattingEnabled = True
+        CScomboBox.Items.AddRange(New Object() {"DSA", "DSII", "COMP 104", "COMP 102"})
+        CScomboBox.Location = New Point(76, 578)
+        CScomboBox.Name = "CScomboBox"
+        CScomboBox.Size = New Size(136, 28)
+        CScomboBox.TabIndex = 20
+        CScomboBox.Visible = False
+        ' 
+        ' courseLabel
+        ' 
+        courseLabel.AutoSize = True
+        courseLabel.Font = New Font("Lucida Sans", 10.8F)
+        courseLabel.ForeColor = SystemColors.ButtonHighlight
+        courseLabel.Location = New Point(77, 554)
+        courseLabel.Name = "courseLabel"
+        courseLabel.Size = New Size(71, 21)
+        courseLabel.TabIndex = 21
+        courseLabel.Text = "Course"
+        courseLabel.Visible = False
+        ' 
+        ' ITcomboBox
+        ' 
+        ITcomboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        ITcomboBox.FormattingEnabled = True
+        ITcomboBox.Items.AddRange(New Object() {"GE01", "PE", "N01"})
+        ITcomboBox.Location = New Point(76, 578)
+        ITcomboBox.Name = "ITcomboBox"
+        ITcomboBox.Size = New Size(136, 28)
+        ITcomboBox.TabIndex = 22
+        ITcomboBox.Visible = False
+        ' 
+        ' EDUCcomboBox
+        ' 
+        EDUCcomboBox.DropDownStyle = ComboBoxStyle.DropDownList
+        EDUCcomboBox.FormattingEnabled = True
+        EDUCcomboBox.Items.AddRange(New Object() {"ENG1", "PE2", "GE03"})
+        EDUCcomboBox.Location = New Point(76, 578)
+        EDUCcomboBox.Name = "EDUCcomboBox"
+        EDUCcomboBox.Size = New Size(136, 28)
+        EDUCcomboBox.TabIndex = 23
+        EDUCcomboBox.Visible = False
+        ' 
         ' GradeForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(46), CByte(7), CByte(63))
         ClientSize = New Size(990, 772)
+        Controls.Add(courseLabel)
+        Controls.Add(CScomboBox)
         Controls.Add(finalPanel)
         Controls.Add(midtermPanel)
         Controls.Add(searchButton)
         Controls.Add(sectionLabel)
         Controls.Add(studentSectionTextBox)
-        Controls.Add(courseLabel)
-        Controls.Add(studentCourseTextBox)
+        Controls.Add(programLabel)
+        Controls.Add(studentProgramTextBox)
         Controls.Add(studentNumberTextBox)
         Controls.Add(Label12)
         Controls.Add(semGrade)
@@ -716,6 +767,8 @@ Partial Class GradeForm
         Controls.Add(nullMidtermPanel)
         Controls.Add(nullFinalPanel)
         Controls.Add(noRecordsYetPanel)
+        Controls.Add(ITcomboBox)
+        Controls.Add(EDUCcomboBox)
         FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "GradeForm"
         Text = "Grade Form"
@@ -760,8 +813,8 @@ Partial Class GradeForm
     Friend WithEvents Label12 As Label
     Friend WithEvents studentNumberTextBox As MaskedTextBox
     Friend WithEvents saveMidtermButton As Button
-    Friend WithEvents courseLabel As Label
-    Friend WithEvents studentCourseTextBox As TextBox
+    Friend WithEvents programLabel As Label
+    Friend WithEvents studentProgramTextBox As TextBox
     Friend WithEvents sectionLabel As Label
     Friend WithEvents studentSectionTextBox As TextBox
     Friend WithEvents searchButton As Button
@@ -792,4 +845,8 @@ Partial Class GradeForm
     Friend WithEvents noRecordsYetPanel As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents noRecordsYetLabel As Label
+    Friend WithEvents CScomboBox As ComboBox
+    Friend WithEvents courseLabel As Label
+    Friend WithEvents ITcomboBox As ComboBox
+    Friend WithEvents EDUCcomboBox As ComboBox
 End Class

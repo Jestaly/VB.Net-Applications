@@ -180,6 +180,7 @@ Public Class GradeForm
         totalPercentage = 0
         percentageTracker = 0
         midtermPerc = 0
+
         attMidTextBox.Enabled = False
         quizMidTextBox.Enabled = False
         labExerMidTextBox.Enabled = False
@@ -863,6 +864,7 @@ Public Class GradeForm
     Private Sub midtermGradeLabel_Click(sender As Object, e As EventArgs) Handles midtermGradeLabel.Click
 
     End Sub
+
 End Class
 
 Public Class Student

@@ -36,7 +36,7 @@
         GradeForm.setDefaultFormFinal()
         GradeForm.studentNumberTextBox.Clear()
         GradeForm.studentNameTextBox.Clear()
-        GradeForm.studentCourseTextBox.Clear()
+        GradeForm.studentProgramTextBox.Clear()
         GradeForm.studentSectionTextBox.Clear()
         GradeForm.midtermPanel.Visible = False
         GradeForm.finalPanel.Visible = False
