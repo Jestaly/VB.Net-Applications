@@ -114,9 +114,9 @@ Partial Class GradeForm
         midtermPanel.Controls.Add(quizMidLabel)
         midtermPanel.Controls.Add(attendanceMidLabel)
         midtermPanel.Controls.Add(attMidTextBox)
-        midtermPanel.Location = New Point(432, 34)
+        midtermPanel.Location = New Point(432, 29)
         midtermPanel.Name = "midtermPanel"
-        midtermPanel.Size = New Size(1027, 266)
+        midtermPanel.Size = New Size(1027, 272)
         midtermPanel.TabIndex = 0
         midtermPanel.Visible = False
         ' 

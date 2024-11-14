@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - Vince\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - vince\\gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - vince\\gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - vince\\gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|solutionrelative:gradeform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89C3F19B-888B-440F-95C3-E39030B62789}|GradeInterface.vbproj|f:\\github projects\\vb.net-applications\\gradeinterface - vince\\gradeinterface.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -99,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GradeForm.vb",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - Vince\\GradeForm.vb",
               "RelativeDocumentMoniker": "GradeForm.vb",
               "ToolTip": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - Vince\\GradeForm.vb",
               "RelativeToolTip": "GradeForm.vb",
-              "ViewState": "AQIAAIgDAAAAAAAAAAAxwJ0CAAASAAAA",
+              "ViewState": "AQIAAIUDAAAAAAAAAAAxwJADAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-15T06:11:26.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GradeForm.vb [Design]",
               "DocumentMoniker": "F:\\Github Projects\\VB.Net-Applications\\GradeInterface - Vince\\GradeForm.vb",
               "RelativeDocumentMoniker": "GradeForm.vb",
