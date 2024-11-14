@@ -822,22 +822,34 @@ Public Class GradeForm
                 Select Case semestralPerc
                     Case Is >= 98
                         semGrade.Text = "1.00"
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 96
                         semGrade.Text = "1.25"
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 93
                         semGrade.Text = "1.50"
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 89
                         semGrade.Text = "1.75"
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 85
                         semGrade.Text = "2.00"
+                        MessageBox.Show("Good Job!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 82
                         semGrade.Text = "2.25"
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Case Is >= 79
                         semGrade.Text = "2.50"
-                    Case Is >= 75
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Case Is >= 76
                         semGrade.Text = "2.75"
-                    Case Is < 75
+                        MessageBox.Show("Well Done!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Case Is >= 75
                         semGrade.Text = "3.00"
+                        MessageBox.Show("You did your best!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Case Is < 74
+                        semGrade.Text = "5.00"
+                        MessageBox.Show("You Failed!", "Remarks", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End Select
             End If
 
@@ -865,6 +877,9 @@ Public Class GradeForm
 
     End Sub
 
+    Private Sub GradeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
 
 Public Class Student
